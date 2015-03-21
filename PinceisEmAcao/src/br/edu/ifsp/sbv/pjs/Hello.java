@@ -11,4 +11,6 @@ package br.edu.ifsp.sbv.pjs;
  */
 public class Hello {
     
+  ("Projeto Java IFSP 2015 Testando")
+    
 }

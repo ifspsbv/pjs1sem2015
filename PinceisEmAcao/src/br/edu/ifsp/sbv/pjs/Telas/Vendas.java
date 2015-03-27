@@ -5,6 +5,8 @@
  */
 package br.edu.ifsp.sbv.pjs.Telas;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author bv1301144
@@ -27,20 +29,20 @@ public class Vendas extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(1100, 660));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGap(0, 1100, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGap(0, 660, Short.MAX_VALUE)
         );
 
-        pack();
+        setBounds(224, 57, 1100, 660);
     }// </editor-fold>//GEN-END:initComponents
 
     /**

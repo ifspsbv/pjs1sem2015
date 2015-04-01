@@ -42,23 +42,29 @@ public class Login extends javax.swing.JFrame {
         jLayeredPane1.setEnabled(false);
         jLayeredPane1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jPasswordSenha.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jPasswordSenha.setBorder(javax.swing.BorderFactory.createBevelBorder(0));
+        jPasswordSenha.setDisabledTextColor(new java.awt.Color(51, 51, 51));
         jPasswordSenha.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jPasswordSenhaActionPerformed(evt);
             }
         });
-        jLayeredPane1.add(jPasswordSenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 200, 170, 30));
+        jLayeredPane1.add(jPasswordSenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 210, 170, 35));
 
         jLabel3.setFont(new java.awt.Font("Swis721 LtEx BT", 1, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 0, 204));
         jLabel3.setText("Senha");
-        jLayeredPane1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 170, 80, -1));
+        jLayeredPane1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 220, 80, -1));
 
+        jTextFieldUsuario.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jTextFieldUsuario.setBorder(javax.swing.BorderFactory.createBevelBorder(0));
         jTextFieldUsuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextFieldUsuarioActionPerformed(evt);
             }
         });
-        jLayeredPane1.add(jTextFieldUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 140, 170, 30));
+        jLayeredPane1.add(jTextFieldUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 160, 170, 35));
 
         jButtonLogin.setText("Login");
         jButtonLogin.addActionListener(new java.awt.event.ActionListener() {
@@ -66,15 +72,16 @@ public class Login extends javax.swing.JFrame {
                 jButtonLoginActionPerformed(evt);
             }
         });
-        jLayeredPane1.add(jButtonLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 260, 70, -1));
+        jLayeredPane1.add(jButtonLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 270, 70, 30));
 
         jLabel4.setFont(new java.awt.Font("Swis721 LtEx BT", 1, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(0, 0, 204));
         jLabel4.setText("Usuário");
-        jLayeredPane1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 110, 70, 30));
+        jLayeredPane1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, 70, 30));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/background.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/fundo com logo login.png"))); // NOI18N
         jLabel2.setAutoscrolls(true);
-        jLayeredPane1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 380, 340));
+        jLayeredPane1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 380, 320));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -84,7 +91,7 @@ public class Login extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLayeredPane1)
+            .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();

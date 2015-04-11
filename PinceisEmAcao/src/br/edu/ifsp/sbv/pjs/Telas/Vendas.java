@@ -37,7 +37,6 @@ public class Vendas extends javax.swing.JFrame {
         jTextField_Quantidade_Vendas = new javax.swing.JTextField();
         jCheckBox_Venda_Vendas = new javax.swing.JCheckBox();
         jCheckBox_Consumo_Vendas = new javax.swing.JCheckBox();
-        jTextField_Tabela_Produto_Vendas = new javax.swing.JTextField();
         jButton_Limpar_Vendas = new javax.swing.JButton();
         jButton_Finalizar_Vendas = new javax.swing.JButton();
         jButton_Excluir_Vendas = new javax.swing.JButton();
@@ -51,8 +50,8 @@ public class Vendas extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jComboBox2 = new javax.swing.JComboBox();
         jButton1 = new javax.swing.JButton();
-
-        setPreferredSize(new java.awt.Dimension(1100, 660));
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel1.setText("Codigo");
@@ -138,6 +137,46 @@ public class Vendas extends javax.swing.JFrame {
 
         jButton1.setText("OK");
 
+        jTable1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Codigo", "Produto", "Quantidade", "Preço"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.Integer.class, java.lang.String.class, java.lang.Integer.class, java.lang.Float.class
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+        });
+        jTable1.setShowHorizontalLines(false);
+        jTable1.setShowVerticalLines(false);
+        jScrollPane1.setViewportView(jTable1);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -165,7 +204,7 @@ public class Vendas extends javax.swing.JFrame {
                         .addComponent(jTextField_Total_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(51, 51, 51))
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -180,7 +219,8 @@ public class Vendas extends javax.swing.JFrame {
                                 .addComponent(jTextField_Quantidade_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
                                 .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jTextField_Tabela_Produto_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 789, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jScrollPane1))
+                        .addGap(1, 1, 1)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 25, Short.MAX_VALUE)
@@ -214,9 +254,6 @@ public class Vendas extends javax.swing.JFrame {
                     .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(26, 26, 26)
-                        .addComponent(jTextField_Tabela_Produto_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 341, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jCheckBox_Consumo_Vendas)
                         .addGap(28, 28, 28)
@@ -224,7 +261,11 @@ public class Vendas extends javax.swing.JFrame {
                         .addGap(38, 38, 38)
                         .addComponent(jButton_Excluir_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(36, 36, 36)
-                        .addComponent(jButton_Limpar_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jButton_Limpar_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(15, 15, 15)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 349, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(3, 3, 3)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(18, 18, Short.MAX_VALUE)
@@ -321,12 +362,13 @@ public class Vendas extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField_Codido_Vendas;
     private javax.swing.JTextField jTextField_Opção_Vendas;
     private javax.swing.JTextField jTextField_Produto_Vendas;
     private javax.swing.JTextField jTextField_Quantidade_Vendas;
     private javax.swing.JTextField jTextField_Sub_Total_Vendas;
-    private javax.swing.JTextField jTextField_Tabela_Produto_Vendas;
     private javax.swing.JTextField jTextField_Total_Vendas;
     private javax.swing.JTextField jTextField_Troco_Vendas;
     // End of variables declaration//GEN-END:variables

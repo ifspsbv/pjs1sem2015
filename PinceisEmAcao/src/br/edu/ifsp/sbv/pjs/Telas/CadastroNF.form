@@ -30,123 +30,111 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabel6" alignment="0" min="-2" pref="64" max="-2" attributes="0"/>
-                          <Component id="jLabel9" alignment="0" min="-2" pref="72" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <Component id="jTextField_Emissao_CadastroNF" min="-2" pref="112" max="-2" attributes="0"/>
-                              <EmptySpace min="45" pref="45" max="-2" attributes="0"/>
-                              <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="113" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                              <Component id="jLabel12" alignment="0" max="32767" attributes="0"/>
+                              <Component id="jLabel13" alignment="0" pref="99" max="32767" attributes="0"/>
+                              <Component id="jLabel11" max="32767" attributes="0"/>
                           </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <Component id="jTextField_Valor_CadastroNF" min="-2" pref="112" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
-                              <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
-                          </Group>
+                          <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                          <Component id="jTextField_QtdeParcela_CadastroNF" alignment="0" pref="153" max="32767" attributes="0"/>
-                          <Component id="jTextField_Impostosl_CadastroNF" max="32767" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabel8" min="-2" pref="43" max="-2" attributes="0"/>
-                          <Component id="jLabel10" alignment="0" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace min="181" max="32767" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel1" min="-2" pref="158" max="-2" attributes="0"/>
-                                  <Component id="jLabel_Total_CadastroNF" min="-2" pref="156" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="1" attributes="0">
-                                          <Component id="jButton5" min="-2" pref="92" max="-2" attributes="0"/>
-                                          <Component id="jTextField_Total_CadastroNF" min="-2" pref="105" max="-2" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="jTextField_Vencimento_CadastroNF" min="-2" pref="105" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <EmptySpace max="32767" attributes="0"/>
-                          </Group>
-                      </Group>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jScrollPane1" min="-2" pref="971" max="-2" attributes="0"/>
-                          <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                      <Component id="jLabel12" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="jLabel13" alignment="0" pref="99" max="32767" attributes="0"/>
-                                      <Component id="jLabel11" max="32767" attributes="0"/>
-                                  </Group>
-                                  <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                              </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jTextField_NotaFiscal_CadastroNF" min="-2" pref="424" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="jLabel14" min="-2" pref="48" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="458" max="-2" attributes="0"/>
-                                      <Component id="jButton1" min="-2" pref="96" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
-                                      <Component id="jButton2" min="-2" pref="92" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
-                                      <Component id="jButton3" min="-2" pref="96" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
-                                      <Component id="jButton4" min="-2" pref="109" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
+                              <Component id="jTextField_CNPJ_CadastroNF" min="-2" pref="382" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="jTextField_RazaoSocial_CadastroNF" min="-2" pref="836" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jButton7" min="-2" pref="26" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Group type="102" attributes="0">
                                           <Component id="jTextField_Codigo_CadastroNF" min="-2" pref="112" max="-2" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                          <Component id="jTextField_Produto_CadastroNF" min="-2" pref="511" max="-2" attributes="0"/>
-                                          <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                                          <Component id="jTextField_Produto_CadastroNF" max="32767" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
                                           <Component id="jButton6" min="-2" pref="25" max="-2" attributes="0"/>
-                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="jTextField_Valor_CadastroNF" min="-2" pref="112" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
                                           <Component id="jLabel4" min="-2" pref="43" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="jTextField_Qtde_CadastroNF" min="-2" pref="76" max="-2" attributes="0"/>
+                                          <Component id="jTextField_Qtde_CadastroNF" min="-2" pref="84" max="-2" attributes="0"/>
                                       </Group>
-                                      <Component id="jTextField_NomeFantasia_CadastroNF" alignment="0" max="32767" attributes="0"/>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="jTextField_RazaoSocial_CadastroNF" min="-2" pref="836" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="jButton7" min="-2" pref="26" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="jTextField_NotaFiscal_CadastroNF" min="-2" pref="424" max="-2" attributes="0"/>
+                                      <Group type="102" attributes="0">
+                                          <Component id="jTextField_NomeFantasia_CadastroNF" max="32767" attributes="0"/>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                          <Component id="jLabel14" min="-2" pref="48" max="-2" attributes="0"/>
+                                          <Component id="jLabel9" min="-2" pref="58" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="jTextField_CNPJ_CadastroNF" min="-2" pref="382" max="-2" attributes="0"/>
+                                          <Component id="jDateChooser_Emissao_CadastroNF" min="-2" pref="118" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
+                                  <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="202" max="-2" attributes="0"/>
+                              <Component id="jButton_Limpar_CadastroNF" min="-2" pref="92" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                              <Component id="jButton_Pesquisar_CadastroNF" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                              <Component id="jButton_Excluir_CadastroNF" min="-2" pref="109" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="jTextField_QtdeParcela_CadastroNF" min="-2" pref="84" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="jTextField_Vencimento_CadastroNF" min="-2" pref="108" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="jButton_Salvar_CadastroNF" min="-2" pref="92" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                              <Component id="jButton_Editar_CadastroNF" min="-2" pref="96" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="267" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jTextField_Impostosl_CadastroNF" min="-2" pref="95" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                      <Component id="jLabel8" min="-2" pref="37" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="jTextField_Total_CadastroNF" min="-2" pref="121" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="jScrollPane2" alignment="0" min="-2" pref="969" max="-2" attributes="0"/>
+                  <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="jLabel_Total_CadastroNF" min="-2" pref="136" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="jScrollPane1" min="-2" pref="969" max="-2" attributes="0"/>
                   </Group>
               </Group>
+              <EmptySpace pref="74" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -170,70 +158,58 @@
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jTextField_NomeFantasia_CadastroNF" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
                   <Component id="jLabel11" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jDateChooser_Emissao_CadastroNF" alignment="1" min="-2" pref="28" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jTextField_Codigo_CadastroNF" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
-                      <Component id="jLabel2" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
-                      <Component id="jLabel3" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
-                      <Component id="jTextField_Produto_CadastroNF" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                      <Component id="jTextField_Qtde_CadastroNF" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
-                      <Component id="jLabel4" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
-                      <Component id="jButton6" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
+              <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jTextField_Codigo_CadastroNF" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                  <Component id="jLabel2" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
+                  <Component id="jLabel3" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
+                  <Component id="jTextField_Produto_CadastroNF" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                  <Component id="jButton6" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTextField_Valor_CadastroNF" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                  <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTextField_Qtde_CadastroNF" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="jScrollPane1" min="-2" pref="158" max="-2" attributes="0"/>
-              <EmptySpace pref="48" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+              <Component id="jScrollPane2" min="-2" pref="158" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLabel7" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                  <Component id="jTextField_QtdeParcela_CadastroNF" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                  <Component id="jLabel10" alignment="3" min="-2" pref="37" max="-2" attributes="0"/>
+                  <Component id="jTextField_Vencimento_CadastroNF" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                  <Component id="jLabel8" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                  <Component id="jTextField_Total_CadastroNF" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                  <Component id="jTextField_Impostosl_CadastroNF" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                  <Component id="jLabel5" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="jScrollPane1" min="-2" pref="130" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Component id="jLabel_Total_CadastroNF" min="-2" pref="78" max="-2" attributes="0"/>
+                      <EmptySpace pref="16" max="32767" attributes="0"/>
+                  </Group>
                   <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel9" alignment="3" min="-2" pref="37" max="-2" attributes="0"/>
-                          <Component id="jTextField_Emissao_CadastroNF" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
-                          <Component id="jLabel7" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
-                          <Component id="jTextField_QtdeParcela_CadastroNF" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel6" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                                  <Component id="jTextField_Valor_CadastroNF" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
-                                  <Component id="jLabel5" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jLabel_Total_CadastroNF" min="-2" pref="104" max="-2" attributes="0"/>
-                          </Group>
+                          <Component id="jLabel1" alignment="3" min="-2" pref="47" max="-2" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
-                              <Component id="jTextField_Impostosl_CadastroNF" min="-2" pref="28" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jButton_Salvar_CadastroNF" alignment="3" min="-2" pref="37" max="-2" attributes="0"/>
+                                  <Component id="jButton_Editar_CadastroNF" alignment="3" min="-2" pref="37" max="-2" attributes="0"/>
+                                  <Component id="jButton_Limpar_CadastroNF" alignment="3" min="-2" pref="37" max="-2" attributes="0"/>
+                                  <Component id="jButton_Pesquisar_CadastroNF" alignment="3" min="-2" pref="37" max="-2" attributes="0"/>
+                                  <Component id="jButton_Excluir_CadastroNF" alignment="3" min="-2" pref="37" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
                       </Group>
-                      <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="1" attributes="0">
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel10" alignment="3" min="-2" pref="37" max="-2" attributes="0"/>
-                          <Component id="jTextField_Vencimento_CadastroNF" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jTextField_Total_CadastroNF" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
-                          <Component id="jLabel8" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jButton5" alignment="3" min="-2" pref="37" max="-2" attributes="0"/>
-                          <Component id="jButton4" alignment="3" min="-2" pref="37" max="-2" attributes="0"/>
-                          <Component id="jButton3" alignment="3" min="-2" pref="37" max="-2" attributes="0"/>
-                          <Component id="jButton2" alignment="3" min="-2" pref="37" max="-2" attributes="0"/>
-                          <Component id="jButton1" alignment="3" min="-2" pref="37" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="91" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
                   </Group>
               </Group>
           </Group>
@@ -241,29 +217,15 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JButton" name="jButton1">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="14" style="1"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Salvar"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JButton" name="jButton2">
+    <Component class="javax.swing.JButton" name="jButton_Editar_CadastroNF">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Editar"/>
-        <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[75, 25]"/>
-        </Property>
-        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[75, 25]"/>
-        </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton3">
+    <Component class="javax.swing.JButton" name="jButton_Limpar_CadastroNF">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="1"/>
@@ -277,20 +239,34 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton4">
+    <Component class="javax.swing.JButton" name="jButton_Pesquisar_CadastroNF">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Pesquisar"/>
+        <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[75, 25]"/>
+        </Property>
+        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[75, 25]"/>
+        </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton5">
+    <Component class="javax.swing.JButton" name="jButton_Excluir_CadastroNF">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Excluir"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton_Salvar_CadastroNF">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Salvar"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">
@@ -427,13 +403,6 @@
         <Property name="text" type="java.lang.String" value="Vencimento:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField_Emissao_CadastroNF">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="14" style="0"/>
-        </Property>
-      </Properties>
-    </Component>
     <Component class="javax.swing.JTextField" name="jTextField_Vencimento_CadastroNF">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -506,14 +475,6 @@
         <Property name="text" type="java.lang.String" value="Pesquisar"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel_Total_CadastroNF">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="24" style="1"/>
-        </Property>
-        <Property name="horizontalAlignment" type="int" value="0"/>
-      </Properties>
-    </Component>
     <Container class="javax.swing.JScrollPane" name="jScrollPane1">
       <AuxValues>
         <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
@@ -522,6 +483,31 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
       <SubComponents>
         <Component class="javax.swing.JTable" name="jTable1">
+          <Properties>
+            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+              <Table columnCount="3" rowCount="10">
+                <Column editable="true" title="Parcela" type="java.lang.Integer"/>
+                <Column editable="true" title="Data" type="java.lang.String"/>
+                <Column editable="true" title="Valor" type="java.lang.Double"/>
+              </Table>
+            </Property>
+            <Property name="toolTipText" type="java.lang.String" value=""/>
+            <Property name="showHorizontalLines" type="boolean" value="false"/>
+            <Property name="showVerticalLines" type="boolean" value="false"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="com.toedter.calendar.JDateChooser" name="jDateChooser_Emissao_CadastroNF">
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTable" name="jTable2">
           <Properties>
             <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
               <Table columnCount="5" rowCount="30">
@@ -539,5 +525,7 @@
         </Component>
       </SubComponents>
     </Container>
+    <Component class="javax.swing.JLabel" name="jLabel_Total_CadastroNF">
+    </Component>
   </SubComponents>
 </Form>

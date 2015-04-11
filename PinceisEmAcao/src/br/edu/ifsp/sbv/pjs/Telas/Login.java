@@ -78,7 +78,7 @@ public class Login extends javax.swing.JFrame {
                 jButtonLoginActionPerformed(evt);
             }
         });
-        jLayeredPane1.add(jButtonLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 270, 70, 30));
+        jLayeredPane1.add(jButtonLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 270, 70, 30));
 
         jLabel4.setFont(new java.awt.Font("Swis721 LtEx BT", 1, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 0, 204));

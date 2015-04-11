@@ -14,7 +14,8 @@ public class MenuPrincipal extends javax.swing.JFrame {
     /**
      * Creates new form MenuPrincipal
      */
-    
+    private CadastroClientes cadastroclientes;
+    private CadastroNF notafiscal;
     private Vendas vendas;
     private CadastroEstoque estoque;
     public MenuPrincipal() {
@@ -30,12 +31,13 @@ public class MenuPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton_Cadastro_NF_MenuPrincipal = new javax.swing.JButton();
+        jButton_Sair_MenuPrincipal = new javax.swing.JButton();
         jButton_Cadastro_Cliente_MenuPrincipal = new javax.swing.JButton();
         jButton_Vendas_MenuPrincipal = new javax.swing.JButton();
         jButton_Estoque_MenuPrincipal = new javax.swing.JButton();
         jButton_Cadastro_Fornecedor_MenuPrincipal = new javax.swing.JButton();
         jLabel_imagem_fundo = new javax.swing.JLabel();
+        jButton_Cadastro_NF_MenuPrincipal1 = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -48,13 +50,13 @@ public class MenuPrincipal extends javax.swing.JFrame {
         setBackground(new java.awt.Color(66, 188, 251));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton_Cadastro_NF_MenuPrincipal.setText("Cadastro NF");
-        jButton_Cadastro_NF_MenuPrincipal.addActionListener(new java.awt.event.ActionListener() {
+        jButton_Sair_MenuPrincipal.setText("Sair");
+        jButton_Sair_MenuPrincipal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_Cadastro_NF_MenuPrincipalActionPerformed(evt);
+                jButton_Sair_MenuPrincipalActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton_Cadastro_NF_MenuPrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 480, 150, 60));
+        getContentPane().add(jButton_Sair_MenuPrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 540, 150, 60));
 
         jButton_Cadastro_Cliente_MenuPrincipal.setText("Cadastro Cliente");
         jButton_Cadastro_Cliente_MenuPrincipal.addActionListener(new java.awt.event.ActionListener() {
@@ -78,7 +80,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
                 jButton_Estoque_MenuPrincipalActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton_Estoque_MenuPrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 250, 150, 60));
+        getContentPane().add(jButton_Estoque_MenuPrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, 150, 60));
 
         jButton_Cadastro_Fornecedor_MenuPrincipal.setText("Cadastro Fornecedor");
         jButton_Cadastro_Fornecedor_MenuPrincipal.addActionListener(new java.awt.event.ActionListener() {
@@ -86,11 +88,19 @@ public class MenuPrincipal extends javax.swing.JFrame {
                 jButton_Cadastro_Fornecedor_MenuPrincipalActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton_Cadastro_Fornecedor_MenuPrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 360, 150, 60));
+        getContentPane().add(jButton_Cadastro_Fornecedor_MenuPrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 340, 150, 60));
 
         jLabel_imagem_fundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/fundo com logo.png"))); // NOI18N
         jLabel_imagem_fundo.setText("jLabel2");
         getContentPane().add(jLabel_imagem_fundo, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 0, 1100, 660));
+
+        jButton_Cadastro_NF_MenuPrincipal1.setText("Cadastro NF");
+        jButton_Cadastro_NF_MenuPrincipal1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_Cadastro_NF_MenuPrincipal1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton_Cadastro_NF_MenuPrincipal1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 440, 150, 60));
 
         jMenu1.setText("Arquivo");
 
@@ -122,12 +132,15 @@ public class MenuPrincipal extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton_Cadastro_NF_MenuPrincipalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Cadastro_NF_MenuPrincipalActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_Cadastro_NF_MenuPrincipalActionPerformed
+    private void jButton_Sair_MenuPrincipalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Sair_MenuPrincipalActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_jButton_Sair_MenuPrincipalActionPerformed
 
     private void jButton_Cadastro_Cliente_MenuPrincipalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Cadastro_Cliente_MenuPrincipalActionPerformed
-        // TODO add your handling code here:
+        if(cadastroclientes==null){
+        cadastroclientes= new CadastroClientes();
+    }
+    cadastroclientes.setVisible(true);
     }//GEN-LAST:event_jButton_Cadastro_Cliente_MenuPrincipalActionPerformed
 
     private void jButton_Vendas_MenuPrincipalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Vendas_MenuPrincipalActionPerformed
@@ -138,8 +151,8 @@ public class MenuPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton_Vendas_MenuPrincipalActionPerformed
 
     private void jButton_Estoque_MenuPrincipalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Estoque_MenuPrincipalActionPerformed
-        if(estoque==null){
-        estoque= new CadastroEstoque();
+        if(estoque == null){
+        estoque = new CadastroEstoque();
     }
     estoque.setVisible(true);
     }//GEN-LAST:event_jButton_Estoque_MenuPrincipalActionPerformed
@@ -147,6 +160,13 @@ public class MenuPrincipal extends javax.swing.JFrame {
     private void jButton_Cadastro_Fornecedor_MenuPrincipalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Cadastro_Fornecedor_MenuPrincipalActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton_Cadastro_Fornecedor_MenuPrincipalActionPerformed
+
+    private void jButton_Cadastro_NF_MenuPrincipal1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Cadastro_NF_MenuPrincipal1ActionPerformed
+        if(notafiscal == null){
+        notafiscal = new CadastroNF();
+    }
+    notafiscal.setVisible(true);
+    }//GEN-LAST:event_jButton_Cadastro_NF_MenuPrincipal1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -189,8 +209,9 @@ public class MenuPrincipal extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton_Cadastro_Cliente_MenuPrincipal;
     private javax.swing.JButton jButton_Cadastro_Fornecedor_MenuPrincipal;
-    private javax.swing.JButton jButton_Cadastro_NF_MenuPrincipal;
+    private javax.swing.JButton jButton_Cadastro_NF_MenuPrincipal1;
     private javax.swing.JButton jButton_Estoque_MenuPrincipal;
+    private javax.swing.JButton jButton_Sair_MenuPrincipal;
     private javax.swing.JButton jButton_Vendas_MenuPrincipal;
     private javax.swing.JLabel jLabel_imagem_fundo;
     private javax.swing.JMenu jMenu1;

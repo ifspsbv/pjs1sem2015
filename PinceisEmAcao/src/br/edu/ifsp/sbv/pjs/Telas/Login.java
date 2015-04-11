@@ -38,33 +38,39 @@ public class Login extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Login");
 
         jLayeredPane1.setEnabled(false);
         jLayeredPane1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPasswordSenha.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jPasswordSenha.setBorder(javax.swing.BorderFactory.createBevelBorder(0));
+        jPasswordSenha.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPasswordSenha.setDisabledTextColor(new java.awt.Color(51, 51, 51));
         jPasswordSenha.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jPasswordSenhaActionPerformed(evt);
             }
         });
-        jLayeredPane1.add(jPasswordSenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 210, 170, 35));
+        jPasswordSenha.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jPasswordSenhaKeyPressed(evt);
+            }
+        });
+        jLayeredPane1.add(jPasswordSenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 210, 170, 35));
 
         jLabel3.setFont(new java.awt.Font("Swis721 LtEx BT", 1, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 0, 204));
         jLabel3.setText("Senha");
-        jLayeredPane1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 220, 80, -1));
+        jLayeredPane1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, 80, -1));
 
         jTextFieldUsuario.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jTextFieldUsuario.setBorder(javax.swing.BorderFactory.createBevelBorder(0));
+        jTextFieldUsuario.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jTextFieldUsuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextFieldUsuarioActionPerformed(evt);
             }
         });
-        jLayeredPane1.add(jTextFieldUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 160, 170, 35));
+        jLayeredPane1.add(jTextFieldUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 160, 170, 35));
 
         jButtonLogin.setText("Login");
         jButtonLogin.addActionListener(new java.awt.event.ActionListener() {
@@ -77,7 +83,7 @@ public class Login extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("Swis721 LtEx BT", 1, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 0, 204));
         jLabel4.setText("Usuário");
-        jLayeredPane1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, 70, 30));
+        jLayeredPane1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 160, 70, 30));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/fundo com logo login.png"))); // NOI18N
         jLabel2.setAutoscrolls(true);
@@ -95,6 +101,7 @@ public class Login extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTextFieldUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldUsuarioActionPerformed
@@ -104,7 +111,7 @@ public class Login extends javax.swing.JFrame {
     private void jButtonLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonLoginActionPerformed
          if (jTextFieldUsuario.getText().equals("usuario") && (jPasswordSenha.getText().equals("1234")))
        {
-JOptionPane.showMessageDialog(null,"Acesso Permitido ");
+//JOptionPane.showMessageDialog(null,"Acesso Permitido ");
 new MenuPrincipal().setVisible(true);
 this.dispose();
 }
@@ -118,6 +125,10 @@ JOptionPane.showMessageDialog(null,"Acesso negado");
     private void jPasswordSenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPasswordSenhaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jPasswordSenhaActionPerformed
+
+    private void jPasswordSenhaKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jPasswordSenhaKeyPressed
+            // TODO add your handling code here:
+    }//GEN-LAST:event_jPasswordSenhaKeyPressed
 
     /**
      * @param args the command line arguments

@@ -14,7 +14,9 @@ public class CadastroEstoque extends javax.swing.JFrame {
     /**
      * Creates new form MenuPrincipal
      */
-    
+    private Pesquisar_CadastroEstoque pesquisarestoque;
+    private Relatorio_CadastroEstoque relatorioestoque;
+    private Cadastro_CadastroEstoque cadastroestoque;
     public CadastroEstoque() {
         initComponents();
     }
@@ -32,7 +34,7 @@ public class CadastroEstoque extends javax.swing.JFrame {
         jButton_Pesquisar_Estoque = new javax.swing.JButton();
         jButton_Cadastrar_Estoque = new javax.swing.JButton();
         jButton_Relatorio_Estoque = new javax.swing.JButton();
-        jButton_Cadastro_Fornecedor = new javax.swing.JButton();
+        jButton_Sair_Fornecedor = new javax.swing.JButton();
         jLabel_imagem_fundo = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
@@ -74,12 +76,13 @@ public class CadastroEstoque extends javax.swing.JFrame {
         });
         getContentPane().add(jButton_Relatorio_Estoque, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 250, 150, 60));
 
-        jButton_Cadastro_Fornecedor.addActionListener(new java.awt.event.ActionListener() {
+        jButton_Sair_Fornecedor.setText("Sair");
+        jButton_Sair_Fornecedor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_Cadastro_FornecedorActionPerformed(evt);
+                jButton_Sair_FornecedorActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton_Cadastro_Fornecedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 360, 150, 60));
+        getContentPane().add(jButton_Sair_Fornecedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 360, 150, 60));
 
         jLabel_imagem_fundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/fundo com logo.png"))); // NOI18N
         jLabel_imagem_fundo.setText("jLabel2");
@@ -117,20 +120,30 @@ public class CadastroEstoque extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton_Cadastro_NFActionPerformed
 
     private void jButton_Pesquisar_EstoqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Pesquisar_EstoqueActionPerformed
-        // TODO add your handling code here:
+        if(pesquisarestoque==null){
+        pesquisarestoque= new Pesquisar_CadastroEstoque();
+    }
+    pesquisarestoque.setVisible(true);
     }//GEN-LAST:event_jButton_Pesquisar_EstoqueActionPerformed
 
     private void jButton_Cadastrar_EstoqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Cadastrar_EstoqueActionPerformed
-    
+       if(cadastroestoque==null){
+        cadastroestoque= new Cadastro_CadastroEstoque();
+    }
+    cadastroestoque.setVisible(true);
+                              
     }//GEN-LAST:event_jButton_Cadastrar_EstoqueActionPerformed
 
     private void jButton_Relatorio_EstoqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Relatorio_EstoqueActionPerformed
-        // TODO add your handling code here:
+        if(relatorioestoque==null){
+        relatorioestoque= new Relatorio_CadastroEstoque();
+    }
+    relatorioestoque.setVisible(true);
     }//GEN-LAST:event_jButton_Relatorio_EstoqueActionPerformed
 
-    private void jButton_Cadastro_FornecedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Cadastro_FornecedorActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_Cadastro_FornecedorActionPerformed
+    private void jButton_Sair_FornecedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Sair_FornecedorActionPerformed
+       this.dispose(); 
+    }//GEN-LAST:event_jButton_Sair_FornecedorActionPerformed
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
         // TODO add your handling code here:
@@ -176,10 +189,10 @@ public class CadastroEstoque extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton_Cadastrar_Estoque;
-    private javax.swing.JButton jButton_Cadastro_Fornecedor;
     private javax.swing.JButton jButton_Cadastro_NF;
     private javax.swing.JButton jButton_Pesquisar_Estoque;
     private javax.swing.JButton jButton_Relatorio_Estoque;
+    private javax.swing.JButton jButton_Sair_Fornecedor;
     private javax.swing.JLabel jLabel_imagem_fundo;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenuBar jMenuBar1;

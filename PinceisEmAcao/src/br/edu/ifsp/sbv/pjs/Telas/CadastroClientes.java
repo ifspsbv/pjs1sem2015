@@ -58,7 +58,6 @@ public class CadastroClientes extends javax.swing.JFrame {
         jTextArea1 = new javax.swing.JTextArea();
 
         setTitle("Cadastro Clientes");
-        setPreferredSize(new java.awt.Dimension(1085, 623));
         setResizable(false);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -254,7 +253,7 @@ public class CadastroClientes extends javax.swing.JFrame {
                 .addGap(46, 46, 46))
         );
 
-        setBounds(224, 57, 1091, 652);
+        setBounds(224, 57, 1093, 653);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTextField_Cep_CadastroClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_Cep_CadastroClientesActionPerformed

@@ -118,8 +118,8 @@
                       </Group>
                       <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jTextField_Impostosl_CadastroNF" min="-2" pref="95" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                      <Component id="jTextField_Impostosl_CadastroNF" min="-2" pref="101" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                       <Component id="jLabel8" min="-2" pref="37" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="jTextField_Total_CadastroNF" min="-2" pref="121" max="-2" attributes="0"/>
@@ -183,7 +183,7 @@
                   <Component id="jTextField_QtdeParcela_CadastroNF" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
                   <Component id="jLabel10" alignment="3" min="-2" pref="37" max="-2" attributes="0"/>
                   <Component id="jTextField_Vencimento_CadastroNF" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
-                  <Component id="jLabel8" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                  <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jTextField_Total_CadastroNF" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
                   <Component id="jTextField_Impostosl_CadastroNF" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
                   <Component id="jLabel5" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>

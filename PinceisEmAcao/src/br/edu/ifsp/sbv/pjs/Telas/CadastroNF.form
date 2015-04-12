@@ -87,7 +87,9 @@
                               </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="202" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jButton_Editar_CadastroNF" min="-2" pref="96" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                               <Component id="jButton_Limpar_CadastroNF" min="-2" pref="92" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                               <Component id="jButton_Pesquisar_CadastroNF" min="-2" max="-2" attributes="0"/>
@@ -111,9 +113,7 @@
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
                               <Component id="jButton_Salvar_CadastroNF" min="-2" pref="92" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
-                              <Component id="jButton_Editar_CadastroNF" min="-2" pref="96" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="267" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="395" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <Component id="jLabel5" min="-2" max="-2" attributes="0"/>

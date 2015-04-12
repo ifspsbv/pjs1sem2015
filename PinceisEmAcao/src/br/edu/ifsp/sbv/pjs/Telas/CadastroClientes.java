@@ -58,6 +58,7 @@ public class CadastroClientes extends javax.swing.JFrame {
         jTextArea1 = new javax.swing.JTextArea();
 
         setTitle("Cadastro Clientes");
+        setPreferredSize(new java.awt.Dimension(1085, 623));
         setResizable(false);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -195,7 +196,7 @@ public class CadastroClientes extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(20, Short.MAX_VALUE)
+                .addContainerGap(21, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel11)
                     .addComponent(jTextField_Nome_CadastroClientes1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -253,7 +254,7 @@ public class CadastroClientes extends javax.swing.JFrame {
                 .addGap(46, 46, 46))
         );
 
-        setBounds(224, 57, 1101, 661);
+        setBounds(224, 57, 1091, 652);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTextField_Cep_CadastroClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_Cep_CadastroClientesActionPerformed

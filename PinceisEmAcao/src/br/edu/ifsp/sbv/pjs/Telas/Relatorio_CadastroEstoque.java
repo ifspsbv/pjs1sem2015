@@ -5,6 +5,7 @@
  */
 package br.edu.ifsp.sbv.pjs.Telas;
 
+import java.awt.event.KeyEvent;
 import javax.swing.JOptionPane;
 
 /**
@@ -125,6 +126,11 @@ public class Relatorio_CadastroEstoque extends javax.swing.JFrame {
         jLabel6.setText("Produto");
 
         jTextField_Codigo_Relatorio_CadastroEstoque.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jTextField_Codigo_Relatorio_CadastroEstoque.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jTextField_Codigo_Relatorio_CadastroEstoqueKeyPressed(evt);
+            }
+        });
 
         jTextField_Produto_Relatorio_CadastroEstoque1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
 
@@ -229,6 +235,13 @@ public class Relatorio_CadastroEstoque extends javax.swing.JFrame {
 
         setBounds(224, 57, 1101, 662);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jTextField_Codigo_Relatorio_CadastroEstoqueKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_Codigo_Relatorio_CadastroEstoqueKeyPressed
+       if(evt.getKeyCode()== KeyEvent.VK_ENTER)
+     {
+         jTextField_Produto_Relatorio_CadastroEstoque1.requestFocus();
+     }
+    }//GEN-LAST:event_jTextField_Codigo_Relatorio_CadastroEstoqueKeyPressed
 
     /**
      * @param args the command line arguments

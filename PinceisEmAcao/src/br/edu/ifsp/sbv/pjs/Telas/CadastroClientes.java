@@ -5,6 +5,9 @@
  */
 package br.edu.ifsp.sbv.pjs.Telas;
 
+import java.awt.event.KeyEvent;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author bv1301144
@@ -44,7 +47,6 @@ public class CadastroClientes extends javax.swing.JFrame {
         jTextField_Telefone_CadastroClientes = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
         jTextField_Cidade_CadastroClientes = new javax.swing.JTextField();
-        jTextField_Estado_CadastroClientes = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
         jButton_Salvar_CadastroClientes = new javax.swing.JButton();
         jButton_Limpar_CadastroClientes = new javax.swing.JButton();
@@ -56,12 +58,19 @@ public class CadastroClientes extends javax.swing.JFrame {
         jButton_Sair_CadastroClientes1 = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
+        jComboBoxestado = new javax.swing.JComboBox();
 
         setTitle("Cadastro Clientes");
         setResizable(false);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel1.setText("Nome:");
+
+        jTextField_Numero_CadastroClientes.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jTextField_Numero_CadastroClientesKeyPressed(evt);
+            }
+        });
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel2.setText("Endereco:");
@@ -74,9 +83,20 @@ public class CadastroClientes extends javax.swing.JFrame {
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel5.setText("E-mail:");
 
+        jTextField_Nome_CadastroClientes.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jTextField_Nome_CadastroClientesKeyPressed(evt);
+            }
+        });
+
         jTextField_Cep_CadastroClientes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField_Cep_CadastroClientesActionPerformed(evt);
+            }
+        });
+        jTextField_Cep_CadastroClientes.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jTextField_Cep_CadastroClientesKeyPressed(evt);
             }
         });
 
@@ -88,6 +108,12 @@ public class CadastroClientes extends javax.swing.JFrame {
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel8.setText("Bairro:");
+
+        jTextField_Telefone_CadastroClientes.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jTextField_Telefone_CadastroClientesKeyPressed(evt);
+            }
+        });
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel9.setText("Cidade:");
@@ -108,6 +134,12 @@ public class CadastroClientes extends javax.swing.JFrame {
         jLabel11.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel11.setText("Codigo:");
 
+        jTextField_Nome_CadastroClientes1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jTextField_Nome_CadastroClientes1KeyPressed(evt);
+            }
+        });
+
         jButton_Sair_CadastroClientes1.setText("Sair");
         jButton_Sair_CadastroClientes1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -119,6 +151,9 @@ public class CadastroClientes extends javax.swing.JFrame {
         jTextArea1.setRows(5);
         jTextArea1.setBorder(javax.swing.BorderFactory.createTitledBorder("Observações"));
         jScrollPane1.setViewportView(jTextArea1);
+
+        jComboBoxestado.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jComboBoxestado.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO" }));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -181,9 +216,9 @@ public class CadastroClientes extends javax.swing.JFrame {
                                             .addComponent(jLabel10, javax.swing.GroupLayout.Alignment.TRAILING))
                                         .addGap(18, 18, 18)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jTextField_Estado_CadastroClientes, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jTextField_Numero_CadastroClientes, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))))))
-                        .addContainerGap(144, Short.MAX_VALUE))
+                                            .addComponent(jTextField_Numero_CadastroClientes, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jComboBoxestado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                        .addContainerGap(136, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jTextField_Telefone_CadastroClientes, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -195,7 +230,7 @@ public class CadastroClientes extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(21, Short.MAX_VALUE)
+                .addContainerGap(17, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel11)
                     .addComponent(jTextField_Nome_CadastroClientes1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -227,8 +262,8 @@ public class CadastroClientes extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel9)
                             .addComponent(jTextField_Cidade_CadastroClientes, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField_Estado_CadastroClientes, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel10))
+                            .addComponent(jLabel10)
+                            .addComponent(jComboBoxestado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(20, 20, 20)
@@ -240,7 +275,7 @@ public class CadastroClientes extends javax.swing.JFrame {
                                     .addComponent(jTextField_Email_CadastroClientes, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel5)))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 25, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
                                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(83, 83, 83)))))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -257,12 +292,73 @@ public class CadastroClientes extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTextField_Cep_CadastroClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_Cep_CadastroClientesActionPerformed
-        // TODO add your handling code here:
+     buscaCep();
     }//GEN-LAST:event_jTextField_Cep_CadastroClientesActionPerformed
+
+    public void buscaCep() {
+        //Faz a busca para o cep 58043-280
+        WebServiceCep webServiceCep = WebServiceCep.searchCep(jTextField_Cep_CadastroClientes.getText());
+        //A ferramenta de busca ignora qualquer caracter que n?o seja n?mero.
+
+        //caso a busca ocorra bem, imprime os resultados.
+        if (webServiceCep.wasSuccessful()) {
+           jTextField_Endereco_CadastroClientes.setText(webServiceCep.getLogradouroFull());
+           jTextField_Cidade_CadastroClientes.setText(webServiceCep.getCidade());
+           jTextField_Bairro_CadastroClientes.setText(webServiceCep.getBairro());
+           jComboBoxestado.setSelectedItem(webServiceCep.getUf());
+            System.out.println("Cep: " + webServiceCep.getCep());
+            System.out.println("Logradouro: " + webServiceCep.getLogradouroFull());
+            System.out.println("Bairro: " + webServiceCep.getBairro());
+            System.out.println("Cidade: "
+                    + webServiceCep.getCidade() + "/" + webServiceCep.getUf());
+
+            //caso haja problemas imprime as exce??es.
+        } else {
+            JOptionPane.showMessageDialog(null, "Erro numero: " + webServiceCep.getResulCode());
+
+            JOptionPane.showMessageDialog(null, "Descrição do erro: " + webServiceCep.getResultText());
+        }
+    }
 
     private void jButton_Sair_CadastroClientes1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Sair_CadastroClientes1ActionPerformed
        this.dispose();
     }//GEN-LAST:event_jButton_Sair_CadastroClientes1ActionPerformed
+
+    private void jTextField_Nome_CadastroClientes1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_Nome_CadastroClientes1KeyPressed
+            if(evt.getKeyCode()== KeyEvent.VK_ENTER)
+     {
+         jTextField_Nome_CadastroClientes.requestFocus();
+     }
+    }//GEN-LAST:event_jTextField_Nome_CadastroClientes1KeyPressed
+
+    private void jTextField_Nome_CadastroClientesKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_Nome_CadastroClientesKeyPressed
+          if(evt.getKeyCode()== KeyEvent.VK_ENTER)
+     {
+         jTextField_Cep_CadastroClientes.requestFocus();
+     }
+    }//GEN-LAST:event_jTextField_Nome_CadastroClientesKeyPressed
+
+    private void jTextField_Cep_CadastroClientesKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_Cep_CadastroClientesKeyPressed
+      if(evt.getKeyCode()== KeyEvent.VK_ENTER)
+     {
+         jTextField_Numero_CadastroClientes.requestFocus();
+     }
+    }//GEN-LAST:event_jTextField_Cep_CadastroClientesKeyPressed
+
+    private void jTextField_Numero_CadastroClientesKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_Numero_CadastroClientesKeyPressed
+    if(evt.getKeyCode()== KeyEvent.VK_ENTER)
+     {
+         jTextField_Telefone_CadastroClientes.requestFocus();
+     }
+    }//GEN-LAST:event_jTextField_Numero_CadastroClientesKeyPressed
+
+    private void jTextField_Telefone_CadastroClientesKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_Telefone_CadastroClientesKeyPressed
+                                                             
+         if(evt.getKeyCode()== KeyEvent.VK_ENTER)
+     {
+         jTextField_Email_CadastroClientes.requestFocus();
+     }
+    }//GEN-LAST:event_jTextField_Telefone_CadastroClientesKeyPressed
 
     /**
      * @param args the command line arguments
@@ -306,6 +402,7 @@ public class CadastroClientes extends javax.swing.JFrame {
     private javax.swing.JButton jButton_Pesquisar_CadastroClientes;
     private javax.swing.JButton jButton_Sair_CadastroClientes1;
     private javax.swing.JButton jButton_Salvar_CadastroClientes;
+    private javax.swing.JComboBox jComboBoxestado;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -324,7 +421,6 @@ public class CadastroClientes extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField_Cidade_CadastroClientes;
     private javax.swing.JTextField jTextField_Email_CadastroClientes;
     private javax.swing.JTextField jTextField_Endereco_CadastroClientes;
-    private javax.swing.JTextField jTextField_Estado_CadastroClientes;
     private javax.swing.JTextField jTextField_Nome_CadastroClientes;
     private javax.swing.JTextField jTextField_Nome_CadastroClientes1;
     private javax.swing.JTextField jTextField_Numero_CadastroClientes;

@@ -5,6 +5,8 @@
  */
 package br.edu.ifsp.sbv.pjs.Telas;
 
+import java.awt.event.KeyEvent;
+
 /**
  *
  * @author bv1301144
@@ -92,6 +94,11 @@ public class CadastroNF extends javax.swing.JFrame {
         jLabel1.setText("Total");
 
         jTextField_Codigo_CadastroNF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jTextField_Codigo_CadastroNF.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jTextField_Codigo_CadastroNFKeyPressed(evt);
+            }
+        });
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel2.setText("Código:");
@@ -100,6 +107,11 @@ public class CadastroNF extends javax.swing.JFrame {
         jLabel3.setText("Produto:");
 
         jTextField_Produto_CadastroNF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jTextField_Produto_CadastroNF.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jTextField_Produto_CadastroNFKeyPressed(evt);
+            }
+        });
 
         jButton6.setText("Pesquisar");
 
@@ -107,21 +119,41 @@ public class CadastroNF extends javax.swing.JFrame {
         jLabel4.setText("Qtde.:");
 
         jTextField_Qtde_CadastroNF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jTextField_Qtde_CadastroNF.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jTextField_Qtde_CadastroNFKeyPressed(evt);
+            }
+        });
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel5.setText("Impostos:");
 
         jTextField_Impostosl_CadastroNF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jTextField_Impostosl_CadastroNF.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jTextField_Impostosl_CadastroNFKeyPressed(evt);
+            }
+        });
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel6.setText(" Valor:");
 
         jTextField_Valor_CadastroNF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jTextField_Valor_CadastroNF.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jTextField_Valor_CadastroNFKeyPressed(evt);
+            }
+        });
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel7.setText("Qtde. de Parcelas:");
 
         jTextField_QtdeParcela_CadastroNF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jTextField_QtdeParcela_CadastroNF.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jTextField_QtdeParcela_CadastroNFKeyPressed(evt);
+            }
+        });
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel8.setText("Total:");
@@ -135,16 +167,31 @@ public class CadastroNF extends javax.swing.JFrame {
         jLabel10.setText("Vencimento:");
 
         jTextField_Vencimento_CadastroNF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jTextField_Vencimento_CadastroNF.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jTextField_Vencimento_CadastroNFKeyPressed(evt);
+            }
+        });
 
         jLabel11.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel11.setText("Nome Fantasia:");
 
         jTextField_NomeFantasia_CadastroNF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jTextField_NomeFantasia_CadastroNF.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jTextField_NomeFantasia_CadastroNFKeyPressed(evt);
+            }
+        });
 
         jLabel12.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel12.setText("Razão Social:");
 
         jTextField_RazaoSocial_CadastroNF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jTextField_RazaoSocial_CadastroNF.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jTextField_RazaoSocial_CadastroNFKeyPressed(evt);
+            }
+        });
 
         jLabel13.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel13.setText("Nota Fiscal:");
@@ -153,8 +200,18 @@ public class CadastroNF extends javax.swing.JFrame {
         jLabel14.setText("CNPJ:");
 
         jTextField_CNPJ_CadastroNF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jTextField_CNPJ_CadastroNF.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jTextField_CNPJ_CadastroNFKeyPressed(evt);
+            }
+        });
 
         jTextField_NotaFiscal_CadastroNF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jTextField_NotaFiscal_CadastroNF.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jTextField_NotaFiscal_CadastroNFKeyPressed(evt);
+            }
+        });
 
         jButton7.setText("Pesquisar");
 
@@ -187,6 +244,12 @@ public class CadastroNF extends javax.swing.JFrame {
         jTable1.setShowHorizontalLines(false);
         jTable1.setShowVerticalLines(false);
         jScrollPane1.setViewportView(jTable1);
+
+        jDateChooser_Emissao_CadastroNF.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jDateChooser_Emissao_CadastroNFKeyPressed(evt);
+            }
+        });
 
         jTable2.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -398,6 +461,90 @@ public class CadastroNF extends javax.swing.JFrame {
 
         setBounds(224, 57, 1101, 662);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jTextField_NotaFiscal_CadastroNFKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_NotaFiscal_CadastroNFKeyPressed
+         if(evt.getKeyCode()== KeyEvent.VK_ENTER)
+     {
+         jTextField_CNPJ_CadastroNF.requestFocus();
+     }
+    }//GEN-LAST:event_jTextField_NotaFiscal_CadastroNFKeyPressed
+
+    private void jTextField_CNPJ_CadastroNFKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_CNPJ_CadastroNFKeyPressed
+       if(evt.getKeyCode()== KeyEvent.VK_ENTER)
+     {
+         jTextField_RazaoSocial_CadastroNF.requestFocus();
+     }
+    }//GEN-LAST:event_jTextField_CNPJ_CadastroNFKeyPressed
+
+    private void jTextField_RazaoSocial_CadastroNFKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_RazaoSocial_CadastroNFKeyPressed
+      if(evt.getKeyCode()== KeyEvent.VK_ENTER)
+     {
+         jTextField_NomeFantasia_CadastroNF.requestFocus();
+     }
+    }//GEN-LAST:event_jTextField_RazaoSocial_CadastroNFKeyPressed
+
+    private void jTextField_NomeFantasia_CadastroNFKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_NomeFantasia_CadastroNFKeyPressed
+         if(evt.getKeyCode()== KeyEvent.VK_ENTER)
+     {
+         jDateChooser_Emissao_CadastroNF.requestFocus();
+     }
+    }//GEN-LAST:event_jTextField_NomeFantasia_CadastroNFKeyPressed
+
+    private void jDateChooser_Emissao_CadastroNFKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jDateChooser_Emissao_CadastroNFKeyPressed
+         if(evt.getKeyCode()== KeyEvent.VK_ENTER)
+     {
+         jTextField_Codigo_CadastroNF.requestFocus();
+     }
+    }//GEN-LAST:event_jDateChooser_Emissao_CadastroNFKeyPressed
+
+    private void jTextField_Codigo_CadastroNFKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_Codigo_CadastroNFKeyPressed
+          if(evt.getKeyCode()== KeyEvent.VK_ENTER)
+     {
+         jTextField_Produto_CadastroNF.requestFocus();
+     }
+    }//GEN-LAST:event_jTextField_Codigo_CadastroNFKeyPressed
+
+    private void jTextField_Produto_CadastroNFKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_Produto_CadastroNFKeyPressed
+           if(evt.getKeyCode()== KeyEvent.VK_ENTER)
+     {
+         jTextField_Valor_CadastroNF.requestFocus();
+     }
+    }//GEN-LAST:event_jTextField_Produto_CadastroNFKeyPressed
+
+    private void jTextField_Valor_CadastroNFKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_Valor_CadastroNFKeyPressed
+            if(evt.getKeyCode()== KeyEvent.VK_ENTER)
+     {
+         jTextField_Qtde_CadastroNF.requestFocus();
+     }
+    }//GEN-LAST:event_jTextField_Valor_CadastroNFKeyPressed
+
+    private void jTextField_Qtde_CadastroNFKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_Qtde_CadastroNFKeyPressed
+       if(evt.getKeyCode()== KeyEvent.VK_ENTER)
+     {
+         jTextField_QtdeParcela_CadastroNF.requestFocus();
+     }
+    }//GEN-LAST:event_jTextField_Qtde_CadastroNFKeyPressed
+
+    private void jTextField_QtdeParcela_CadastroNFKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_QtdeParcela_CadastroNFKeyPressed
+        if(evt.getKeyCode()== KeyEvent.VK_ENTER)
+     {
+         jTextField_Vencimento_CadastroNF.requestFocus();
+     }
+    }//GEN-LAST:event_jTextField_QtdeParcela_CadastroNFKeyPressed
+
+    private void jTextField_Vencimento_CadastroNFKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_Vencimento_CadastroNFKeyPressed
+        if(evt.getKeyCode()== KeyEvent.VK_ENTER)
+     {
+         jTextField_Impostosl_CadastroNF.requestFocus();
+     }
+    }//GEN-LAST:event_jTextField_Vencimento_CadastroNFKeyPressed
+
+    private void jTextField_Impostosl_CadastroNFKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_Impostosl_CadastroNFKeyPressed
+       if(evt.getKeyCode()== KeyEvent.VK_ENTER)
+     {
+         jTextField_Total_CadastroNF.requestFocus();
+     }
+    }//GEN-LAST:event_jTextField_Impostosl_CadastroNFKeyPressed
 
     /**
      * @param args the command line arguments

@@ -6,6 +6,8 @@
 
 package br.edu.ifsp.sbv.pjs.Telas;
 
+import java.awt.event.KeyEvent;
+
 /**
  *
  * @author Marcelo
@@ -38,13 +40,17 @@ public class Pesquisar_CadastroEstoque extends javax.swing.JFrame {
         jButton_Limpar_Cadastro_Cadastro_Estoque2 = new javax.swing.JButton();
         jButton_Sair_Cadastro_Cadastro_Estoque3 = new javax.swing.JButton();
 
-        setPreferredSize(new java.awt.Dimension(1100, 660));
-
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel1.setText("Codigo");
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel2.setText("Produto");
+
+        jTextField_Codigo_Cadastro_Cadastro_Estoque.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jTextField_Codigo_Cadastro_Cadastro_EstoqueKeyPressed(evt);
+            }
+        });
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -166,6 +172,13 @@ public class Pesquisar_CadastroEstoque extends javax.swing.JFrame {
     private void jButton_Pesquisar_Cadastro_Cadastro_Estoque1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Pesquisar_Cadastro_Cadastro_Estoque1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton_Pesquisar_Cadastro_Cadastro_Estoque1ActionPerformed
+
+    private void jTextField_Codigo_Cadastro_Cadastro_EstoqueKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_Codigo_Cadastro_Cadastro_EstoqueKeyPressed
+      if(evt.getKeyCode()== KeyEvent.VK_ENTER)
+     {
+         jTextField_Produto_Cadastro_Cadastro_Estoque.requestFocus();
+     }
+    }//GEN-LAST:event_jTextField_Codigo_Cadastro_Cadastro_EstoqueKeyPressed
 
     /**
      * @param args the command line arguments

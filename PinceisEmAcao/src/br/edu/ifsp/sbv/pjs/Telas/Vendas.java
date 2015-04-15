@@ -5,6 +5,7 @@
  */
 package br.edu.ifsp.sbv.pjs.Telas;
 
+import java.awt.event.KeyEvent;
 import javax.swing.JOptionPane;
 
 /**
@@ -62,6 +63,11 @@ public class Vendas extends javax.swing.JFrame {
                 jTextField_Codido_VendasActionPerformed(evt);
             }
         });
+        jTextField_Codido_Vendas.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jTextField_Codido_VendasKeyPressed(evt);
+            }
+        });
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel2.setText("Produto");
@@ -70,6 +76,11 @@ public class Vendas extends javax.swing.JFrame {
         jTextField_Produto_Vendas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField_Produto_VendasActionPerformed(evt);
+            }
+        });
+        jTextField_Produto_Vendas.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jTextField_Produto_VendasKeyPressed(evt);
             }
         });
 
@@ -308,6 +319,20 @@ public class Vendas extends javax.swing.JFrame {
     private void jTextField_Total_VendasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_Total_VendasActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField_Total_VendasActionPerformed
+
+    private void jTextField_Codido_VendasKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_Codido_VendasKeyPressed
+       if(evt.getKeyCode()== KeyEvent.VK_ENTER)
+     {
+         jTextField_Produto_Vendas.requestFocus();
+     }
+    }//GEN-LAST:event_jTextField_Codido_VendasKeyPressed
+
+    private void jTextField_Produto_VendasKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_Produto_VendasKeyPressed
+        if(evt.getKeyCode()== KeyEvent.VK_ENTER)
+     {
+         jTextField_Quantidade_Vendas.requestFocus();
+     }
+    }//GEN-LAST:event_jTextField_Produto_VendasKeyPressed
 
     /**
      * @param args the command line arguments

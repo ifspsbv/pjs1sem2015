@@ -5,6 +5,7 @@
  */
 package br.edu.ifsp.sbv.pjs.Telas;
 
+import java.awt.event.KeyEvent;
 import javax.swing.JOptionPane;
 
 /**
@@ -58,15 +59,38 @@ public class Cadastro_CadastroEstoque extends javax.swing.JFrame {
                 jTextField_Codigo_Cadastro_CadastroEstoqueActionPerformed(evt);
             }
         });
+        jTextField_Codigo_Cadastro_CadastroEstoque.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jTextField_Codigo_Cadastro_CadastroEstoqueKeyPressed(evt);
+            }
+        });
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel2.setText("Produto");
+
+        jTextField_Produto_Cadastro_CadastroEstoque1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jTextField_Produto_Cadastro_CadastroEstoque1KeyPressed(evt);
+            }
+        });
+
+        jTextField_EstoqueMinimo_Cadastro_CadastroEstoque.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jTextField_EstoqueMinimo_Cadastro_CadastroEstoqueKeyPressed(evt);
+            }
+        });
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel4.setText("Categoria");
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel5.setText("Estoque Mínimo");
+
+        jTextField_ValorUnitario_Cadastro_CadastroEstoque3.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jTextField_ValorUnitario_Cadastro_CadastroEstoque3KeyPressed(evt);
+            }
+        });
 
         jComboBox_UnidadeDeMedida_CadastroEstoque.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jComboBox_UnidadeDeMedida_CadastroEstoque.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Agulha", "Botão", "Cordão", "Elastico", "Fita", "Guipper", "Linha", "Passa Fita", "Renda", "Sianinha", "Tecido", "Tinta", "Velcro", "Viés", "Ziper" }));
@@ -96,6 +120,12 @@ public class Cadastro_CadastroEstoque extends javax.swing.JFrame {
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel9.setText("Preço de Venda");
+
+        jTextField_MargemLucro_Cadastro_CadastroEstoque5.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jTextField_MargemLucro_Cadastro_CadastroEstoque5KeyPressed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -196,6 +226,41 @@ public class Cadastro_CadastroEstoque extends javax.swing.JFrame {
     private void jTextField_Codigo_Cadastro_CadastroEstoqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_Codigo_Cadastro_CadastroEstoqueActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField_Codigo_Cadastro_CadastroEstoqueActionPerformed
+
+    private void jTextField_Codigo_Cadastro_CadastroEstoqueKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_Codigo_Cadastro_CadastroEstoqueKeyPressed
+        if(evt.getKeyCode()== KeyEvent.VK_ENTER)
+     {
+         jTextField_Produto_Cadastro_CadastroEstoque1.requestFocus();
+     }
+    }//GEN-LAST:event_jTextField_Codigo_Cadastro_CadastroEstoqueKeyPressed
+
+    private void jTextField_Produto_Cadastro_CadastroEstoque1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_Produto_Cadastro_CadastroEstoque1KeyPressed
+       if(evt.getKeyCode()== KeyEvent.VK_ENTER)
+     {
+         jTextField_EstoqueMinimo_Cadastro_CadastroEstoque.requestFocus();
+     }
+    }//GEN-LAST:event_jTextField_Produto_Cadastro_CadastroEstoque1KeyPressed
+
+    private void jTextField_EstoqueMinimo_Cadastro_CadastroEstoqueKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_EstoqueMinimo_Cadastro_CadastroEstoqueKeyPressed
+         if(evt.getKeyCode()== KeyEvent.VK_ENTER)
+     {
+         jTextField_ValorUnitario_Cadastro_CadastroEstoque3.requestFocus();
+     }
+    }//GEN-LAST:event_jTextField_EstoqueMinimo_Cadastro_CadastroEstoqueKeyPressed
+
+    private void jTextField_ValorUnitario_Cadastro_CadastroEstoque3KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_ValorUnitario_Cadastro_CadastroEstoque3KeyPressed
+        if(evt.getKeyCode()== KeyEvent.VK_ENTER)
+     {
+         jTextField_MargemLucro_Cadastro_CadastroEstoque5.requestFocus();
+     }
+    }//GEN-LAST:event_jTextField_ValorUnitario_Cadastro_CadastroEstoque3KeyPressed
+
+    private void jTextField_MargemLucro_Cadastro_CadastroEstoque5KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_MargemLucro_Cadastro_CadastroEstoque5KeyPressed
+      if(evt.getKeyCode()== KeyEvent.VK_ENTER)
+     {
+         jTextField_PrecoVenda_Cadastro_CadastroEstoque4.requestFocus();
+     }
+    }//GEN-LAST:event_jTextField_MargemLucro_Cadastro_CadastroEstoque5KeyPressed
 
     /**
      * @param args the command line arguments

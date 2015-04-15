@@ -5,6 +5,7 @@
  */
 package br.edu.ifsp.sbv.pjs.Telas;
 
+import java.awt.event.KeyEvent;
 import javax.swing.JOptionPane;
 
 /**
@@ -33,7 +34,7 @@ public class Login extends javax.swing.JFrame {
         jPasswordSenha = new javax.swing.JPasswordField();
         jLabel3 = new javax.swing.JLabel();
         jTextFieldUsuario = new javax.swing.JTextField();
-        jButtonLogin = new javax.swing.JToggleButton();
+        jButton_Login = new javax.swing.JToggleButton();
         jLabel4 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
@@ -46,11 +47,6 @@ public class Login extends javax.swing.JFrame {
         jPasswordSenha.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jPasswordSenha.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPasswordSenha.setDisabledTextColor(new java.awt.Color(51, 51, 51));
-        jPasswordSenha.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jPasswordSenhaActionPerformed(evt);
-            }
-        });
         jPasswordSenha.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 jPasswordSenhaKeyPressed(evt);
@@ -72,13 +68,18 @@ public class Login extends javax.swing.JFrame {
         });
         jLayeredPane1.add(jTextFieldUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 160, 170, 35));
 
-        jButtonLogin.setText("Login");
-        jButtonLogin.addActionListener(new java.awt.event.ActionListener() {
+        jButton_Login.setText("Login");
+        jButton_Login.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonLoginActionPerformed(evt);
+                jButton_LoginActionPerformed(evt);
             }
         });
-        jLayeredPane1.add(jButtonLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 270, 70, 30));
+        jButton_Login.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jButton_LoginKeyPressed(evt);
+            }
+        });
+        jLayeredPane1.add(jButton_Login, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 270, 70, 30));
 
         jLabel4.setFont(new java.awt.Font("Swis721 LtEx BT", 1, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 0, 204));
@@ -108,7 +109,19 @@ public class Login extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextFieldUsuarioActionPerformed
 
-    private void jButtonLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonLoginActionPerformed
+    private void jButton_LoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_LoginActionPerformed
+         
+
+
+    }//GEN-LAST:event_jButton_LoginActionPerformed
+
+    private void jButton_LoginKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton_LoginKeyPressed
+
+    }//GEN-LAST:event_jButton_LoginKeyPressed
+
+    private void jPasswordSenhaKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jPasswordSenhaKeyPressed
+       if(evt.getKeyCode()== KeyEvent.VK_ENTER)
+     {
          if (jTextFieldUsuario.getText().equals("usuario") && (jPasswordSenha.getText().equals("1234")))
        {
 //JOptionPane.showMessageDialog(null,"Acesso Permitido ");
@@ -118,18 +131,9 @@ this.dispose();
 else
 {
 JOptionPane.showMessageDialog(null,"Acesso negado");
-
-}
-    }//GEN-LAST:event_jButtonLoginActionPerformed
-
-    private void jPasswordSenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPasswordSenhaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jPasswordSenhaActionPerformed
-
-    private void jPasswordSenhaKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jPasswordSenhaKeyPressed
-            // TODO add your handling code here:
+     }
     }//GEN-LAST:event_jPasswordSenhaKeyPressed
-
+    }
     /**
      * @param args the command line arguments
      */
@@ -166,7 +170,7 @@ JOptionPane.showMessageDialog(null,"Acesso negado");
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JToggleButton jButtonLogin;
+    private javax.swing.JToggleButton jButton_Login;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

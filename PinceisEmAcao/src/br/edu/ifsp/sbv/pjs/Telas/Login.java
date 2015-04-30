@@ -21,7 +21,6 @@ public class Login extends javax.swing.JFrame {
         initComponents();
     }
 
-   
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -64,7 +63,13 @@ public class Login extends javax.swing.JFrame {
         });
         jLayeredPane1.add(jTextFieldUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 160, 170, 35));
 
+        jButton_Login.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/key-16.png"))); // NOI18N
         jButton_Login.setText("Login");
+        jButton_Login.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton_LoginMouseClicked(evt);
+            }
+        });
         jButton_Login.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton_LoginActionPerformed(evt);
@@ -75,7 +80,7 @@ public class Login extends javax.swing.JFrame {
                 jButton_LoginKeyPressed(evt);
             }
         });
-        jLayeredPane1.add(jButton_Login, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 270, 70, 30));
+        jLayeredPane1.add(jButton_Login, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 270, 100, 30));
 
         jLabel4.setFont(new java.awt.Font("Swis721 LtEx BT", 1, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 0, 204));
@@ -106,7 +111,6 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextFieldUsuarioActionPerformed
 
     private void jButton_LoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_LoginActionPerformed
-         
 
 
     }//GEN-LAST:event_jButton_LoginActionPerformed
@@ -116,20 +120,28 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton_LoginKeyPressed
 
     private void jPasswordSenhaKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jPasswordSenhaKeyPressed
-       if(evt.getKeyCode()== KeyEvent.VK_ENTER)
-     {
-         if (jTextFieldUsuario.getText().equals("usuario") && (jPasswordSenha.getText().equals("1234")))
-       {
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
+            if (jTextFieldUsuario.getText().equals("usuario") && (jPasswordSenha.getText().equals("1234"))) {
 //JOptionPane.showMessageDialog(null,"Acesso Permitido ");
-new MenuPrincipal().setVisible(true);
-this.dispose();
-}
-else
-{
-JOptionPane.showMessageDialog(null,"Acesso negado");
-     }
+                new MenuPrincipal().setVisible(true);
+                this.dispose();
+            } else {
+                JOptionPane.showMessageDialog(null, "Acesso negado");
+            }
     }//GEN-LAST:event_jPasswordSenhaKeyPressed
     }
+    private void jButton_LoginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton_LoginMouseClicked
+       {
+            if (jTextFieldUsuario.getText().equals("usuario") && (jPasswordSenha.getText().equals("1234"))) {
+//JOptionPane.showMessageDialog(null,"Acesso Permitido ");
+                new MenuPrincipal().setVisible(true);
+                this.dispose();
+            } else {
+                JOptionPane.showMessageDialog(null, "Acesso negado");
+            }
+    }  
+    }//GEN-LAST:event_jButton_LoginMouseClicked
+
     /**
      * @param args the command line arguments
      */

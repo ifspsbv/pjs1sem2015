@@ -84,6 +84,9 @@
   <SubComponents>
     <Component class="javax.swing.JButton" name="jButton_Sair_MenuPrincipal">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/br/edu/ifsp/sbv/pjs/Imagens/Sair.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Sair"/>
       </Properties>
       <Events>
@@ -97,7 +100,10 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton_Cadastro_Cliente_MenuPrincipal">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Cadastro Cliente"/>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/br/edu/ifsp/sbv/pjs/Imagens/Cliente.png"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value=" Clientes"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_Cadastro_Cliente_MenuPrincipalActionPerformed"/>
@@ -110,6 +116,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton_Vendas_MenuPrincipal">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/br/edu/ifsp/sbv/pjs/Imagens/Vendas.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Vendas"/>
       </Properties>
       <Events>
@@ -123,6 +132,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton_Estoque_MenuPrincipal">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/br/edu/ifsp/sbv/pjs/Imagens/Estoque.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Estoque"/>
       </Properties>
       <Events>
@@ -136,14 +148,17 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton_Cadastro_Fornecedor_MenuPrincipal">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Cadastro Fornecedor"/>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/br/edu/ifsp/sbv/pjs/Imagens/Fornecedor.png"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Fornecedor"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_Cadastro_Fornecedor_MenuPrincipalActionPerformed"/>
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="10" y="340" width="150" height="60"/>
+          <AbsoluteConstraints x="10" y="340" width="150" height="50"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -162,6 +177,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton_Cadastro_NF_MenuPrincipal1">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/br/edu/ifsp/sbv/pjs/Imagens/Nota Fiscal.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Cadastro NF"/>
       </Properties>
       <Events>

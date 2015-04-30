@@ -18,6 +18,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
     private CadastroNF notafiscal;
     private Vendas vendas;
     private CadastroEstoque estoque;
+    private CadastroFornecedor fornecedor;
     public MenuPrincipal() {
         initComponents();
     }
@@ -50,6 +51,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
         setBackground(new java.awt.Color(66, 188, 251));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jButton_Sair_MenuPrincipal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/Sair.png"))); // NOI18N
         jButton_Sair_MenuPrincipal.setText("Sair");
         jButton_Sair_MenuPrincipal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -58,7 +60,8 @@ public class MenuPrincipal extends javax.swing.JFrame {
         });
         getContentPane().add(jButton_Sair_MenuPrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 540, 150, 60));
 
-        jButton_Cadastro_Cliente_MenuPrincipal.setText("Cadastro Cliente");
+        jButton_Cadastro_Cliente_MenuPrincipal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/Cliente.png"))); // NOI18N
+        jButton_Cadastro_Cliente_MenuPrincipal.setText(" Clientes");
         jButton_Cadastro_Cliente_MenuPrincipal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton_Cadastro_Cliente_MenuPrincipalActionPerformed(evt);
@@ -66,6 +69,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
         });
         getContentPane().add(jButton_Cadastro_Cliente_MenuPrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 150, 60));
 
+        jButton_Vendas_MenuPrincipal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/Vendas.png"))); // NOI18N
         jButton_Vendas_MenuPrincipal.setText("Vendas");
         jButton_Vendas_MenuPrincipal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -74,6 +78,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
         });
         getContentPane().add(jButton_Vendas_MenuPrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, 150, 60));
 
+        jButton_Estoque_MenuPrincipal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/Estoque.png"))); // NOI18N
         jButton_Estoque_MenuPrincipal.setText("Estoque");
         jButton_Estoque_MenuPrincipal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -82,18 +87,20 @@ public class MenuPrincipal extends javax.swing.JFrame {
         });
         getContentPane().add(jButton_Estoque_MenuPrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, 150, 60));
 
-        jButton_Cadastro_Fornecedor_MenuPrincipal.setText("Cadastro Fornecedor");
+        jButton_Cadastro_Fornecedor_MenuPrincipal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/Fornecedor.png"))); // NOI18N
+        jButton_Cadastro_Fornecedor_MenuPrincipal.setText("Fornecedor");
         jButton_Cadastro_Fornecedor_MenuPrincipal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton_Cadastro_Fornecedor_MenuPrincipalActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton_Cadastro_Fornecedor_MenuPrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 340, 150, 60));
+        getContentPane().add(jButton_Cadastro_Fornecedor_MenuPrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 340, 150, 50));
 
         jLabel_imagem_fundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/fundo com logo.png"))); // NOI18N
         jLabel_imagem_fundo.setText("jLabel2");
         getContentPane().add(jLabel_imagem_fundo, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 0, 1100, 660));
 
+        jButton_Cadastro_NF_MenuPrincipal1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/Nota Fiscal.png"))); // NOI18N
         jButton_Cadastro_NF_MenuPrincipal1.setText("Cadastro NF");
         jButton_Cadastro_NF_MenuPrincipal1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -158,7 +165,11 @@ public class MenuPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton_Estoque_MenuPrincipalActionPerformed
 
     private void jButton_Cadastro_Fornecedor_MenuPrincipalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Cadastro_Fornecedor_MenuPrincipalActionPerformed
-        // TODO add your handling code here:
+          if(fornecedor==null){
+        fornecedor= new CadastroFornecedor();
+    }
+    fornecedor.setVisible(true);
+       
     }//GEN-LAST:event_jButton_Cadastro_Fornecedor_MenuPrincipalActionPerformed
 
     private void jButton_Cadastro_NF_MenuPrincipal1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Cadastro_NF_MenuPrincipal1ActionPerformed

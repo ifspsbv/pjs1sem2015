@@ -94,7 +94,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
                 jButton_Cadastro_Fornecedor_MenuPrincipalActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton_Cadastro_Fornecedor_MenuPrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 340, 150, 50));
+        getContentPane().add(jButton_Cadastro_Fornecedor_MenuPrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 340, 150, 60));
 
         jLabel_imagem_fundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/fundo com logo.png"))); // NOI18N
         jLabel_imagem_fundo.setText("jLabel2");

@@ -30,25 +30,25 @@ public class Pesquisar_CadastroEstoque extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jTextField_Produto_Cadastro_Cadastro_Estoque = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
-        jTextField_Codigo_Cadastro_Cadastro_Estoque = new javax.swing.JTextField();
+        jLabel_Codigo_Pesquisar_CadastroEstoque = new javax.swing.JLabel();
+        jTextField_Produto_Pesquisar_CadastroEstoque = new javax.swing.JTextField();
+        jLabel_Produto_Pesquisar_CadastroEstoque = new javax.swing.JLabel();
+        jTextField_Codigo_Pesquisar_CadastroEstoque = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
-        jButton_Pesquisar_Cadastro_Cadastro_Estoque1 = new javax.swing.JButton();
-        jButton_Limpar_Cadastro_Cadastro_Estoque2 = new javax.swing.JButton();
-        jButton_Sair_Cadastro_Cadastro_Estoque3 = new javax.swing.JButton();
+        jButton_Pesquisar_Cadastro_Cadastro_Estoque = new javax.swing.JButton();
+        jButton_Limpar_Cadastro_Cadastro_Estoque = new javax.swing.JButton();
+        jButton_Sair_Cadastro_Cadastro_Estoque = new javax.swing.JButton();
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel1.setText("Codigo");
+        jLabel_Codigo_Pesquisar_CadastroEstoque.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel_Codigo_Pesquisar_CadastroEstoque.setText("Codigo");
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel2.setText("Produto");
+        jLabel_Produto_Pesquisar_CadastroEstoque.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel_Produto_Pesquisar_CadastroEstoque.setText("Produto");
 
-        jTextField_Codigo_Cadastro_Cadastro_Estoque.addKeyListener(new java.awt.event.KeyAdapter() {
+        jTextField_Codigo_Pesquisar_CadastroEstoque.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
-                jTextField_Codigo_Cadastro_Cadastro_EstoqueKeyPressed(evt);
+                jTextField_Codigo_Pesquisar_CadastroEstoqueKeyPressed(evt);
             }
         });
 
@@ -103,19 +103,19 @@ public class Pesquisar_CadastroEstoque extends javax.swing.JFrame {
         jTable1.setShowVerticalLines(false);
         jScrollPane1.setViewportView(jTable1);
 
-        jButton_Pesquisar_Cadastro_Cadastro_Estoque1.setText("Pesquisar");
-        jButton_Pesquisar_Cadastro_Cadastro_Estoque1.addActionListener(new java.awt.event.ActionListener() {
+        jButton_Pesquisar_Cadastro_Cadastro_Estoque.setText("Pesquisar");
+        jButton_Pesquisar_Cadastro_Cadastro_Estoque.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_Pesquisar_Cadastro_Cadastro_Estoque1ActionPerformed(evt);
+                jButton_Pesquisar_Cadastro_Cadastro_EstoqueActionPerformed(evt);
             }
         });
 
-        jButton_Limpar_Cadastro_Cadastro_Estoque2.setText("Limpar");
+        jButton_Limpar_Cadastro_Cadastro_Estoque.setText("Limpar");
 
-        jButton_Sair_Cadastro_Cadastro_Estoque3.setText("Sair");
-        jButton_Sair_Cadastro_Cadastro_Estoque3.addActionListener(new java.awt.event.ActionListener() {
+        jButton_Sair_Cadastro_Cadastro_Estoque.setText("Sair");
+        jButton_Sair_Cadastro_Cadastro_Estoque.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_Sair_Cadastro_Cadastro_Estoque3ActionPerformed(evt);
+                jButton_Sair_Cadastro_Cadastro_EstoqueActionPerformed(evt);
             }
         });
 
@@ -127,20 +127,20 @@ public class Pesquisar_CadastroEstoque extends javax.swing.JFrame {
                 .addGap(160, 160, 160)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton_Pesquisar_Cadastro_Cadastro_Estoque1, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton_Pesquisar_Cadastro_Cadastro_Estoque, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 170, Short.MAX_VALUE)
-                        .addComponent(jButton_Limpar_Cadastro_Cadastro_Estoque2, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton_Limpar_Cadastro_Cadastro_Estoque, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(147, 147, 147)
-                        .addComponent(jButton_Sair_Cadastro_Cadastro_Estoque3, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jButton_Sair_Cadastro_Cadastro_Estoque, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jScrollPane1)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1)
+                        .addComponent(jLabel_Codigo_Pesquisar_CadastroEstoque)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField_Codigo_Cadastro_Cadastro_Estoque, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jTextField_Codigo_Pesquisar_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel2)
+                        .addComponent(jLabel_Produto_Pesquisar_CadastroEstoque)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jTextField_Produto_Cadastro_Cadastro_Estoque, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jTextField_Produto_Pesquisar_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(159, 159, 159))
         );
         layout.setVerticalGroup(
@@ -148,37 +148,37 @@ public class Pesquisar_CadastroEstoque extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(19, 19, 19)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jTextField_Produto_Cadastro_Cadastro_Estoque, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2)
-                    .addComponent(jTextField_Codigo_Cadastro_Cadastro_Estoque, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel_Codigo_Pesquisar_CadastroEstoque)
+                    .addComponent(jTextField_Produto_Pesquisar_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel_Produto_Pesquisar_CadastroEstoque)
+                    .addComponent(jTextField_Codigo_Pesquisar_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 435, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton_Limpar_Cadastro_Cadastro_Estoque2, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton_Pesquisar_Cadastro_Cadastro_Estoque1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton_Sair_Cadastro_Cadastro_Estoque3, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jButton_Limpar_Cadastro_Cadastro_Estoque, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton_Pesquisar_Cadastro_Cadastro_Estoque, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton_Sair_Cadastro_Cadastro_Estoque, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(0, 71, Short.MAX_VALUE))
         );
 
         setBounds(224, 57, 1101, 662);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton_Sair_Cadastro_Cadastro_Estoque3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Sair_Cadastro_Cadastro_Estoque3ActionPerformed
+    private void jButton_Sair_Cadastro_Cadastro_EstoqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Sair_Cadastro_Cadastro_EstoqueActionPerformed
       this.dispose();
-    }//GEN-LAST:event_jButton_Sair_Cadastro_Cadastro_Estoque3ActionPerformed
+    }//GEN-LAST:event_jButton_Sair_Cadastro_Cadastro_EstoqueActionPerformed
 
-    private void jButton_Pesquisar_Cadastro_Cadastro_Estoque1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Pesquisar_Cadastro_Cadastro_Estoque1ActionPerformed
+    private void jButton_Pesquisar_Cadastro_Cadastro_EstoqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Pesquisar_Cadastro_Cadastro_EstoqueActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_Pesquisar_Cadastro_Cadastro_Estoque1ActionPerformed
+    }//GEN-LAST:event_jButton_Pesquisar_Cadastro_Cadastro_EstoqueActionPerformed
 
-    private void jTextField_Codigo_Cadastro_Cadastro_EstoqueKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_Codigo_Cadastro_Cadastro_EstoqueKeyPressed
+    private void jTextField_Codigo_Pesquisar_CadastroEstoqueKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_Codigo_Pesquisar_CadastroEstoqueKeyPressed
       if(evt.getKeyCode()== KeyEvent.VK_ENTER)
      {
-         jTextField_Produto_Cadastro_Cadastro_Estoque.requestFocus();
+         jTextField_Produto_Pesquisar_CadastroEstoque.requestFocus();
      }
-    }//GEN-LAST:event_jTextField_Codigo_Cadastro_Cadastro_EstoqueKeyPressed
+    }//GEN-LAST:event_jTextField_Codigo_Pesquisar_CadastroEstoqueKeyPressed
 
     /**
      * @param args the command line arguments
@@ -216,14 +216,14 @@ public class Pesquisar_CadastroEstoque extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton_Limpar_Cadastro_Cadastro_Estoque2;
-    private javax.swing.JButton jButton_Pesquisar_Cadastro_Cadastro_Estoque1;
-    private javax.swing.JButton jButton_Sair_Cadastro_Cadastro_Estoque3;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JButton jButton_Limpar_Cadastro_Cadastro_Estoque;
+    private javax.swing.JButton jButton_Pesquisar_Cadastro_Cadastro_Estoque;
+    private javax.swing.JButton jButton_Sair_Cadastro_Cadastro_Estoque;
+    private javax.swing.JLabel jLabel_Codigo_Pesquisar_CadastroEstoque;
+    private javax.swing.JLabel jLabel_Produto_Pesquisar_CadastroEstoque;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
-    private javax.swing.JTextField jTextField_Codigo_Cadastro_Cadastro_Estoque;
-    private javax.swing.JTextField jTextField_Produto_Cadastro_Cadastro_Estoque;
+    private javax.swing.JTextField jTextField_Codigo_Pesquisar_CadastroEstoque;
+    private javax.swing.JTextField jTextField_Produto_Pesquisar_CadastroEstoque;
     // End of variables declaration//GEN-END:variables
 }

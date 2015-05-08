@@ -34,31 +34,31 @@ public class CadastroNF extends javax.swing.JFrame {
         jButton_Pesquisar_CadastroNF = new javax.swing.JButton();
         jButton_Excluir_CadastroNF = new javax.swing.JButton();
         jButton_Salvar_CadastroNF = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        jLabel_Total2_CadastroNF = new javax.swing.JLabel();
         jTextField_Codigo_CadastroNF = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        jLabel_Codigo_CadastroNF = new javax.swing.JLabel();
+        jLabel_Produto_CadastroNF = new javax.swing.JLabel();
         jTextField_Produto_CadastroNF = new javax.swing.JTextField();
         jButton6 = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
+        jLabel_Qtde_CadastroNF = new javax.swing.JLabel();
         jTextField_Qtde_CadastroNF = new javax.swing.JTextField();
-        jLabel5 = new javax.swing.JLabel();
-        jTextField_Impostosl_CadastroNF = new javax.swing.JTextField();
-        jLabel6 = new javax.swing.JLabel();
+        jLabel_Impostos_CadastroNF = new javax.swing.JLabel();
+        jTextField_Impostos_CadastroNF = new javax.swing.JTextField();
+        jLabel_Valor_CadastroNF = new javax.swing.JLabel();
         jTextField_Valor_CadastroNF = new javax.swing.JTextField();
-        jLabel7 = new javax.swing.JLabel();
+        jLabel_QtdeParcela_CadastroNF = new javax.swing.JLabel();
         jTextField_QtdeParcela_CadastroNF = new javax.swing.JTextField();
-        jLabel8 = new javax.swing.JLabel();
+        jLabel_Total1_CadastroNF = new javax.swing.JLabel();
         jTextField_Total_CadastroNF = new javax.swing.JTextField();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
+        jLabel_Emissao_CadastroNF = new javax.swing.JLabel();
+        jLabel_Vencimento_CadastroNF = new javax.swing.JLabel();
         jTextField_Vencimento_CadastroNF = new javax.swing.JTextField();
-        jLabel11 = new javax.swing.JLabel();
+        jLabel_NomeFantasia_CadastroNF = new javax.swing.JLabel();
         jTextField_NomeFantasia_CadastroNF = new javax.swing.JTextField();
-        jLabel12 = new javax.swing.JLabel();
+        jLabel_RazaoSocial_CadastroNF = new javax.swing.JLabel();
         jTextField_RazaoSocial_CadastroNF = new javax.swing.JTextField();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
+        jLabel_NotaFiscal_CadastroNF = new javax.swing.JLabel();
+        jLabel_CNPJ_CadastroNF = new javax.swing.JLabel();
         jTextField_CNPJ_CadastroNF = new javax.swing.JTextField();
         jTextField_NotaFiscal_CadastroNF = new javax.swing.JTextField();
         jButton7 = new javax.swing.JButton();
@@ -90,8 +90,8 @@ public class CadastroNF extends javax.swing.JFrame {
         jButton_Salvar_CadastroNF.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton_Salvar_CadastroNF.setText("Salvar");
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 48)); // NOI18N
-        jLabel1.setText("Total");
+        jLabel_Total2_CadastroNF.setFont(new java.awt.Font("Tahoma", 1, 48)); // NOI18N
+        jLabel_Total2_CadastroNF.setText("Total");
 
         jTextField_Codigo_CadastroNF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jTextField_Codigo_CadastroNF.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -100,11 +100,11 @@ public class CadastroNF extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel2.setText("Código:");
+        jLabel_Codigo_CadastroNF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel_Codigo_CadastroNF.setText("Código:");
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel3.setText("Produto:");
+        jLabel_Produto_CadastroNF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel_Produto_CadastroNF.setText("Produto:");
 
         jTextField_Produto_CadastroNF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jTextField_Produto_CadastroNF.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -115,8 +115,8 @@ public class CadastroNF extends javax.swing.JFrame {
 
         jButton6.setText("Pesquisar");
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel4.setText("Qtde.:");
+        jLabel_Qtde_CadastroNF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel_Qtde_CadastroNF.setText("Qtde.:");
 
         jTextField_Qtde_CadastroNF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jTextField_Qtde_CadastroNF.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -125,18 +125,18 @@ public class CadastroNF extends javax.swing.JFrame {
             }
         });
 
-        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel5.setText("Impostos:");
+        jLabel_Impostos_CadastroNF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel_Impostos_CadastroNF.setText("Impostos:");
 
-        jTextField_Impostosl_CadastroNF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jTextField_Impostosl_CadastroNF.addKeyListener(new java.awt.event.KeyAdapter() {
+        jTextField_Impostos_CadastroNF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jTextField_Impostos_CadastroNF.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
-                jTextField_Impostosl_CadastroNFKeyPressed(evt);
+                jTextField_Impostos_CadastroNFKeyPressed(evt);
             }
         });
 
-        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel6.setText(" Valor:");
+        jLabel_Valor_CadastroNF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel_Valor_CadastroNF.setText(" Valor:");
 
         jTextField_Valor_CadastroNF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jTextField_Valor_CadastroNF.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -145,8 +145,8 @@ public class CadastroNF extends javax.swing.JFrame {
             }
         });
 
-        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel7.setText("Qtde. de Parcelas:");
+        jLabel_QtdeParcela_CadastroNF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel_QtdeParcela_CadastroNF.setText("Qtde. de Parcelas:");
 
         jTextField_QtdeParcela_CadastroNF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jTextField_QtdeParcela_CadastroNF.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -155,16 +155,16 @@ public class CadastroNF extends javax.swing.JFrame {
             }
         });
 
-        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel8.setText("Total:");
+        jLabel_Total1_CadastroNF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel_Total1_CadastroNF.setText("Total:");
 
         jTextField_Total_CadastroNF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
 
-        jLabel9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel9.setText(" Emissão:");
+        jLabel_Emissao_CadastroNF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel_Emissao_CadastroNF.setText(" Emissão:");
 
-        jLabel10.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel10.setText("Vencimento:");
+        jLabel_Vencimento_CadastroNF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel_Vencimento_CadastroNF.setText("Vencimento:");
 
         jTextField_Vencimento_CadastroNF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jTextField_Vencimento_CadastroNF.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -173,8 +173,8 @@ public class CadastroNF extends javax.swing.JFrame {
             }
         });
 
-        jLabel11.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel11.setText("Nome Fantasia:");
+        jLabel_NomeFantasia_CadastroNF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel_NomeFantasia_CadastroNF.setText("Nome Fantasia:");
 
         jTextField_NomeFantasia_CadastroNF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jTextField_NomeFantasia_CadastroNF.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -183,8 +183,8 @@ public class CadastroNF extends javax.swing.JFrame {
             }
         });
 
-        jLabel12.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel12.setText("Razão Social:");
+        jLabel_RazaoSocial_CadastroNF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel_RazaoSocial_CadastroNF.setText("Razão Social:");
 
         jTextField_RazaoSocial_CadastroNF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jTextField_RazaoSocial_CadastroNF.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -193,11 +193,11 @@ public class CadastroNF extends javax.swing.JFrame {
             }
         });
 
-        jLabel13.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel13.setText("Nota Fiscal:");
+        jLabel_NotaFiscal_CadastroNF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel_NotaFiscal_CadastroNF.setText("Nota Fiscal:");
 
-        jLabel14.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel14.setText("CNPJ:");
+        jLabel_CNPJ_CadastroNF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel_CNPJ_CadastroNF.setText("CNPJ:");
 
         jTextField_CNPJ_CadastroNF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jTextField_CNPJ_CadastroNF.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -311,16 +311,16 @@ public class CadastroNF extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addComponent(jLabel12, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabel13, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 99, Short.MAX_VALUE)
-                                .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addComponent(jLabel2))
+                                .addComponent(jLabel_RazaoSocial_CadastroNF, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel_NotaFiscal_CadastroNF, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 99, Short.MAX_VALUE)
+                                .addComponent(jLabel_NomeFantasia_CadastroNF, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(jLabel_Codigo_CadastroNF))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jTextField_NotaFiscal_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 424, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jLabel_CNPJ_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jTextField_CNPJ_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 382, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -333,23 +333,23 @@ public class CadastroNF extends javax.swing.JFrame {
                                         .addGroup(layout.createSequentialGroup()
                                             .addComponent(jTextField_Codigo_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addGap(18, 18, 18)
-                                            .addComponent(jLabel3)
+                                            .addComponent(jLabel_Produto_CadastroNF)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                             .addComponent(jTextField_Produto_CadastroNF)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                             .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                            .addComponent(jLabel6)
+                                            .addComponent(jLabel_Valor_CadastroNF)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                             .addComponent(jTextField_Valor_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jLabel_Qtde_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                             .addComponent(jTextField_Qtde_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addGroup(layout.createSequentialGroup()
                                             .addComponent(jTextField_NomeFantasia_CadastroNF)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                            .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jLabel_Emissao_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                             .addComponent(jDateChooser_Emissao_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                     .addGap(2, 2, 2)))
@@ -366,28 +366,28 @@ public class CadastroNF extends javax.swing.JFrame {
                         .addGap(50, 50, 50)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel7)
+                                .addComponent(jLabel_QtdeParcela_CadastroNF)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(jTextField_QtdeParcela_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(jLabel10)
+                                .addComponent(jLabel_Vencimento_CadastroNF)
                                 .addGap(18, 18, 18)
                                 .addComponent(jTextField_Vencimento_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jButton_Salvar_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(395, 395, 395)))
-                        .addComponent(jLabel5)
+                        .addComponent(jLabel_Impostos_CadastroNF)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField_Impostosl_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jTextField_Impostos_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel_Total1_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jTextField_Total_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 969, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                         .addGroup(layout.createSequentialGroup()
-                            .addComponent(jLabel1)
+                            .addComponent(jLabel_Total2_CadastroNF)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                             .addComponent(jLabel_Total_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 969, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -398,13 +398,13 @@ public class CadastroNF extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(22, 22, 22)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel13)
-                    .addComponent(jLabel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel_NotaFiscal_CadastroNF)
+                    .addComponent(jLabel_CNPJ_CadastroNF, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jTextField_CNPJ_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField_NotaFiscal_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel12)
+                    .addComponent(jLabel_RazaoSocial_CadastroNF)
                     .addComponent(jButton7)
                     .addComponent(jTextField_RazaoSocial_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -412,31 +412,31 @@ public class CadastroNF extends javax.swing.JFrame {
                     .addComponent(jDateChooser_Emissao_CadastroNF, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jTextField_NomeFantasia_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel11)
-                        .addComponent(jLabel9)))
+                        .addComponent(jLabel_NomeFantasia_CadastroNF)
+                        .addComponent(jLabel_Emissao_CadastroNF)))
                 .addGap(16, 16, 16)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTextField_Codigo_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel_Codigo_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel_Produto_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField_Produto_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton6)
-                    .addComponent(jLabel6)
+                    .addComponent(jLabel_Valor_CadastroNF)
                     .addComponent(jTextField_Valor_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4)
+                    .addComponent(jLabel_Qtde_CadastroNF)
                     .addComponent(jTextField_Qtde_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(7, 7, 7)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(4, 4, 4)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel_QtdeParcela_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField_QtdeParcela_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel_Vencimento_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField_Vencimento_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel8)
+                    .addComponent(jLabel_Total1_CadastroNF)
                     .addComponent(jTextField_Total_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField_Impostosl_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTextField_Impostos_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel_Impostos_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
@@ -455,7 +455,7 @@ public class CadastroNF extends javax.swing.JFrame {
                                     .addComponent(jButton_Limpar_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jButton_Pesquisar_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jButton_Excluir_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabel_Total2_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(36, 36, 36))))
         );
 
@@ -535,16 +535,16 @@ public class CadastroNF extends javax.swing.JFrame {
     private void jTextField_Vencimento_CadastroNFKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_Vencimento_CadastroNFKeyPressed
         if(evt.getKeyCode()== KeyEvent.VK_ENTER)
      {
-         jTextField_Impostosl_CadastroNF.requestFocus();
+         jTextField_Impostos_CadastroNF.requestFocus();
      }
     }//GEN-LAST:event_jTextField_Vencimento_CadastroNFKeyPressed
 
-    private void jTextField_Impostosl_CadastroNFKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_Impostosl_CadastroNFKeyPressed
+    private void jTextField_Impostos_CadastroNFKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_Impostos_CadastroNFKeyPressed
        if(evt.getKeyCode()== KeyEvent.VK_ENTER)
      {
          jTextField_Total_CadastroNF.requestFocus();
      }
-    }//GEN-LAST:event_jTextField_Impostosl_CadastroNFKeyPressed
+    }//GEN-LAST:event_jTextField_Impostos_CadastroNFKeyPressed
 
     /**
      * @param args the command line arguments
@@ -590,28 +590,28 @@ public class CadastroNF extends javax.swing.JFrame {
     private javax.swing.JButton jButton_Pesquisar_CadastroNF;
     private javax.swing.JButton jButton_Salvar_CadastroNF;
     private com.toedter.calendar.JDateChooser jDateChooser_Emissao_CadastroNF;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabel_CNPJ_CadastroNF;
+    private javax.swing.JLabel jLabel_Codigo_CadastroNF;
+    private javax.swing.JLabel jLabel_Emissao_CadastroNF;
+    private javax.swing.JLabel jLabel_Impostos_CadastroNF;
+    private javax.swing.JLabel jLabel_NomeFantasia_CadastroNF;
+    private javax.swing.JLabel jLabel_NotaFiscal_CadastroNF;
+    private javax.swing.JLabel jLabel_Produto_CadastroNF;
+    private javax.swing.JLabel jLabel_QtdeParcela_CadastroNF;
+    private javax.swing.JLabel jLabel_Qtde_CadastroNF;
+    private javax.swing.JLabel jLabel_RazaoSocial_CadastroNF;
+    private javax.swing.JLabel jLabel_Total1_CadastroNF;
+    private javax.swing.JLabel jLabel_Total2_CadastroNF;
     private javax.swing.JLabel jLabel_Total_CadastroNF;
+    private javax.swing.JLabel jLabel_Valor_CadastroNF;
+    private javax.swing.JLabel jLabel_Vencimento_CadastroNF;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable jTable1;
     private javax.swing.JTable jTable2;
     private javax.swing.JTextField jTextField_CNPJ_CadastroNF;
     private javax.swing.JTextField jTextField_Codigo_CadastroNF;
-    private javax.swing.JTextField jTextField_Impostosl_CadastroNF;
+    private javax.swing.JTextField jTextField_Impostos_CadastroNF;
     private javax.swing.JTextField jTextField_NomeFantasia_CadastroNF;
     private javax.swing.JTextField jTextField_NotaFiscal_CadastroNF;
     private javax.swing.JTextField jTextField_Produto_CadastroNF;

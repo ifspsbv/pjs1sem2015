@@ -43,24 +43,24 @@
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="jButton_Excluir_CadastroClientes" min="-2" pref="120" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
-                              <Component id="jButton_Sair_CadastroClientes1" min="-2" pref="120" max="-2" attributes="0"/>
+                              <Component id="jButton_Sair_CadastroClientes" min="-2" pref="120" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="jButton_Pesquisar_CadastroClientes" min="-2" pref="120" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel_Telefone_CadastroClientes" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel_Bairro_CadastroClientes" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel_CEP_CadastroClientes" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel_Codigo_CadastroClientes" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" attributes="0">
-                                      <Component id="jTextField_Cep_CadastroClientes" min="-2" pref="142" max="-2" attributes="0"/>
+                                      <Component id="jTextField_CEP_CadastroClientes" min="-2" pref="142" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel_Endereco_CadastroClientes" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
                                       <Component id="jTextField_Endereco_CadastroClientes" min="-2" pref="365" max="-2" attributes="0"/>
                                   </Group>
@@ -68,45 +68,45 @@
                                       <Group type="102" attributes="0">
                                           <Component id="jTextField_Telefone_CadastroClientes" min="-2" pref="144" max="-2" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel_Celular_CadastroClientes" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                          <Component id="jTextField_Celular" min="-2" pref="139" max="-2" attributes="0"/>
+                                          <Component id="jTextField_Celular_CadastroClientes" min="-2" pref="139" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="jLabel14" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel_TelefoneRecado_CadastroClientes" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="jTextField_Telefone_Recado" min="-2" pref="144" max="-2" attributes="0"/>
+                                          <Component id="jTextField_TelefoneRecado_CadastroClientes" min="-2" pref="144" max="-2" attributes="0"/>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                          <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel_Email_CadastroClientes" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
                                           <Component id="jTextField_Email_CadastroClientes" min="-2" pref="222" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
                                           <Group type="103" groupAlignment="1" attributes="0">
                                               <Group type="102" attributes="0">
-                                                  <Component id="jTextField_Nome_CadastroClientes1" min="-2" pref="57" max="-2" attributes="0"/>
+                                                  <Component id="jTextField_Codigo_CadastroClientes" min="-2" pref="57" max="-2" attributes="0"/>
                                                   <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
-                                                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jLabel_Nome_CadastroClientes" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace max="-2" attributes="0"/>
                                                   <Component id="jTextField_Nome_CadastroClientes" min="-2" pref="342" max="-2" attributes="0"/>
                                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jLabel_CPF_CadastroClientes" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Component id="jTextField_CPF" min="-2" pref="193" max="-2" attributes="0"/>
+                                                  <Component id="jTextField_CPF_CadastroClientes" min="-2" pref="193" max="-2" attributes="0"/>
                                                   <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
-                                                  <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jLabel_OBS_CadastroClientes" min="-2" max="-2" attributes="0"/>
                                               </Group>
                                               <Group type="102" attributes="0">
                                                   <Component id="jTextField_Bairro_CadastroClientes" min="-2" pref="342" max="-2" attributes="0"/>
                                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                  <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jLabel_Cidade_CadastroClientes" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                                                   <Component id="jTextField_Cidade_CadastroClientes" min="-2" pref="365" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
                                           <EmptySpace max="32767" attributes="0"/>
-                                          <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel_UF_CadastroClientes" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="jComboBoxestado" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jComboBox_UF_CadastroClientes" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
@@ -116,11 +116,11 @@
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="32767" attributes="0"/>
-                      <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel_Numero_CadastroClientes" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="jTextField_Numero_CadastroClientes" min="-2" pref="57" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
-                      <Component id="jTextField_Obs" min="-2" pref="193" max="-2" attributes="0"/>
+                      <Component id="jTextField_OBS_CadastroClientes" min="-2" pref="193" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
@@ -136,46 +136,46 @@
           <Group type="102" attributes="0">
               <EmptySpace pref="12" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel12" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField_CPF" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
-                  <Component id="jLabel11" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField_Nome_CadastroClientes1" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                  <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel_CPF_CadastroClientes" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTextField_CPF_CadastroClientes" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                  <Component id="jLabel_Codigo_CadastroClientes" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTextField_Codigo_CadastroClientes" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                  <Component id="jLabel_Nome_CadastroClientes" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jTextField_Nome_CadastroClientes" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                  <Component id="jLabel15" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField_Obs" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                  <Component id="jLabel_OBS_CadastroClientes" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTextField_OBS_CadastroClientes" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField_Cep_CadastroClientes" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                  <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel_CEP_CadastroClientes" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTextField_CEP_CadastroClientes" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                  <Component id="jLabel_Endereco_CadastroClientes" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jTextField_Endereco_CadastroClientes" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                  <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel_Numero_CadastroClientes" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jTextField_Numero_CadastroClientes" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jTextField_Cidade_CadastroClientes" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                      <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jComboBoxestado" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel_UF_CadastroClientes" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jComboBox_UF_CadastroClientes" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jTextField_Bairro_CadastroClientes" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                      <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel_Cidade_CadastroClientes" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel_Bairro_CadastroClientes" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jTextField_Celular" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
-                  <Component id="jLabel13" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTextField_Celular_CadastroClientes" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                  <Component id="jLabel_Celular_CadastroClientes" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jTextField_Telefone_CadastroClientes" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                  <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel14" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField_Telefone_Recado" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
-                  <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel_Telefone_CadastroClientes" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel_TelefoneRecado_CadastroClientes" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTextField_TelefoneRecado_CadastroClientes" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                  <Component id="jLabel_Email_CadastroClientes" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jTextField_Email_CadastroClientes" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
               </Group>
               <Group type="103" groupAlignment="0" attributes="0">
@@ -195,7 +195,7 @@
                   <Component id="jButton_Editar_CadastroClientes" alignment="3" min="-2" pref="51" max="-2" attributes="0"/>
                   <Component id="jButton_Excluir_CadastroClientes" alignment="3" min="-2" pref="51" max="-2" attributes="0"/>
                   <Component id="jButton_Pesquisar_CadastroClientes" alignment="3" min="-2" pref="53" max="-2" attributes="0"/>
-                  <Component id="jButton_Sair_CadastroClientes1" alignment="3" min="-2" pref="53" max="-2" attributes="0"/>
+                  <Component id="jButton_Sair_CadastroClientes" alignment="3" min="-2" pref="53" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
           </Group>
@@ -203,7 +203,7 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="jLabel1">
+    <Component class="javax.swing.JLabel" name="jLabel_Nome_CadastroClientes">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="0"/>
@@ -216,7 +216,7 @@
         <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTextField_Numero_CadastroClientesKeyPressed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel2">
+    <Component class="javax.swing.JLabel" name="jLabel_Endereco_CadastroClientes">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="0"/>
@@ -224,7 +224,7 @@
         <Property name="text" type="java.lang.String" value="Endereco:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel3">
+    <Component class="javax.swing.JLabel" name="jLabel_Telefone_CadastroClientes">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="0"/>
@@ -239,7 +239,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel5">
+    <Component class="javax.swing.JLabel" name="jLabel_Email_CadastroClientes">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="0"/>
@@ -252,10 +252,10 @@
         <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTextField_Nome_CadastroClientesKeyPressed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField_Cep_CadastroClientes">
+    <Component class="javax.swing.JTextField" name="jTextField_CEP_CadastroClientes">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField_Cep_CadastroClientesActionPerformed"/>
-        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTextField_Cep_CadastroClientesKeyPressed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField_CEP_CadastroClientesActionPerformed"/>
+        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTextField_CEP_CadastroClientesKeyPressed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="jTextField_Bairro_CadastroClientes">
@@ -263,7 +263,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField_Bairro_CadastroClientesActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel6">
+    <Component class="javax.swing.JLabel" name="jLabel_CEP_CadastroClientes">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="0"/>
@@ -275,7 +275,7 @@
     </Component>
     <Component class="javax.swing.JTextField" name="jTextField_Endereco_CadastroClientes">
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel7">
+    <Component class="javax.swing.JLabel" name="jLabel_Numero_CadastroClientes">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="0"/>
@@ -283,7 +283,7 @@
         <Property name="text" type="java.lang.String" value="N&#xba;:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel8">
+    <Component class="javax.swing.JLabel" name="jLabel_Bairro_CadastroClientes">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="0"/>
@@ -296,7 +296,7 @@
         <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTextField_Telefone_CadastroClientesKeyPressed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel9">
+    <Component class="javax.swing.JLabel" name="jLabel_Cidade_CadastroClientes">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="0"/>
@@ -306,7 +306,7 @@
     </Component>
     <Component class="javax.swing.JTextField" name="jTextField_Cidade_CadastroClientes">
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel10">
+    <Component class="javax.swing.JLabel" name="jLabel_UF_CadastroClientes">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="0"/>
@@ -354,7 +354,7 @@
         <Property name="text" type="java.lang.String" value="Pesquisar"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel11">
+    <Component class="javax.swing.JLabel" name="jLabel_Codigo_CadastroClientes">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="0"/>
@@ -362,12 +362,12 @@
         <Property name="text" type="java.lang.String" value="Codigo:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField_Nome_CadastroClientes1">
+    <Component class="javax.swing.JTextField" name="jTextField_Codigo_CadastroClientes">
       <Events>
-        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTextField_Nome_CadastroClientes1KeyPressed"/>
+        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTextField_Codigo_CadastroClientesKeyPressed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton_Sair_CadastroClientes1">
+    <Component class="javax.swing.JButton" name="jButton_Sair_CadastroClientes">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/br/edu/ifsp/sbv/pjs/Imagens/Sair.png"/>
@@ -375,10 +375,10 @@
         <Property name="text" type="java.lang.String" value="Sair"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_Sair_CadastroClientes1ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_Sair_CadastroClientesActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JComboBox" name="jComboBoxestado">
+    <Component class="javax.swing.JComboBox" name="jComboBox_UF_CadastroClientes">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="0"/>
@@ -416,7 +416,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel12">
+    <Component class="javax.swing.JLabel" name="jLabel_CPF_CadastroClientes">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="0"/>
@@ -424,9 +424,9 @@
         <Property name="text" type="java.lang.String" value="CPF:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField_CPF">
+    <Component class="javax.swing.JTextField" name="jTextField_CPF_CadastroClientes">
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel13">
+    <Component class="javax.swing.JLabel" name="jLabel_Celular_CadastroClientes">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="0"/>
@@ -434,9 +434,9 @@
         <Property name="text" type="java.lang.String" value="Celular:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField_Celular">
+    <Component class="javax.swing.JTextField" name="jTextField_Celular_CadastroClientes">
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel14">
+    <Component class="javax.swing.JLabel" name="jLabel_TelefoneRecado_CadastroClientes">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="0"/>
@@ -444,12 +444,12 @@
         <Property name="text" type="java.lang.String" value="Telefone Recado:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField_Telefone_Recado">
+    <Component class="javax.swing.JTextField" name="jTextField_TelefoneRecado_CadastroClientes">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField_Telefone_RecadoActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField_TelefoneRecado_CadastroClientesActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel15">
+    <Component class="javax.swing.JLabel" name="jLabel_OBS_CadastroClientes">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="0"/>
@@ -457,7 +457,7 @@
         <Property name="text" type="java.lang.String" value="OBS:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField_Obs">
+    <Component class="javax.swing.JTextField" name="jTextField_OBS_CadastroClientes">
     </Component>
     <Container class="javax.swing.JScrollPane" name="jScrollPane2">
       <AuxValues>

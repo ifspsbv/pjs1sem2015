@@ -38,7 +38,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jButton_Estoque_MenuPrincipal = new javax.swing.JButton();
         jButton_Cadastro_Fornecedor_MenuPrincipal = new javax.swing.JButton();
         jLabel_imagem_fundo = new javax.swing.JLabel();
-        jButton_Cadastro_NF_MenuPrincipal1 = new javax.swing.JButton();
+        jButton_Cadastro_NF_MenuPrincipal = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -100,14 +100,14 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jLabel_imagem_fundo.setText("jLabel2");
         getContentPane().add(jLabel_imagem_fundo, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 0, 1100, 660));
 
-        jButton_Cadastro_NF_MenuPrincipal1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/Nota Fiscal.png"))); // NOI18N
-        jButton_Cadastro_NF_MenuPrincipal1.setText("Cadastro NF");
-        jButton_Cadastro_NF_MenuPrincipal1.addActionListener(new java.awt.event.ActionListener() {
+        jButton_Cadastro_NF_MenuPrincipal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/Nota Fiscal.png"))); // NOI18N
+        jButton_Cadastro_NF_MenuPrincipal.setText("Cadastro NF");
+        jButton_Cadastro_NF_MenuPrincipal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_Cadastro_NF_MenuPrincipal1ActionPerformed(evt);
+                jButton_Cadastro_NF_MenuPrincipalActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton_Cadastro_NF_MenuPrincipal1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 440, 150, 60));
+        getContentPane().add(jButton_Cadastro_NF_MenuPrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 440, 150, 60));
 
         jMenu1.setText("Arquivo");
 
@@ -172,12 +172,12 @@ public class MenuPrincipal extends javax.swing.JFrame {
        
     }//GEN-LAST:event_jButton_Cadastro_Fornecedor_MenuPrincipalActionPerformed
 
-    private void jButton_Cadastro_NF_MenuPrincipal1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Cadastro_NF_MenuPrincipal1ActionPerformed
+    private void jButton_Cadastro_NF_MenuPrincipalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Cadastro_NF_MenuPrincipalActionPerformed
         if(notafiscal == null){
         notafiscal = new CadastroNF();
     }
     notafiscal.setVisible(true);
-    }//GEN-LAST:event_jButton_Cadastro_NF_MenuPrincipal1ActionPerformed
+    }//GEN-LAST:event_jButton_Cadastro_NF_MenuPrincipalActionPerformed
 
     /**
      * @param args the command line arguments
@@ -220,7 +220,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton_Cadastro_Cliente_MenuPrincipal;
     private javax.swing.JButton jButton_Cadastro_Fornecedor_MenuPrincipal;
-    private javax.swing.JButton jButton_Cadastro_NF_MenuPrincipal1;
+    private javax.swing.JButton jButton_Cadastro_NF_MenuPrincipal;
     private javax.swing.JButton jButton_Estoque_MenuPrincipal;
     private javax.swing.JButton jButton_Sair_MenuPrincipal;
     private javax.swing.JButton jButton_Vendas_MenuPrincipal;

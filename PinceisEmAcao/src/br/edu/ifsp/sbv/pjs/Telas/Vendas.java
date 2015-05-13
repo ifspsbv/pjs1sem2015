@@ -30,32 +30,32 @@ public class Vendas extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
+        jLabel_Codido_Vendas = new javax.swing.JLabel();
         jTextField_Codido_Vendas = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
+        jLabel_Produto_Vendas = new javax.swing.JLabel();
         jTextField_Produto_Vendas = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
+        jLabel_Quantidade_Vendas = new javax.swing.JLabel();
         jTextField_Quantidade_Vendas = new javax.swing.JTextField();
         jCheckBox_Venda_Vendas = new javax.swing.JCheckBox();
         jCheckBox_Consumo_Vendas = new javax.swing.JCheckBox();
         jButton_Limpar_Vendas = new javax.swing.JButton();
         jButton_Finalizar_Vendas = new javax.swing.JButton();
         jButton_Excluir_Vendas = new javax.swing.JButton();
-        jComboBox1 = new javax.swing.JComboBox();
-        jLabel4 = new javax.swing.JLabel();
+        jComboBox_FormaPagamento = new javax.swing.JComboBox();
+        jLabel_Troco_Vendas = new javax.swing.JLabel();
         jTextField_Troco_Vendas = new javax.swing.JTextField();
         jTextField_Sub_Total_Vendas = new javax.swing.JTextField();
         jTextField_Opção_Vendas = new javax.swing.JTextField();
-        jLabel5 = new javax.swing.JLabel();
+        jLabel_Total_Vendas = new javax.swing.JLabel();
         jTextField_Total_Vendas = new javax.swing.JTextField();
-        jLabel6 = new javax.swing.JLabel();
-        jComboBox2 = new javax.swing.JComboBox();
-        jButton1 = new javax.swing.JButton();
+        jLabel_Sub_Total_Vendas = new javax.swing.JLabel();
+        jComboBox_UnidadeMedida = new javax.swing.JComboBox();
+        jButton_Ok = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel1.setText("Codigo");
+        jLabel_Codido_Vendas.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel_Codido_Vendas.setText("Codigo");
 
         jTextField_Codido_Vendas.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jTextField_Codido_Vendas.addActionListener(new java.awt.event.ActionListener() {
@@ -69,8 +69,8 @@ public class Vendas extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel2.setText("Produto");
+        jLabel_Produto_Vendas.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel_Produto_Vendas.setText("Produto");
 
         jTextField_Produto_Vendas.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jTextField_Produto_Vendas.addActionListener(new java.awt.event.ActionListener() {
@@ -84,8 +84,8 @@ public class Vendas extends javax.swing.JFrame {
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel3.setText("Qtde");
+        jLabel_Quantidade_Vendas.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel_Quantidade_Vendas.setText("Qtde");
 
         jTextField_Quantidade_Vendas.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jTextField_Quantidade_Vendas.addActionListener(new java.awt.event.ActionListener() {
@@ -109,12 +109,12 @@ public class Vendas extends javax.swing.JFrame {
         jButton_Excluir_Vendas.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jButton_Excluir_Vendas.setText("Excluir");
 
-        jComboBox1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Dinheiro", "Cartão", "Cheque" }));
+        jComboBox_FormaPagamento.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jComboBox_FormaPagamento.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Dinheiro", "Cartão", "Cheque" }));
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel4.setText("Troco");
-        jLabel4.setToolTipText("");
+        jLabel_Troco_Vendas.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel_Troco_Vendas.setText("Troco");
+        jLabel_Troco_Vendas.setToolTipText("");
 
         jTextField_Troco_Vendas.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
 
@@ -127,9 +127,9 @@ public class Vendas extends javax.swing.JFrame {
             }
         });
 
-        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 48)); // NOI18N
-        jLabel5.setText("  Total");
-        jLabel5.setToolTipText("");
+        jLabel_Total_Vendas.setFont(new java.awt.Font("Tahoma", 1, 48)); // NOI18N
+        jLabel_Total_Vendas.setText("  Total");
+        jLabel_Total_Vendas.setToolTipText("");
 
         jTextField_Total_Vendas.setFont(new java.awt.Font("Tahoma", 1, 54)); // NOI18N
         jTextField_Total_Vendas.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -139,14 +139,14 @@ public class Vendas extends javax.swing.JFrame {
             }
         });
 
-        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel6.setText("Total");
-        jLabel6.setToolTipText("");
+        jLabel_Sub_Total_Vendas.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel_Sub_Total_Vendas.setText("Total");
+        jLabel_Sub_Total_Vendas.setToolTipText("");
 
-        jComboBox2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Unidade", "Centimetros", " " }));
+        jComboBox_UnidadeMedida.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jComboBox_UnidadeMedida.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Unidade", "Centimetros", " " }));
 
-        jButton1.setText("OK");
+        jButton_Ok.setText("OK");
 
         jTable1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
@@ -199,37 +199,37 @@ public class Vendas extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(jLabel_Sub_Total_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jComboBox_FormaPagamento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(18, 18, 18))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(jLabel4)
+                                .addComponent(jLabel_Troco_Vendas)
                                 .addGap(44, 44, 44)))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jTextField_Sub_Total_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jTextField_Troco_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jTextField_Opção_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel_Total_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jTextField_Total_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(51, 51, 51))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jLabel_Codido_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jTextField_Codido_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jLabel_Produto_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jTextField_Produto_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 324, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jLabel3)
+                                .addComponent(jLabel_Quantidade_Vendas)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(jTextField_Quantidade_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(jComboBox_UnidadeMedida, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jScrollPane1))
                         .addGap(1, 1, 1)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -241,7 +241,7 @@ public class Vendas extends javax.swing.JFrame {
                                     .addComponent(jButton_Finalizar_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addContainerGap(90, Short.MAX_VALUE))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jButton_Ok, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(35, 35, 35)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jCheckBox_Venda_Vendas)
@@ -253,15 +253,15 @@ public class Vendas extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(17, 17, 17)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
+                    .addComponent(jLabel_Codido_Vendas)
                     .addComponent(jTextField_Codido_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2)
+                    .addComponent(jLabel_Produto_Vendas)
                     .addComponent(jTextField_Produto_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3)
+                    .addComponent(jLabel_Quantidade_Vendas)
                     .addComponent(jTextField_Quantidade_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jCheckBox_Venda_Vendas)
-                    .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jComboBox_UnidadeMedida, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton_Ok, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -279,21 +279,21 @@ public class Vendas extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(39, 39, 39)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel_Sub_Total_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jTextField_Sub_Total_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jTextField_Opção_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jComboBox_FormaPagamento, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel_Troco_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jTextField_Troco_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(27, 27, 27)
+                        .addGap(21, 21, 21)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jTextField_Total_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(jLabel_Total_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(39, 39, 39))
         );
 
@@ -370,20 +370,20 @@ public class Vendas extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton_Excluir_Vendas;
     private javax.swing.JButton jButton_Finalizar_Vendas;
     private javax.swing.JButton jButton_Limpar_Vendas;
+    private javax.swing.JButton jButton_Ok;
     private javax.swing.JCheckBox jCheckBox_Consumo_Vendas;
     private javax.swing.JCheckBox jCheckBox_Venda_Vendas;
-    private javax.swing.JComboBox jComboBox1;
-    private javax.swing.JComboBox jComboBox2;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
+    private javax.swing.JComboBox jComboBox_FormaPagamento;
+    private javax.swing.JComboBox jComboBox_UnidadeMedida;
+    private javax.swing.JLabel jLabel_Codido_Vendas;
+    private javax.swing.JLabel jLabel_Produto_Vendas;
+    private javax.swing.JLabel jLabel_Quantidade_Vendas;
+    private javax.swing.JLabel jLabel_Sub_Total_Vendas;
+    private javax.swing.JLabel jLabel_Total_Vendas;
+    private javax.swing.JLabel jLabel_Troco_Vendas;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField_Codido_Vendas;

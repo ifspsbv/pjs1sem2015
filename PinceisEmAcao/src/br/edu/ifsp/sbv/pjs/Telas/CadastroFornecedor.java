@@ -31,54 +31,54 @@ public class CadastroFornecedor extends javax.swing.JFrame {
     private void initComponents() {
 
         jLayeredPane1 = new javax.swing.JLayeredPane();
-        jLabel1 = new javax.swing.JLabel();
+        jLabel_Codigo_CadastroFornecedor = new javax.swing.JLabel();
         jTextField_Codigo_Fornecedor = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
+        jLabel_CEP_CadastroFornecedor = new javax.swing.JLabel();
         jTextField_CEP_CadastroFornecedor = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
-        jTextField_CNPJ = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
+        jLabel_OBS_CadastroFornecedor = new javax.swing.JLabel();
+        jTextField_CNPJ_CadastroFornecedor = new javax.swing.JTextField();
+        jLabel_Telefone_CadastroFornecedor = new javax.swing.JLabel();
         jTextField_Telefone_CadastroFornecedor = new javax.swing.JTextField();
-        jLabel5 = new javax.swing.JLabel();
+        jLabel_Endereco_CadastroFornecedor = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
+        jLabel_Bairro_CadastroFornecedor = new javax.swing.JLabel();
         jTextField_Bairro_CadastroFornecedor = new javax.swing.JTextField();
-        jLabel8 = new javax.swing.JLabel();
+        jLabel_Cidade_CadastroFornecedor = new javax.swing.JLabel();
         jTextField_Cidade_CadastroFornecedor = new javax.swing.JTextField();
-        jLabel10 = new javax.swing.JLabel();
-        jTextField_Razao_Social = new javax.swing.JTextField();
-        jLabel11 = new javax.swing.JLabel();
-        jTextField_OBS_Fornecedor = new javax.swing.JTextField();
-        jButton_Salvar = new javax.swing.JButton();
-        jButton_Editar = new javax.swing.JButton();
-        jButton_Pesquisar = new javax.swing.JButton();
+        jLabel_Razao_Social_CadastroFornecedor = new javax.swing.JLabel();
+        jTextField_Razao_Social_CadastroFornecedor = new javax.swing.JTextField();
+        jLabel_CNPJ_CadastroFornecedor = new javax.swing.JLabel();
+        jTextField_OBS_CadastroFornecedor = new javax.swing.JTextField();
+        jButton_Salvar_CadastroFornecedor = new javax.swing.JButton();
+        jButton_Editar_CadastroFornecedor = new javax.swing.JButton();
+        jButton_Pesquisar_CadastroFornecedor = new javax.swing.JButton();
         jLabel9 = new javax.swing.JLabel();
         jComboBox_Estado_CadastroFornecedor = new javax.swing.JComboBox();
         jTextField_Numero_CadastroFornecedor = new javax.swing.JTextField();
         jTextField_Endereco_CadastroFornecedor = new javax.swing.JTextField();
-        jLabel13 = new javax.swing.JLabel();
-        jTextField_Email_CadastroFornecedor = new javax.swing.JTextField();
+        jLabel_Celular_CadastroFornecedor = new javax.swing.JLabel();
+        jTextField_Celular_CadastroFornecedor = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
         jTextField_Celular_CadastroFornecedor1 = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        jTable_CadastroFornecedor = new javax.swing.JTable();
         jButton_Pesquisar1 = new javax.swing.JButton();
-        jButton_Limpar = new javax.swing.JButton();
-        jButton_Excluir = new javax.swing.JButton();
-        jButton_Sair = new javax.swing.JButton();
+        jButton_Limpar_CadastroFornecedor = new javax.swing.JButton();
+        jButton_Excluir_CadastroFornecedor = new javax.swing.JButton();
+        jButton_Sair_CadastroFornecedor = new javax.swing.JButton();
 
         setPreferredSize(new java.awt.Dimension(1085, 623));
 
         jLayeredPane1.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
         jLayeredPane1.setPreferredSize(new java.awt.Dimension(1085, 623));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel1.setText("Codigo");
+        jLabel_Codigo_CadastroFornecedor.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel_Codigo_CadastroFornecedor.setText("Codigo");
 
         jTextField_Codigo_Fornecedor.setPreferredSize(new java.awt.Dimension(28, 20));
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel2.setText("CEP:");
+        jLabel_CEP_CadastroFornecedor.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel_CEP_CadastroFornecedor.setText("CEP:");
 
         jTextField_CEP_CadastroFornecedor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -86,11 +86,11 @@ public class CadastroFornecedor extends javax.swing.JFrame {
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel3.setText("OBS:");
+        jLabel_OBS_CadastroFornecedor.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel_OBS_CadastroFornecedor.setText("OBS:");
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel4.setText("Telefone:");
+        jLabel_Telefone_CadastroFornecedor.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel_Telefone_CadastroFornecedor.setText("Telefone:");
 
         jTextField_Telefone_CadastroFornecedor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -98,17 +98,17 @@ public class CadastroFornecedor extends javax.swing.JFrame {
             }
         });
 
-        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel5.setText("Endereço :");
+        jLabel_Endereco_CadastroFornecedor.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel_Endereco_CadastroFornecedor.setText("Endereço :");
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel6.setText("Nº :");
 
-        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel7.setText("Bairro :");
+        jLabel_Bairro_CadastroFornecedor.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel_Bairro_CadastroFornecedor.setText("Bairro :");
 
-        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel8.setText("Cidade :");
+        jLabel_Cidade_CadastroFornecedor.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel_Cidade_CadastroFornecedor.setText("Cidade :");
 
         jTextField_Cidade_CadastroFornecedor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -116,31 +116,31 @@ public class CadastroFornecedor extends javax.swing.JFrame {
             }
         });
 
-        jLabel10.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel10.setText("Razão Social:");
+        jLabel_Razao_Social_CadastroFornecedor.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel_Razao_Social_CadastroFornecedor.setText("Razão Social:");
 
-        jTextField_Razao_Social.addActionListener(new java.awt.event.ActionListener() {
+        jTextField_Razao_Social_CadastroFornecedor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField_Razao_SocialActionPerformed(evt);
+                jTextField_Razao_Social_CadastroFornecedorActionPerformed(evt);
             }
         });
 
-        jLabel11.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel11.setText("CNPJ:");
+        jLabel_CNPJ_CadastroFornecedor.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel_CNPJ_CadastroFornecedor.setText("CNPJ:");
 
-        jButton_Salvar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/Salvar.png"))); // NOI18N
-        jButton_Salvar.setText("Salvar");
-        jButton_Salvar.addActionListener(new java.awt.event.ActionListener() {
+        jButton_Salvar_CadastroFornecedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/Salvar.png"))); // NOI18N
+        jButton_Salvar_CadastroFornecedor.setText("Salvar");
+        jButton_Salvar_CadastroFornecedor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_SalvarActionPerformed(evt);
+                jButton_Salvar_CadastroFornecedorActionPerformed(evt);
             }
         });
 
-        jButton_Editar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/Editar.png"))); // NOI18N
-        jButton_Editar.setText("Editar");
+        jButton_Editar_CadastroFornecedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/Editar.png"))); // NOI18N
+        jButton_Editar_CadastroFornecedor.setText("Editar");
 
-        jButton_Pesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/Pesquisar.png"))); // NOI18N
-        jButton_Pesquisar.setText("Pesquisar");
+        jButton_Pesquisar_CadastroFornecedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/Pesquisar.png"))); // NOI18N
+        jButton_Pesquisar_CadastroFornecedor.setText("Pesquisar");
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel9.setText("UF :");
@@ -159,12 +159,12 @@ public class CadastroFornecedor extends javax.swing.JFrame {
             }
         });
 
-        jLabel13.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel13.setText("Celular:");
+        jLabel_Celular_CadastroFornecedor.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel_Celular_CadastroFornecedor.setText("Celular:");
 
-        jTextField_Email_CadastroFornecedor.addActionListener(new java.awt.event.ActionListener() {
+        jTextField_Celular_CadastroFornecedor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField_Email_CadastroFornecedorActionPerformed(evt);
+                jTextField_Celular_CadastroFornecedorActionPerformed(evt);
             }
         });
 
@@ -177,7 +177,7 @@ public class CadastroFornecedor extends javax.swing.JFrame {
             }
         });
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        jTable_CadastroFornecedor.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null, null},
                 {null, null, null, null, null, null, null},
@@ -208,29 +208,29 @@ public class CadastroFornecedor extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
-        jTable1.setRowHeight(45);
-        jScrollPane1.setViewportView(jTable1);
-        if (jTable1.getColumnModel().getColumnCount() > 0) {
-            jTable1.getColumnModel().getColumn(0).setResizable(false);
-            jTable1.getColumnModel().getColumn(1).setResizable(false);
-            jTable1.getColumnModel().getColumn(2).setResizable(false);
-            jTable1.getColumnModel().getColumn(3).setResizable(false);
-            jTable1.getColumnModel().getColumn(4).setResizable(false);
-            jTable1.getColumnModel().getColumn(5).setResizable(false);
-            jTable1.getColumnModel().getColumn(6).setResizable(false);
+        jTable_CadastroFornecedor.setRowHeight(45);
+        jScrollPane1.setViewportView(jTable_CadastroFornecedor);
+        if (jTable_CadastroFornecedor.getColumnModel().getColumnCount() > 0) {
+            jTable_CadastroFornecedor.getColumnModel().getColumn(0).setResizable(false);
+            jTable_CadastroFornecedor.getColumnModel().getColumn(1).setResizable(false);
+            jTable_CadastroFornecedor.getColumnModel().getColumn(2).setResizable(false);
+            jTable_CadastroFornecedor.getColumnModel().getColumn(3).setResizable(false);
+            jTable_CadastroFornecedor.getColumnModel().getColumn(4).setResizable(false);
+            jTable_CadastroFornecedor.getColumnModel().getColumn(5).setResizable(false);
+            jTable_CadastroFornecedor.getColumnModel().getColumn(6).setResizable(false);
         }
 
         jButton_Pesquisar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/Pesquisar.png"))); // NOI18N
         jButton_Pesquisar1.setText("Pesquisar");
 
-        jButton_Limpar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/Limpar.png"))); // NOI18N
-        jButton_Limpar.setText("Limpar");
+        jButton_Limpar_CadastroFornecedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/Limpar.png"))); // NOI18N
+        jButton_Limpar_CadastroFornecedor.setText("Limpar");
 
-        jButton_Excluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/Excluir.png"))); // NOI18N
-        jButton_Excluir.setText("Excluir");
+        jButton_Excluir_CadastroFornecedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/Excluir.png"))); // NOI18N
+        jButton_Excluir_CadastroFornecedor.setText("Excluir");
 
-        jButton_Sair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/Sair.png"))); // NOI18N
-        jButton_Sair.setText("Sair");
+        jButton_Sair_CadastroFornecedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/Sair.png"))); // NOI18N
+        jButton_Sair_CadastroFornecedor.setText("Sair");
 
         javax.swing.GroupLayout jLayeredPane1Layout = new javax.swing.GroupLayout(jLayeredPane1);
         jLayeredPane1.setLayout(jLayeredPane1Layout);
@@ -242,23 +242,23 @@ public class CadastroFornecedor extends javax.swing.JFrame {
                         .addGap(334, 334, 334)
                         .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(jLayeredPane1Layout.createSequentialGroup()
-                                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jLabel_Telefone_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jTextField_Telefone_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(jLabel13)
+                                .addComponent(jLabel_Celular_CadastroFornecedor)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jTextField_Email_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(jTextField_Celular_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jLayeredPane1Layout.createSequentialGroup()
                                 .addComponent(jTextField_Endereco_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 312, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(19, 19, 19)
-                                .addComponent(jLabel7)
+                                .addComponent(jLabel_Bairro_CadastroFornecedor)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jTextField_Bairro_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 339, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jLayeredPane1Layout.createSequentialGroup()
-                                .addComponent(jLabel3)
+                                .addComponent(jLabel_OBS_CadastroFornecedor)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jTextField_OBS_Fornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 202, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(jTextField_OBS_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 202, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jLayeredPane1Layout.createSequentialGroup()
                                 .addGap(97, 97, 97)
@@ -280,39 +280,39 @@ public class CadastroFornecedor extends javax.swing.JFrame {
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1031, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jLayeredPane1Layout.createSequentialGroup()
                                 .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel1)
-                                    .addComponent(jLabel8))
+                                    .addComponent(jLabel_CEP_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel_Codigo_CadastroFornecedor)
+                                    .addComponent(jLabel_Cidade_CadastroFornecedor))
                                 .addGap(18, 18, 18)
                                 .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jTextField_Cidade_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(jLayeredPane1Layout.createSequentialGroup()
                                         .addComponent(jTextField_CEP_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(37, 37, 37)
-                                        .addComponent(jLabel5))
+                                        .addComponent(jLabel_Endereco_CadastroFornecedor))
                                     .addGroup(jLayeredPane1Layout.createSequentialGroup()
                                         .addComponent(jTextField_Codigo_Fornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jLabel10)
+                                        .addComponent(jLabel_Razao_Social_CadastroFornecedor)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jTextField_Razao_Social, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jTextField_Razao_Social_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(18, 18, 18)
-                                        .addComponent(jLabel11)
+                                        .addComponent(jLabel_CNPJ_CadastroFornecedor)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField_CNPJ, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                        .addComponent(jTextField_CNPJ_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE))))
                             .addGroup(jLayeredPane1Layout.createSequentialGroup()
                                 .addGap(47, 47, 47)
-                                .addComponent(jButton_Salvar, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jButton_Salvar_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(jButton_Limpar, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jButton_Limpar_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(jButton_Pesquisar, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jButton_Pesquisar_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(jButton_Editar, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jButton_Editar_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(jButton_Excluir, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jButton_Excluir_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(jButton_Sair, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(jButton_Sair_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jLayeredPane1Layout.createSequentialGroup()
                                 .addGap(276, 276, 276)
                                 .addComponent(jButton_Pesquisar1, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))))
@@ -323,89 +323,89 @@ public class CadastroFornecedor extends javax.swing.JFrame {
             .addGroup(jLayeredPane1Layout.createSequentialGroup()
                 .addGap(18, 18, 18)
                 .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel_Codigo_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField_Codigo_Fornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel10)
-                    .addComponent(jTextField_Razao_Social, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel11)
-                    .addComponent(jTextField_CNPJ, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3)
-                    .addComponent(jTextField_OBS_Fornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel_Razao_Social_CadastroFornecedor)
+                    .addComponent(jTextField_Razao_Social_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel_CNPJ_CadastroFornecedor)
+                    .addComponent(jTextField_CNPJ_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel_OBS_CadastroFornecedor)
+                    .addComponent(jTextField_OBS_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel7)
+                    .addComponent(jLabel_Bairro_CadastroFornecedor)
                     .addComponent(jTextField_Bairro_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField_Numero_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel6)
                     .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jComboBox_Estado_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField_CEP_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2)
+                    .addComponent(jLabel_CEP_CadastroFornecedor)
                     .addComponent(jTextField_Endereco_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel5))
+                    .addComponent(jLabel_Endereco_CadastroFornecedor))
                 .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jLayeredPane1Layout.createSequentialGroup()
                         .addGap(18, 18, 18)
                         .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jTextField_Celular_CadastroFornecedor1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel8)
+                            .addComponent(jLabel_Cidade_CadastroFornecedor)
                             .addComponent(jTextField_Cidade_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jLayeredPane1Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel13)
-                            .addComponent(jTextField_Email_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel_Celular_CadastroFornecedor)
+                            .addComponent(jTextField_Celular_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jTextField_Telefone_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel4))))
+                            .addComponent(jLabel_Telefone_CadastroFornecedor))))
                 .addGap(26, 26, 26)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 361, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(32, 32, 32)
                 .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton_Salvar, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton_Editar, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton_Pesquisar, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton_Limpar, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton_Excluir, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton_Sair, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jButton_Salvar_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton_Editar_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton_Pesquisar_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton_Limpar_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton_Excluir_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton_Sair_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(138, 138, 138)
                 .addComponent(jButton_Pesquisar1, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(83, 83, 83))
         );
-        jLayeredPane1.setLayer(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane1.setLayer(jLabel_Codigo_CadastroFornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane1.setLayer(jTextField_Codigo_Fornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane1.setLayer(jLabel2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane1.setLayer(jLabel_CEP_CadastroFornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane1.setLayer(jTextField_CEP_CadastroFornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane1.setLayer(jLabel3, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane1.setLayer(jTextField_CNPJ, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane1.setLayer(jLabel4, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane1.setLayer(jLabel_OBS_CadastroFornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane1.setLayer(jTextField_CNPJ_CadastroFornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane1.setLayer(jLabel_Telefone_CadastroFornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane1.setLayer(jTextField_Telefone_CadastroFornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane1.setLayer(jLabel5, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane1.setLayer(jLabel_Endereco_CadastroFornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane1.setLayer(jLabel6, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane1.setLayer(jLabel7, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane1.setLayer(jLabel_Bairro_CadastroFornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane1.setLayer(jTextField_Bairro_CadastroFornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane1.setLayer(jLabel8, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane1.setLayer(jLabel_Cidade_CadastroFornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane1.setLayer(jTextField_Cidade_CadastroFornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane1.setLayer(jLabel10, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane1.setLayer(jTextField_Razao_Social, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane1.setLayer(jLabel11, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane1.setLayer(jTextField_OBS_Fornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane1.setLayer(jButton_Salvar, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane1.setLayer(jButton_Editar, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane1.setLayer(jButton_Pesquisar, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane1.setLayer(jLabel_Razao_Social_CadastroFornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane1.setLayer(jTextField_Razao_Social_CadastroFornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane1.setLayer(jLabel_CNPJ_CadastroFornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane1.setLayer(jTextField_OBS_CadastroFornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane1.setLayer(jButton_Salvar_CadastroFornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane1.setLayer(jButton_Editar_CadastroFornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane1.setLayer(jButton_Pesquisar_CadastroFornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane1.setLayer(jLabel9, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane1.setLayer(jComboBox_Estado_CadastroFornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane1.setLayer(jTextField_Numero_CadastroFornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane1.setLayer(jTextField_Endereco_CadastroFornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane1.setLayer(jLabel13, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane1.setLayer(jTextField_Email_CadastroFornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane1.setLayer(jLabel_Celular_CadastroFornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane1.setLayer(jTextField_Celular_CadastroFornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane1.setLayer(jLabel12, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane1.setLayer(jTextField_Celular_CadastroFornecedor1, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane1.setLayer(jScrollPane1, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane1.setLayer(jButton_Pesquisar1, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane1.setLayer(jButton_Limpar, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane1.setLayer(jButton_Excluir, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane1.setLayer(jButton_Sair, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane1.setLayer(jButton_Limpar_CadastroFornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane1.setLayer(jButton_Excluir_CadastroFornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane1.setLayer(jButton_Sair_CadastroFornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -432,13 +432,13 @@ public class CadastroFornecedor extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jComboBox_Estado_CadastroFornecedorActionPerformed
 
-    private void jButton_SalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_SalvarActionPerformed
+    private void jButton_Salvar_CadastroFornecedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Salvar_CadastroFornecedorActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_SalvarActionPerformed
+    }//GEN-LAST:event_jButton_Salvar_CadastroFornecedorActionPerformed
 
-    private void jTextField_Razao_SocialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_Razao_SocialActionPerformed
+    private void jTextField_Razao_Social_CadastroFornecedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_Razao_Social_CadastroFornecedorActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField_Razao_SocialActionPerformed
+    }//GEN-LAST:event_jTextField_Razao_Social_CadastroFornecedorActionPerformed
 
     private void jTextField_Cidade_CadastroFornecedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_Cidade_CadastroFornecedorActionPerformed
         // TODO add your handling code here:
@@ -456,9 +456,9 @@ public class CadastroFornecedor extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField_Celular_CadastroFornecedor1ActionPerformed
 
-    private void jTextField_Email_CadastroFornecedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_Email_CadastroFornecedorActionPerformed
+    private void jTextField_Celular_CadastroFornecedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_Celular_CadastroFornecedorActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField_Email_CadastroFornecedorActionPerformed
+    }//GEN-LAST:event_jTextField_Celular_CadastroFornecedorActionPerformed
 
      public void buscaCep() {
         //Faz a busca para o cep 58043-280
@@ -523,41 +523,41 @@ public class CadastroFornecedor extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton_Editar;
-    private javax.swing.JButton jButton_Excluir;
-    private javax.swing.JButton jButton_Limpar;
-    private javax.swing.JButton jButton_Pesquisar;
+    private javax.swing.JButton jButton_Editar_CadastroFornecedor;
+    private javax.swing.JButton jButton_Excluir_CadastroFornecedor;
+    private javax.swing.JButton jButton_Limpar_CadastroFornecedor;
     private javax.swing.JButton jButton_Pesquisar1;
-    private javax.swing.JButton jButton_Sair;
-    private javax.swing.JButton jButton_Salvar;
+    private javax.swing.JButton jButton_Pesquisar_CadastroFornecedor;
+    private javax.swing.JButton jButton_Sair_CadastroFornecedor;
+    private javax.swing.JButton jButton_Salvar_CadastroFornecedor;
     private javax.swing.JComboBox jComboBox_Estado_CadastroFornecedor;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabel_Bairro_CadastroFornecedor;
+    private javax.swing.JLabel jLabel_CEP_CadastroFornecedor;
+    private javax.swing.JLabel jLabel_CNPJ_CadastroFornecedor;
+    private javax.swing.JLabel jLabel_Celular_CadastroFornecedor;
+    private javax.swing.JLabel jLabel_Cidade_CadastroFornecedor;
+    private javax.swing.JLabel jLabel_Codigo_CadastroFornecedor;
+    private javax.swing.JLabel jLabel_Endereco_CadastroFornecedor;
+    private javax.swing.JLabel jLabel_OBS_CadastroFornecedor;
+    private javax.swing.JLabel jLabel_Razao_Social_CadastroFornecedor;
+    private javax.swing.JLabel jLabel_Telefone_CadastroFornecedor;
     private javax.swing.JLayeredPane jLayeredPane1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JTable jTable_CadastroFornecedor;
     private javax.swing.JTextField jTextField_Bairro_CadastroFornecedor;
     private javax.swing.JTextField jTextField_CEP_CadastroFornecedor;
-    private javax.swing.JTextField jTextField_CNPJ;
+    private javax.swing.JTextField jTextField_CNPJ_CadastroFornecedor;
+    private javax.swing.JTextField jTextField_Celular_CadastroFornecedor;
     private javax.swing.JTextField jTextField_Celular_CadastroFornecedor1;
     private javax.swing.JTextField jTextField_Cidade_CadastroFornecedor;
     private javax.swing.JTextField jTextField_Codigo_Fornecedor;
-    private javax.swing.JTextField jTextField_Email_CadastroFornecedor;
     private javax.swing.JTextField jTextField_Endereco_CadastroFornecedor;
     private javax.swing.JTextField jTextField_Numero_CadastroFornecedor;
-    private javax.swing.JTextField jTextField_OBS_Fornecedor;
-    private javax.swing.JTextField jTextField_Razao_Social;
+    private javax.swing.JTextField jTextField_OBS_CadastroFornecedor;
+    private javax.swing.JTextField jTextField_Razao_Social_CadastroFornecedor;
     private javax.swing.JTextField jTextField_Telefone_CadastroFornecedor;
     // End of variables declaration//GEN-END:variables
 }

@@ -32,22 +32,22 @@ public class Relatorio_CadastroEstoque extends javax.swing.JFrame {
 
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        jLabel_DataInicial_Relatorio_CadastroEstoque = new javax.swing.JLabel();
+        jLabel_DataFinal_Relatorio_CadastroEstoque = new javax.swing.JLabel();
         jCheckBox_Consumo_Relatorio_CadastroEstoque = new javax.swing.JCheckBox();
-        jCheckBox_Consumo_Relatorio_CadastroEstoque1 = new javax.swing.JCheckBox();
+        jCheckBox_Venda_Relatorio_CadastroEstoque = new javax.swing.JCheckBox();
         jButton_Limpar_Relatorio_CadastroEstoque = new javax.swing.JButton();
         jButton_Pesquisar_Relatorio_CadastroEstoque = new javax.swing.JButton();
-        jDateChooser1 = new com.toedter.calendar.JDateChooser();
-        jDateChooser2 = new com.toedter.calendar.JDateChooser();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
+        jDateChooser_jDateChooser_DataInicial_Relatorio_CadastroEstoque = new com.toedter.calendar.JDateChooser();
+        jDateChooser_DataFinal_Relatorio_CadastroEstoque = new com.toedter.calendar.JDateChooser();
+        jLabel_Codigo_Relatorio_CadastroEstoque = new javax.swing.JLabel();
+        jLabelProduto_Relatorio_CadastroEstoque = new javax.swing.JLabel();
         jTextField_Codigo_Relatorio_CadastroEstoque = new javax.swing.JTextField();
-        jTextField_Produto_Relatorio_CadastroEstoque1 = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        jTextField_Produto_Relatorio_CadastroEstoque = new javax.swing.JTextField();
+        jLabel_TotalQtdes_Relatorio_CadastroEstoque = new javax.swing.JLabel();
+        jLabel_TotaldoTotal_Relatorio_CadastroEstoque = new javax.swing.JLabel();
         jLabel_Total_Relatorio_CadastroEstoque = new javax.swing.JLabel();
-        jLabel_TotalQtde_Relatorio_CadastroEstoque1 = new javax.swing.JLabel();
+        jLabel_TotalQtde_Relatorio_CadastroEstoque = new javax.swing.JLabel();
 
         jTable1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
@@ -101,17 +101,17 @@ public class Relatorio_CadastroEstoque extends javax.swing.JFrame {
         jTable1.setShowVerticalLines(false);
         jScrollPane1.setViewportView(jTable1);
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel1.setText("Data Inicial");
+        jLabel_DataInicial_Relatorio_CadastroEstoque.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel_DataInicial_Relatorio_CadastroEstoque.setText("Data Inicial");
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel2.setText("Data Final");
+        jLabel_DataFinal_Relatorio_CadastroEstoque.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel_DataFinal_Relatorio_CadastroEstoque.setText("Data Final");
 
         jCheckBox_Consumo_Relatorio_CadastroEstoque.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jCheckBox_Consumo_Relatorio_CadastroEstoque.setText("Consumo");
 
-        jCheckBox_Consumo_Relatorio_CadastroEstoque1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jCheckBox_Consumo_Relatorio_CadastroEstoque1.setText("Venda");
+        jCheckBox_Venda_Relatorio_CadastroEstoque.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jCheckBox_Venda_Relatorio_CadastroEstoque.setText("Venda");
 
         jButton_Limpar_Relatorio_CadastroEstoque.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton_Limpar_Relatorio_CadastroEstoque.setText("Limpar");
@@ -119,11 +119,11 @@ public class Relatorio_CadastroEstoque extends javax.swing.JFrame {
         jButton_Pesquisar_Relatorio_CadastroEstoque.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton_Pesquisar_Relatorio_CadastroEstoque.setText("Pesquisar");
 
-        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel5.setText("Codigo");
+        jLabel_Codigo_Relatorio_CadastroEstoque.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel_Codigo_Relatorio_CadastroEstoque.setText("Codigo");
 
-        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel6.setText("Produto");
+        jLabelProduto_Relatorio_CadastroEstoque.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabelProduto_Relatorio_CadastroEstoque.setText("Produto");
 
         jTextField_Codigo_Relatorio_CadastroEstoque.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jTextField_Codigo_Relatorio_CadastroEstoque.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -132,19 +132,19 @@ public class Relatorio_CadastroEstoque extends javax.swing.JFrame {
             }
         });
 
-        jTextField_Produto_Relatorio_CadastroEstoque1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jTextField_Produto_Relatorio_CadastroEstoque.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel3.setText("Total");
+        jLabel_TotalQtdes_Relatorio_CadastroEstoque.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel_TotalQtdes_Relatorio_CadastroEstoque.setText("Total");
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel4.setText("Total");
+        jLabel_TotaldoTotal_Relatorio_CadastroEstoque.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel_TotaldoTotal_Relatorio_CadastroEstoque.setText("Total");
 
         jLabel_Total_Relatorio_CadastroEstoque.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel_Total_Relatorio_CadastroEstoque.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
-        jLabel_TotalQtde_Relatorio_CadastroEstoque1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel_TotalQtde_Relatorio_CadastroEstoque1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel_TotalQtde_Relatorio_CadastroEstoque.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel_TotalQtde_Relatorio_CadastroEstoque.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -158,11 +158,11 @@ public class Relatorio_CadastroEstoque extends javax.swing.JFrame {
                 .addGap(207, 207, 207))
             .addGroup(layout.createSequentialGroup()
                 .addGap(440, 440, 440)
-                .addComponent(jLabel3)
+                .addComponent(jLabel_TotalQtdes_Relatorio_CadastroEstoque)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel_TotalQtde_Relatorio_CadastroEstoque1, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel_TotalQtde_Relatorio_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel4)
+                .addComponent(jLabel_TotaldoTotal_Relatorio_CadastroEstoque)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel_Total_Relatorio_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(147, 147, 147))
@@ -171,24 +171,24 @@ public class Relatorio_CadastroEstoque extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1)
-                            .addComponent(jDateChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabel_DataInicial_Relatorio_CadastroEstoque)
+                            .addComponent(jDateChooser_jDateChooser_DataInicial_Relatorio_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jDateChooser2, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jDateChooser_DataFinal_Relatorio_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(26, 26, 26)
-                                .addComponent(jLabel5)
+                                .addComponent(jLabel_Codigo_Relatorio_CadastroEstoque)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(jTextField_Codigo_Relatorio_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(jLabel6)
+                                .addComponent(jLabelProduto_Relatorio_CadastroEstoque)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField_Produto_Relatorio_CadastroEstoque1))
-                            .addComponent(jLabel2))
+                                .addComponent(jTextField_Produto_Relatorio_CadastroEstoque))
+                            .addComponent(jLabel_DataFinal_Relatorio_CadastroEstoque))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jCheckBox_Consumo_Relatorio_CadastroEstoque1)
+                            .addComponent(jCheckBox_Venda_Relatorio_CadastroEstoque)
                             .addComponent(jCheckBox_Consumo_Relatorio_CadastroEstoque)))
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 910, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(84, Short.MAX_VALUE))
@@ -202,30 +202,30 @@ public class Relatorio_CadastroEstoque extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(56, 56, 56)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel5)
-                                    .addComponent(jLabel6)
+                                    .addComponent(jLabel_Codigo_Relatorio_CadastroEstoque)
+                                    .addComponent(jLabelProduto_Relatorio_CadastroEstoque)
                                     .addComponent(jTextField_Codigo_Relatorio_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jTextField_Produto_Relatorio_CadastroEstoque1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(jTextField_Produto_Relatorio_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(30, 30, 30)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jCheckBox_Consumo_Relatorio_CadastroEstoque1))
+                                    .addComponent(jLabel_DataInicial_Relatorio_CadastroEstoque, javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel_DataFinal_Relatorio_CadastroEstoque, javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jCheckBox_Venda_Relatorio_CadastroEstoque))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(jDateChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jDateChooser2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(jDateChooser_jDateChooser_DataInicial_Relatorio_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jDateChooser_DataFinal_Relatorio_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addComponent(jCheckBox_Consumo_Relatorio_CadastroEstoque))))
                         .addGap(12, 12, 12)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 349, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel_Total_Relatorio_CadastroEstoque, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel_TotalQtde_Relatorio_CadastroEstoque1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING)))
-                    .addComponent(jLabel3))
+                            .addComponent(jLabel_TotalQtde_Relatorio_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel_TotaldoTotal_Relatorio_CadastroEstoque, javax.swing.GroupLayout.Alignment.TRAILING)))
+                    .addComponent(jLabel_TotalQtdes_Relatorio_CadastroEstoque))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 53, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton_Pesquisar_Relatorio_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -239,7 +239,7 @@ public class Relatorio_CadastroEstoque extends javax.swing.JFrame {
     private void jTextField_Codigo_Relatorio_CadastroEstoqueKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_Codigo_Relatorio_CadastroEstoqueKeyPressed
        if(evt.getKeyCode()== KeyEvent.VK_ENTER)
      {
-         jTextField_Produto_Relatorio_CadastroEstoque1.requestFocus();
+         jTextField_Produto_Relatorio_CadastroEstoque.requestFocus();
      }
     }//GEN-LAST:event_jTextField_Codigo_Relatorio_CadastroEstoqueKeyPressed
 
@@ -282,20 +282,20 @@ public class Relatorio_CadastroEstoque extends javax.swing.JFrame {
     private javax.swing.JButton jButton_Limpar_Relatorio_CadastroEstoque;
     private javax.swing.JButton jButton_Pesquisar_Relatorio_CadastroEstoque;
     private javax.swing.JCheckBox jCheckBox_Consumo_Relatorio_CadastroEstoque;
-    private javax.swing.JCheckBox jCheckBox_Consumo_Relatorio_CadastroEstoque1;
-    private com.toedter.calendar.JDateChooser jDateChooser1;
-    private com.toedter.calendar.JDateChooser jDateChooser2;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel_TotalQtde_Relatorio_CadastroEstoque1;
+    private javax.swing.JCheckBox jCheckBox_Venda_Relatorio_CadastroEstoque;
+    private com.toedter.calendar.JDateChooser jDateChooser_DataFinal_Relatorio_CadastroEstoque;
+    private com.toedter.calendar.JDateChooser jDateChooser_jDateChooser_DataInicial_Relatorio_CadastroEstoque;
+    private javax.swing.JLabel jLabelProduto_Relatorio_CadastroEstoque;
+    private javax.swing.JLabel jLabel_Codigo_Relatorio_CadastroEstoque;
+    private javax.swing.JLabel jLabel_DataFinal_Relatorio_CadastroEstoque;
+    private javax.swing.JLabel jLabel_DataInicial_Relatorio_CadastroEstoque;
+    private javax.swing.JLabel jLabel_TotalQtde_Relatorio_CadastroEstoque;
+    private javax.swing.JLabel jLabel_TotalQtdes_Relatorio_CadastroEstoque;
     private javax.swing.JLabel jLabel_Total_Relatorio_CadastroEstoque;
+    private javax.swing.JLabel jLabel_TotaldoTotal_Relatorio_CadastroEstoque;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField_Codigo_Relatorio_CadastroEstoque;
-    private javax.swing.JTextField jTextField_Produto_Relatorio_CadastroEstoque1;
+    private javax.swing.JTextField jTextField_Produto_Relatorio_CadastroEstoque;
     // End of variables declaration//GEN-END:variables
 }

@@ -52,6 +52,7 @@ public class CadastroEstoque extends javax.swing.JFrame {
         });
         getContentPane().add(jButton_Cadastro_NF, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 470, 150, 60));
 
+        jButton_Pesquisar_Estoque.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/Pesquisar.png"))); // NOI18N
         jButton_Pesquisar_Estoque.setText("Pesquisar");
         jButton_Pesquisar_Estoque.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -76,6 +77,7 @@ public class CadastroEstoque extends javax.swing.JFrame {
         });
         getContentPane().add(jButton_Relatorio_Estoque, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 250, 150, 60));
 
+        jButton_Sair_Estoque.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/Sair.png"))); // NOI18N
         jButton_Sair_Estoque.setText("Sair");
         jButton_Sair_Estoque.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

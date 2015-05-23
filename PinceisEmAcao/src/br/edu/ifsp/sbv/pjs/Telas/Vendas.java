@@ -31,7 +31,7 @@ public class Vendas extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel_Codido_Vendas = new javax.swing.JLabel();
-        jTextField_Codido_Vendas = new javax.swing.JTextField();
+        jTextField_Codigo_Cliente_Vendas = new javax.swing.JTextField();
         jLabel_Produto_Vendas = new javax.swing.JLabel();
         jTextField_Produto_Vendas = new javax.swing.JTextField();
         jLabel_Quantidade_Vendas = new javax.swing.JLabel();
@@ -53,19 +53,25 @@ public class Vendas extends javax.swing.JFrame {
         jButton_Ok = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
+        jLabel1 = new javax.swing.JLabel();
+        jTextField_Codido_Vendas1 = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        jTextField_Produto_Vendas1 = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
+        jButton2_Sair_Vendas = new javax.swing.JButton();
 
         jLabel_Codido_Vendas.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel_Codido_Vendas.setText("Codigo");
 
-        jTextField_Codido_Vendas.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jTextField_Codido_Vendas.addActionListener(new java.awt.event.ActionListener() {
+        jTextField_Codigo_Cliente_Vendas.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jTextField_Codigo_Cliente_Vendas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField_Codido_VendasActionPerformed(evt);
+                jTextField_Codigo_Cliente_VendasActionPerformed(evt);
             }
         });
-        jTextField_Codido_Vendas.addKeyListener(new java.awt.event.KeyAdapter() {
+        jTextField_Codigo_Cliente_Vendas.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
-                jTextField_Codido_VendasKeyPressed(evt);
+                jTextField_Codigo_Cliente_VendasKeyPressed(evt);
             }
         });
 
@@ -85,7 +91,7 @@ public class Vendas extends javax.swing.JFrame {
         });
 
         jLabel_Quantidade_Vendas.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel_Quantidade_Vendas.setText("Qtde");
+        jLabel_Quantidade_Vendas.setText("Quantidade");
 
         jTextField_Quantidade_Vendas.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jTextField_Quantidade_Vendas.addActionListener(new java.awt.event.ActionListener() {
@@ -101,12 +107,15 @@ public class Vendas extends javax.swing.JFrame {
         jCheckBox_Consumo_Vendas.setText("Consumo");
 
         jButton_Limpar_Vendas.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jButton_Limpar_Vendas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/Limpar.png"))); // NOI18N
         jButton_Limpar_Vendas.setText("Limpar");
 
         jButton_Finalizar_Vendas.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jButton_Finalizar_Vendas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/finalizar 32.png"))); // NOI18N
         jButton_Finalizar_Vendas.setText("Finalizar");
 
         jButton_Excluir_Vendas.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jButton_Excluir_Vendas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/Excluir.png"))); // NOI18N
         jButton_Excluir_Vendas.setText("Excluir");
 
         jComboBox_FormaPagamento.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -144,7 +153,7 @@ public class Vendas extends javax.swing.JFrame {
         jLabel_Sub_Total_Vendas.setToolTipText("");
 
         jComboBox_UnidadeMedida.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jComboBox_UnidadeMedida.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Unidade", "Centimetros", " " }));
+        jComboBox_UnidadeMedida.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Unidade", "Centimetros" }));
 
         jButton_Ok.setText("OK");
 
@@ -188,6 +197,47 @@ public class Vendas extends javax.swing.JFrame {
         jTable1.setShowVerticalLines(false);
         jScrollPane1.setViewportView(jTable1);
 
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel1.setText("Codigo");
+
+        jTextField_Codido_Vendas1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jTextField_Codido_Vendas1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField_Codido_Vendas1ActionPerformed(evt);
+            }
+        });
+        jTextField_Codido_Vendas1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jTextField_Codido_Vendas1KeyPressed(evt);
+            }
+        });
+
+        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel2.setText("Cliente");
+
+        jTextField_Produto_Vendas1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jTextField_Produto_Vendas1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField_Produto_Vendas1ActionPerformed(evt);
+            }
+        });
+        jTextField_Produto_Vendas1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jTextField_Produto_Vendas1KeyPressed(evt);
+            }
+        });
+
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/lupa16.png"))); // NOI18N
+
+        jButton2_Sair_Vendas.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jButton2_Sair_Vendas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/Sair.png"))); // NOI18N
+        jButton2_Sair_Vendas.setText("Sair");
+        jButton2_Sair_Vendas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2_Sair_VendasActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -209,75 +259,100 @@ public class Vendas extends javax.swing.JFrame {
                             .addComponent(jTextField_Sub_Total_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jTextField_Troco_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jTextField_Opção_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 313, Short.MAX_VALUE)
                         .addComponent(jLabel_Total_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jTextField_Total_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(51, 51, 51))
+                        .addGap(6, 6, 6))
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel_Codido_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jTextField_Codido_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel_Produto_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jTextField_Produto_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 324, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jLabel_Quantidade_Vendas)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField_Quantidade_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jComboBox_UnidadeMedida, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jScrollPane1))
-                        .addGap(1, 1, 1)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 25, Short.MAX_VALUE)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jButton_Limpar_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton_Excluir_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton_Finalizar_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addContainerGap(90, Short.MAX_VALUE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jLabel_Codido_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(jTextField_Codido_Vendas1, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(20, 20, 20)
+                                        .addComponent(jLabel_Produto_Vendas)
+                                        .addGap(10, 10, 10)
+                                        .addComponent(jTextField_Produto_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 324, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(20, 20, 20)
+                                        .addComponent(jLabel_Quantidade_Vendas))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jLabel1)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(jTextField_Codigo_Cliente_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(20, 20, 20)
+                                        .addComponent(jLabel2)
+                                        .addGap(20, 20, 20)
+                                        .addComponent(jTextField_Produto_Vendas1, javax.swing.GroupLayout.PREFERRED_SIZE, 324, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(10, 10, 10)
+                                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(10, 10, 10)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jButton_Ok, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jTextField_Quantidade_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(20, 20, 20)
+                                        .addComponent(jComboBox_UnidadeMedida, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 824, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(jButton_Ok, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(35, 35, 35)
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(jButton_Limpar_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(jButton2_Sair_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jCheckBox_Venda_Vendas)
-                                    .addComponent(jCheckBox_Consumo_Vendas))
-                                .addGap(28, 28, 28))))))
+                                    .addComponent(jCheckBox_Consumo_Vendas)
+                                    .addComponent(jButton_Finalizar_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton_Excluir_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(0, 0, Short.MAX_VALUE)))))
+                .addGap(45, 45, 45))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(17, 17, 17)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel_Codido_Vendas)
-                    .addComponent(jTextField_Codido_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel_Produto_Vendas)
-                    .addComponent(jTextField_Produto_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel_Quantidade_Vendas)
-                    .addComponent(jTextField_Quantidade_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jCheckBox_Venda_Vendas)
-                    .addComponent(jComboBox_UnidadeMedida, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton_Ok, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addComponent(jCheckBox_Venda_Vendas, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel_Codido_Vendas)
+                        .addComponent(jLabel_Produto_Vendas)
+                        .addComponent(jTextField_Produto_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel_Quantidade_Vendas)
+                        .addComponent(jTextField_Quantidade_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jComboBox_UnidadeMedida, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jTextField_Codido_Vendas1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(15, 15, 15)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jCheckBox_Consumo_Vendas)
-                        .addGap(28, 28, 28)
-                        .addComponent(jButton_Finalizar_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(38, 38, 38)
-                        .addComponent(jButton_Excluir_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(36, 36, 36)
-                        .addComponent(jButton_Limpar_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jButton_Ok, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel1)
+                            .addComponent(jTextField_Codigo_Cliente_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel2)
+                            .addComponent(jTextField_Produto_Vendas1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(22, 22, 22)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(15, 15, 15)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 349, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jButton_Finalizar_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(33, 33, 33)
+                        .addComponent(jButton_Excluir_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(32, 32, 32)
+                        .addComponent(jButton_Limpar_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(33, 33, 33)
+                        .addComponent(jButton2_Sair_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 299, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(39, 39, 39)
+                        .addGap(30, 30, 30)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel_Sub_Total_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jTextField_Sub_Total_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -285,24 +360,25 @@ public class Vendas extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jTextField_Opção_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jComboBox_FormaPagamento, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
+                        .addGap(31, 31, 31)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel_Troco_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jTextField_Troco_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(21, 21, 21)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jTextField_Total_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel_Total_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(39, 39, 39))
+                        .addGap(57, 57, 57)
+                        .addComponent(jLabel_Total_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jTextField_Total_Vendas, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(52, 52, 52))
         );
 
         setBounds(224, 57, 1100, 663);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField_Codido_VendasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_Codido_VendasActionPerformed
+    private void jTextField_Codigo_Cliente_VendasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_Codigo_Cliente_VendasActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField_Codido_VendasActionPerformed
+    }//GEN-LAST:event_jTextField_Codigo_Cliente_VendasActionPerformed
 
     private void jTextField_Produto_VendasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_Produto_VendasActionPerformed
         // TODO add your handling code here:
@@ -320,12 +396,12 @@ public class Vendas extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField_Total_VendasActionPerformed
 
-    private void jTextField_Codido_VendasKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_Codido_VendasKeyPressed
+    private void jTextField_Codigo_Cliente_VendasKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_Codigo_Cliente_VendasKeyPressed
        if(evt.getKeyCode()== KeyEvent.VK_ENTER)
      {
          jTextField_Produto_Vendas.requestFocus();
      }
-    }//GEN-LAST:event_jTextField_Codido_VendasKeyPressed
+    }//GEN-LAST:event_jTextField_Codigo_Cliente_VendasKeyPressed
 
     private void jTextField_Produto_VendasKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_Produto_VendasKeyPressed
         if(evt.getKeyCode()== KeyEvent.VK_ENTER)
@@ -333,6 +409,26 @@ public class Vendas extends javax.swing.JFrame {
          jTextField_Quantidade_Vendas.requestFocus();
      }
     }//GEN-LAST:event_jTextField_Produto_VendasKeyPressed
+
+    private void jTextField_Codido_Vendas1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_Codido_Vendas1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField_Codido_Vendas1ActionPerformed
+
+    private void jTextField_Codido_Vendas1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_Codido_Vendas1KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField_Codido_Vendas1KeyPressed
+
+    private void jTextField_Produto_Vendas1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_Produto_Vendas1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField_Produto_Vendas1ActionPerformed
+
+    private void jTextField_Produto_Vendas1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_Produto_Vendas1KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField_Produto_Vendas1KeyPressed
+
+    private void jButton2_Sair_VendasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2_Sair_VendasActionPerformed
+       this.dispose();
+    }//GEN-LAST:event_jButton2_Sair_VendasActionPerformed
 
     /**
      * @param args the command line arguments
@@ -370,6 +466,8 @@ public class Vendas extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2_Sair_Vendas;
     private javax.swing.JButton jButton_Excluir_Vendas;
     private javax.swing.JButton jButton_Finalizar_Vendas;
     private javax.swing.JButton jButton_Limpar_Vendas;
@@ -378,6 +476,8 @@ public class Vendas extends javax.swing.JFrame {
     private javax.swing.JCheckBox jCheckBox_Venda_Vendas;
     private javax.swing.JComboBox jComboBox_FormaPagamento;
     private javax.swing.JComboBox jComboBox_UnidadeMedida;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel_Codido_Vendas;
     private javax.swing.JLabel jLabel_Produto_Vendas;
     private javax.swing.JLabel jLabel_Quantidade_Vendas;
@@ -386,9 +486,11 @@ public class Vendas extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel_Troco_Vendas;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
-    private javax.swing.JTextField jTextField_Codido_Vendas;
+    private javax.swing.JTextField jTextField_Codido_Vendas1;
+    private javax.swing.JTextField jTextField_Codigo_Cliente_Vendas;
     private javax.swing.JTextField jTextField_Opção_Vendas;
     private javax.swing.JTextField jTextField_Produto_Vendas;
+    private javax.swing.JTextField jTextField_Produto_Vendas1;
     private javax.swing.JTextField jTextField_Quantidade_Vendas;
     private javax.swing.JTextField jTextField_Sub_Total_Vendas;
     private javax.swing.JTextField jTextField_Total_Vendas;

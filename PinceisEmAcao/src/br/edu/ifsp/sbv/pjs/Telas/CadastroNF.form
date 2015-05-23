@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
-  <Properties>
-    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-      <Dimension value="[1085, 623]"/>
-    </Property>
-  </Properties>
   <SyntheticProperties>
-    <SyntheticProperty name="formSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,2,-106,0,0,4,77"/>
+    <SyntheticProperty name="formSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,2,-106,0,0,4,88"/>
     <SyntheticProperty name="formPosition" type="java.awt.Point" value="-84,-19,0,5,115,114,0,14,106,97,118,97,46,97,119,116,46,80,111,105,110,116,-74,-60,-118,114,52,126,-56,38,2,0,2,73,0,1,120,73,0,1,121,120,112,0,0,0,-32,0,0,0,57"/>
     <SyntheticProperty name="formSizePolicy" type="int" value="0"/>
     <SyntheticProperty name="generatePosition" type="boolean" value="true"/>
@@ -31,110 +26,144 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                              <Component id="jLabel_RazaoSocial_CadastroNF" alignment="0" max="32767" attributes="0"/>
-                              <Component id="jLabel_NotaFiscal_CadastroNF" alignment="0" pref="99" max="32767" attributes="0"/>
-                              <Component id="jLabel_NomeFantasia_CadastroNF" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jButton_Salvar_CadastroNF" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                              <Component id="jButton_Editar_CadastroNF" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <Component id="jLabel_Codigo_CadastroNF" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLabel_QtdeParcela_CadastroNF" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel_Impostos_CadastroNF" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                  <Component id="jTextField_Impostos_CadastroNF" max="32767" attributes="0"/>
+                                  <Component id="jTextField_Parcela1_CadastroNF" alignment="1" pref="84" max="32767" attributes="0"/>
+                              </Group>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                                      <Component id="jLabel_QtdeParcela_CadastroNF1" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="jLabel_Total1_CadastroNF" min="-2" pref="37" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
                       </Group>
-                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="jTextField_NotaFiscal_CadastroNF" min="-2" pref="424" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="jLabel_CNPJ_CadastroNF" min="-2" pref="48" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jTextField_CNPJ_CadastroNF" min="-2" pref="382" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <Component id="jTextField_RazaoSocial_CadastroNF" min="-2" pref="836" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jButton7" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="jTextField_Parcela2_CadastroNF" pref="84" max="32767" attributes="0"/>
+                                  <Component id="jTextField_Total_CadastroNF" max="32767" attributes="0"/>
                               </Group>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Group type="103" groupAlignment="1" attributes="0">
-                                      <Group type="102" attributes="0">
-                                          <Component id="jTextField_Codigo_CadastroNF" min="-2" pref="112" max="-2" attributes="0"/>
-                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                              <Component id="jLabel_Vencimento_CadastroNF" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                              <Component id="jTextField_Parcela3_CadastroNF" min="-2" pref="84" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                              <Component id="jLabel_Vencimento_CadastroNF2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                              <Component id="jTextField_Parcela4_CadastroNF" min="-2" pref="84" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                              <Component id="jLabel_Vencimento_CadastroNF3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+                              <Component id="jButton_Limpar_CadastroNF" min="-2" pref="115" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                              <Component id="jButton_Pesquisar_CadastroNF" min="-2" pref="127" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                              <Component id="jButton_Excluir_CadastroNF" min="-2" pref="109" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                              <Component id="jButton_Sair_CadastroNF" min="-2" pref="100" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jTextField_Parcela5_CadastroNF" min="-2" pref="84" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                              <Component id="jLabel_Vencimento_CadastroNF1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="jTextField_Parcela6_CadastroNF" min="-2" pref="84" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              <Component id="jLabel_Total2_CadastroNF" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="jLabel_Total_CadastroNF" min="-2" pref="144" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                      <Component id="jLabel_RazaoSocial_CadastroNF" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="jLabel_NotaFiscal_CadastroNF" alignment="0" pref="99" max="32767" attributes="0"/>
+                                      <Component id="jLabel_NomeFantasia_CadastroNF" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Component id="jLabel_Codigo_CadastroNF" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jTextField_NotaFiscal_CadastroNF" min="-2" pref="424" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="jLabel_CNPJ_CadastroNF" min="-2" pref="48" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jTextField_CNPJ_CadastroNF" min="-2" pref="431" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jTextField_RazaoSocial_CadastroNF" min="-2" pref="882" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="jButton7" min="-2" pref="26" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="jTextField_Codigo_CadastroNF" min="-2" pref="71" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                                           <Component id="jLabel_Produto_CadastroNF" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                          <Component id="jTextField_Produto_CadastroNF" max="32767" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="jButton6" min="-2" pref="25" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="jLabel_Valor_CadastroNF" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="jTextField_Valor_CadastroNF" min="-2" pref="112" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="jLabel_Qtde_CadastroNF" min="-2" pref="43" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="jTextField_Qtde_CadastroNF" min="-2" pref="84" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" attributes="0">
-                                          <Component id="jTextField_NomeFantasia_CadastroNF" max="32767" attributes="0"/>
+                                          <Component id="jTextField_Produto_CadastroNF" min="-2" pref="336" max="-2" attributes="0"/>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="jButton6" min="-2" pref="35" max="-2" attributes="0"/>
+                                          <EmptySpace max="32767" attributes="0"/>
+                                          <Component id="jLabel_Valor_CadastroNF" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="jTextField_qtde_CadastroNF" min="-2" pref="81" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="jLabel_Qtde_CadastroNF" min="-2" pref="37" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="jTextField_Valor_CadastroNF" min="-2" pref="63" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="jTextField_NomeFantasia_CadastroNF" min="-2" pref="714" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                                           <Component id="jLabel_Emissao_CadastroNF" min="-2" pref="58" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                           <Component id="jDateChooser_Emissao_CadastroNF" min="-2" pref="118" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
-                                  <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="73" max="-2" attributes="0"/>
-                              <Component id="jButton_Editar_CadastroNF" min="-2" pref="96" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                              <Component id="jButton_Limpar_CadastroNF" min="-2" pref="92" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                              <Component id="jButton_Pesquisar_CadastroNF" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
-                              <Component id="jButton_Excluir_CadastroNF" min="-2" pref="109" max="-2" attributes="0"/>
-                          </Group>
+                          <Component id="jScrollPane2" alignment="0" min="-2" pref="1026" max="-2" attributes="0"/>
                       </Group>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Group type="102" alignment="1" attributes="0">
-                              <Component id="jLabel_QtdeParcela_CadastroNF" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="jTextField_QtdeParcela_CadastroNF" min="-2" pref="84" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jLabel_Vencimento_CadastroNF" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jTextField_Vencimento_CadastroNF" min="-2" pref="108" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <Component id="jButton_Salvar_CadastroNF" min="-2" pref="92" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="395" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <Component id="jLabel_Impostos_CadastroNF" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jTextField_Impostos_CadastroNF" min="-2" pref="101" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                      <Component id="jLabel_Total1_CadastroNF" min="-2" pref="37" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="jTextField_Total_CadastroNF" min="-2" pref="121" max="-2" attributes="0"/>
-                  </Group>
-                  <Component id="jScrollPane2" alignment="0" min="-2" pref="969" max="-2" attributes="0"/>
-                  <Group type="103" alignment="0" groupAlignment="1" attributes="0">
-                      <Group type="102" alignment="1" attributes="0">
-                          <Component id="jLabel_Total2_CadastroNF" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="jLabel_Total_CadastroNF" min="-2" pref="136" max="-2" attributes="0"/>
-                      </Group>
-                      <Component id="jScrollPane1" min="-2" pref="969" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace pref="74" max="32767" attributes="0"/>
+              <EmptySpace pref="17" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -148,13 +177,15 @@
                   <Component id="jTextField_CNPJ_CadastroNF" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
                   <Component id="jTextField_NotaFiscal_CadastroNF" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel_RazaoSocial_CadastroNF" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton7" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField_RazaoSocial_CadastroNF" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jButton7" alignment="0" min="-2" pref="28" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel_RazaoSocial_CadastroNF" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jTextField_RazaoSocial_CadastroNF" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                  </Group>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="jDateChooser_Emissao_CadastroNF" alignment="1" min="-2" pref="28" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
@@ -163,57 +194,61 @@
                       <Component id="jLabel_Emissao_CadastroNF" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jTextField_Codigo_CadastroNF" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
                   <Component id="jLabel_Codigo_CadastroNF" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
                   <Component id="jLabel_Produto_CadastroNF" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
                   <Component id="jTextField_Produto_CadastroNF" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
-                  <Component id="jButton6" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel_Valor_CadastroNF" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField_Valor_CadastroNF" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                  <Component id="jTextField_qtde_CadastroNF" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
                   <Component id="jLabel_Qtde_CadastroNF" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField_Qtde_CadastroNF" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                  <Component id="jButton6" alignment="0" min="-2" pref="28" max="-2" attributes="0"/>
+                  <Component id="jButton1" alignment="1" min="-2" pref="25" max="-2" attributes="0"/>
+                  <Component id="jTextField_Valor_CadastroNF" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
               <Component id="jScrollPane2" min="-2" pref="158" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel_QtdeParcela_CadastroNF" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
-                  <Component id="jTextField_QtdeParcela_CadastroNF" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                  <Component id="jTextField_Parcela2_CadastroNF" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                  <Component id="jLabel_QtdeParcela_CadastroNF1" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                  <Component id="jTextField_Parcela1_CadastroNF" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
                   <Component id="jLabel_Vencimento_CadastroNF" alignment="3" min="-2" pref="37" max="-2" attributes="0"/>
-                  <Component id="jTextField_Vencimento_CadastroNF" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
-                  <Component id="jLabel_Total1_CadastroNF" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField_Total_CadastroNF" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
-                  <Component id="jTextField_Impostos_CadastroNF" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
-                  <Component id="jLabel_Impostos_CadastroNF" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                  <Component id="jLabel_Vencimento_CadastroNF1" alignment="3" min="-2" pref="37" max="-2" attributes="0"/>
+                  <Component id="jTextField_Parcela4_CadastroNF" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                  <Component id="jTextField_Parcela5_CadastroNF" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                  <Component id="jLabel_Vencimento_CadastroNF2" alignment="3" min="-2" pref="37" max="-2" attributes="0"/>
+                  <Component id="jLabel_Vencimento_CadastroNF3" alignment="3" min="-2" pref="37" max="-2" attributes="0"/>
+                  <Component id="jTextField_Parcela3_CadastroNF" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                  <Component id="jTextField_Parcela6_CadastroNF" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="jScrollPane1" min="-2" pref="130" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <Component id="jLabel_Total_CadastroNF" min="-2" pref="78" max="-2" attributes="0"/>
-                      <EmptySpace pref="16" max="32767" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jButton_Salvar_CadastroNF" alignment="3" min="-2" pref="37" max="-2" attributes="0"/>
-                                  <Component id="jButton_Editar_CadastroNF" alignment="3" min="-2" pref="37" max="-2" attributes="0"/>
-                                  <Component id="jButton_Limpar_CadastroNF" alignment="3" min="-2" pref="37" max="-2" attributes="0"/>
-                                  <Component id="jButton_Pesquisar_CadastroNF" alignment="3" min="-2" pref="37" max="-2" attributes="0"/>
-                                  <Component id="jButton_Excluir_CadastroNF" alignment="3" min="-2" pref="37" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Component id="jLabel_Total2_CadastroNF" min="-2" pref="47" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel_Impostos_CadastroNF" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                          <Component id="jTextField_Impostos_CadastroNF" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                          <Component id="jLabel_Total1_CadastroNF" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTextField_Total_CadastroNF" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+                      <EmptySpace pref="65" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jButton_Salvar_CadastroNF" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="jButton_Editar_CadastroNF" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="jButton_Limpar_CadastroNF" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="jButton_Pesquisar_CadastroNF" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="jButton_Excluir_CadastroNF" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="jButton_Sair_CadastroNF" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="jLabel_Total2_CadastroNF" alignment="3" min="-2" pref="47" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Component id="jLabel_Total_CadastroNF" min="-2" pref="78" max="-2" attributes="0"/>
                   </Group>
               </Group>
+              <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -224,6 +259,9 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="1"/>
         </Property>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/br/edu/ifsp/sbv/pjs/Imagens/Editar.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Editar"/>
       </Properties>
     </Component>
@@ -231,6 +269,9 @@
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="1"/>
+        </Property>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/br/edu/ifsp/sbv/pjs/Imagens/Limpar.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Limpar"/>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -246,6 +287,9 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="1"/>
         </Property>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/br/edu/ifsp/sbv/pjs/Imagens/lupa24.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Pesquisar"/>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[75, 25]"/>
@@ -260,6 +304,9 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="1"/>
         </Property>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/br/edu/ifsp/sbv/pjs/Imagens/Excluir.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Excluir"/>
       </Properties>
     </Component>
@@ -268,13 +315,16 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="1"/>
         </Property>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/br/edu/ifsp/sbv/pjs/Imagens/Salvar.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Salvar"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel_Total2_CadastroNF">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="48" style="1"/>
+          <Font name="Tahoma" size="36" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Total"/>
       </Properties>
@@ -317,7 +367,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton6">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Pesquisar"/>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/br/edu/ifsp/sbv/pjs/Imagens/lupa16.png"/>
+        </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel_Qtde_CadastroNF">
@@ -325,17 +377,17 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="0"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Qtde.:"/>
+        <Property name="text" type="java.lang.String" value="Valor:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField_Qtde_CadastroNF">
+    <Component class="javax.swing.JTextField" name="jTextField_Valor_CadastroNF">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="0"/>
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTextField_Qtde_CadastroNFKeyPressed"/>
+        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTextField_Valor_CadastroNFKeyPressed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel_Impostos_CadastroNF">
@@ -361,17 +413,17 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="0"/>
         </Property>
-        <Property name="text" type="java.lang.String" value=" Valor:"/>
+        <Property name="text" type="java.lang.String" value="Quantidade:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField_Valor_CadastroNF">
+    <Component class="javax.swing.JTextField" name="jTextField_qtde_CadastroNF">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="0"/>
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTextField_Valor_CadastroNFKeyPressed"/>
+        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTextField_qtde_CadastroNFKeyPressed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel_QtdeParcela_CadastroNF">
@@ -379,17 +431,17 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="0"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Qtde. de Parcelas:"/>
+        <Property name="text" type="java.lang.String" value="Parcelas 1:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField_QtdeParcela_CadastroNF">
+    <Component class="javax.swing.JTextField" name="jTextField_Parcela2_CadastroNF">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="0"/>
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTextField_QtdeParcela_CadastroNFKeyPressed"/>
+        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTextField_Parcela2_CadastroNFKeyPressed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel_Total1_CadastroNF">
@@ -420,18 +472,8 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="0"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Vencimento:"/>
+        <Property name="text" type="java.lang.String" value="Parcela 3:"/>
       </Properties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="jTextField_Vencimento_CadastroNF">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="14" style="0"/>
-        </Property>
-      </Properties>
-      <Events>
-        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTextField_Vencimento_CadastroNFKeyPressed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel_NomeFantasia_CadastroNF">
       <Properties>
@@ -507,32 +549,11 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton7">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Pesquisar"/>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/br/edu/ifsp/sbv/pjs/Imagens/lupa16.png"/>
+        </Property>
       </Properties>
     </Component>
-    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
-      <AuxValues>
-        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
-      </AuxValues>
-
-      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-      <SubComponents>
-        <Component class="javax.swing.JTable" name="jTable1">
-          <Properties>
-            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-              <Table columnCount="3" rowCount="10">
-                <Column editable="true" title="Parcela" type="java.lang.Integer"/>
-                <Column editable="true" title="Data" type="java.lang.String"/>
-                <Column editable="true" title="Valor" type="java.lang.Double"/>
-              </Table>
-            </Property>
-            <Property name="toolTipText" type="java.lang.String" value=""/>
-            <Property name="showHorizontalLines" type="boolean" value="false"/>
-            <Property name="showVerticalLines" type="boolean" value="false"/>
-          </Properties>
-        </Component>
-      </SubComponents>
-    </Container>
     <Component class="com.toedter.calendar.JDateChooser" name="jDateChooser_Emissao_CadastroNF">
       <Events>
         <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jDateChooser_Emissao_CadastroNFKeyPressed"/>
@@ -564,6 +585,108 @@
       </SubComponents>
     </Container>
     <Component class="javax.swing.JLabel" name="jLabel_Total_CadastroNF">
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel_QtdeParcela_CadastroNF1">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Parcelas 2:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jTextField_Parcela1_CadastroNF">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField_Parcela1_CadastroNFActionPerformed"/>
+        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTextField_Parcela1_CadastroNFKeyPressed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jTextField_Parcela3_CadastroNF">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTextField_Parcela3_CadastroNFKeyPressed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel_Vencimento_CadastroNF1">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Parcela 6:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel_Vencimento_CadastroNF2">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Parcela 4:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jTextField_Parcela4_CadastroNF">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTextField_Parcela4_CadastroNFKeyPressed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jTextField_Parcela5_CadastroNF">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTextField_Parcela5_CadastroNFKeyPressed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel_Vencimento_CadastroNF3">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Parcela 5:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jTextField_Parcela6_CadastroNF">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTextField_Parcela6_CadastroNFKeyPressed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton_Sair_CadastroNF">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="1"/>
+        </Property>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/br/edu/ifsp/sbv/pjs/Imagens/Sair.png"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Sair"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_Sair_CadastroNFActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="OK"/>
+      </Properties>
     </Component>
   </SubComponents>
 </Form>

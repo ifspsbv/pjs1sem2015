@@ -50,6 +50,9 @@ public class Cadastro_CadastroEstoque extends javax.swing.JFrame {
         jLabel_ValorUnitario_Cadastro_CadastroEstoque = new javax.swing.JLabel();
         jLabel_PrecoVenda_Cadastro_CadastroEstoque = new javax.swing.JLabel();
         jTextField_MargemLucro_Cadastro_CadastroEstoque = new javax.swing.JTextField();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+        jButton_Sair_Cadastro_CadastroEstoque = new javax.swing.JButton();
 
         jLabel_Codigo_Cadastro_CadastroEstoque.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel_Codigo_Cadastro_CadastroEstoque.setText("Codigo");
@@ -92,23 +95,32 @@ public class Cadastro_CadastroEstoque extends javax.swing.JFrame {
             }
         });
 
-        jComboBox_UnidadeDeMedida_Cadastro_CadastroEstoque.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jComboBox_UnidadeDeMedida_Cadastro_CadastroEstoque.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jComboBox_UnidadeDeMedida_Cadastro_CadastroEstoque.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Agulha", "Botão", "Cordão", "Elastico", "Fita", "Guipper", "Linha", "Passa Fita", "Renda", "Sianinha", "Tecido", "Tinta", "Velcro", "Viés", "Ziper" }));
 
-        jComboBox_UnidadeDeMedida_CadastroEstoque.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jComboBox_UnidadeDeMedida_CadastroEstoque.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jComboBox_UnidadeDeMedida_CadastroEstoque.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Unidade", "Centimetro" }));
 
-        jButton_Editar_Cadastro_CadastroEstoque.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jButton_Editar_Cadastro_CadastroEstoque.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jButton_Editar_Cadastro_CadastroEstoque.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/Editar.png"))); // NOI18N
         jButton_Editar_Cadastro_CadastroEstoque.setText("Editar");
 
-        jButton_Salvar_Cadastro_CadastroEstoque.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jButton_Salvar_Cadastro_CadastroEstoque.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jButton_Salvar_Cadastro_CadastroEstoque.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/Salvar.png"))); // NOI18N
         jButton_Salvar_Cadastro_CadastroEstoque.setText("Salvar");
 
-        jButton_Limpar_Cadastro_CadastroEstoque.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jButton_Limpar_Cadastro_CadastroEstoque.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jButton_Limpar_Cadastro_CadastroEstoque.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/Limpar.png"))); // NOI18N
         jButton_Limpar_Cadastro_CadastroEstoque.setText("Limpar");
 
-        jButton_Excluir_Cadastro_CadastroEstoque.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jButton_Excluir_Cadastro_CadastroEstoque.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jButton_Excluir_Cadastro_CadastroEstoque.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/Excluir.png"))); // NOI18N
         jButton_Excluir_Cadastro_CadastroEstoque.setText("Excluir");
+        jButton_Excluir_Cadastro_CadastroEstoque.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_Excluir_Cadastro_CadastroEstoqueActionPerformed(evt);
+            }
+        });
 
         jLabel_MargemLucro_Cadastro_CadastroEstoque.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel_MargemLucro_Cadastro_CadastroEstoque.setText("Margem de Lucro");
@@ -127,97 +139,117 @@ public class Cadastro_CadastroEstoque extends javax.swing.JFrame {
             }
         });
 
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jTextArea1.setBorder(javax.swing.BorderFactory.createTitledBorder("Observações"));
+        jScrollPane1.setViewportView(jTextArea1);
+
+        jButton_Sair_Cadastro_CadastroEstoque.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/Sair.png"))); // NOI18N
+        jButton_Sair_Cadastro_CadastroEstoque.setText("Sair");
+        jButton_Sair_Cadastro_CadastroEstoque.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_Sair_Cadastro_CadastroEstoqueActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(141, 141, 141)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(133, 133, 133)
+                .addComponent(jLabel7)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(436, 436, 436)
-                                .addComponent(jButton_Excluir_Cadastro_CadastroEstoque))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(36, 36, 36)
-                                .addComponent(jButton_Salvar_Cadastro_CadastroEstoque)
-                                .addGap(98, 98, 98)
-                                .addComponent(jButton_Editar_Cadastro_CadastroEstoque))
-                            .addComponent(jLabel_EstoqueMinimo_Cadastro_CadastroEstoque))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 106, Short.MAX_VALUE)
-                        .addComponent(jButton_Limpar_Cadastro_CadastroEstoque)
-                        .addGap(172, 172, 172))
+                    .addComponent(jLabel_PrecoVenda_Cadastro_CadastroEstoque)
                     .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel_MargemLucro_Cadastro_CadastroEstoque)
+                            .addComponent(jLabel_EstoqueMinimo_Cadastro_CadastroEstoque, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel_Produto_Cadastro_CadastroEstoque, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel_Codigo_Cadastro_CadastroEstoque, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel_Categoria_CadastroEstoque, javax.swing.GroupLayout.Alignment.LEADING))
+                        .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel7)
+                            .addComponent(jTextField_EstoqueMinimo_Cadastro_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField_Codigo_Cadastro_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jComboBox_UnidadeDeMedida_Cadastro_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel_Categoria_CadastroEstoque)
-                                    .addComponent(jLabel_Codigo_Cadastro_CadastroEstoque)
-                                    .addComponent(jLabel_Produto_Cadastro_CadastroEstoque))
-                                .addGap(58, 58, 58)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jTextField_Codigo_Cadastro_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jComboBox_UnidadeDeMedida_Cadastro_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(jTextField_Produto_Cadastro_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 423, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(30, 30, 30)
+                                .addComponent(jComboBox_UnidadeDeMedida_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel_ValorUnitario_Cadastro_CadastroEstoque)
-                                .addGap(36, 36, 36)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jTextField_EstoqueMinimo_Cadastro_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jTextField_Produto_Cadastro_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 423, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(jComboBox_UnidadeDeMedida_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jTextField_ValorUnitario_Cadastro_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(33, 33, 33)
-                                        .addComponent(jLabel_MargemLucro_Cadastro_CadastroEstoque)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField_MargemLucro_Cadastro_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(26, 26, 26)
-                                        .addComponent(jLabel_PrecoVenda_Cadastro_CadastroEstoque)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField_PrecoVenda_Cadastro_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(jTextField_PrecoVenda_Cadastro_CadastroEstoque, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jTextField_MargemLucro_Cadastro_CadastroEstoque, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jTextField_ValorUnitario_Cadastro_CadastroEstoque, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 276, Short.MAX_VALUE)
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 309, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addComponent(jLabel_ValorUnitario_Cadastro_CadastroEstoque))
+                .addGap(129, 129, 129))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(110, 110, 110)
+                .addComponent(jButton_Salvar_Cadastro_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(70, 70, 70)
+                .addComponent(jButton_Editar_Cadastro_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(70, 70, 70)
+                .addComponent(jButton_Excluir_Cadastro_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(70, 70, 70)
+                .addComponent(jButton_Limpar_Cadastro_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(70, 70, 70)
+                .addComponent(jButton_Sair_Cadastro_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(45, 45, 45)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jComboBox_UnidadeDeMedida_Cadastro_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel_Categoria_CadastroEstoque))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel7)
+                .addGap(327, 327, 327))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(35, 35, 35)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel_Categoria_CadastroEstoque)
+                    .addComponent(jComboBox_UnidadeDeMedida_Cadastro_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(25, 25, 25)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTextField_Codigo_Cadastro_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel_Codigo_Cadastro_CadastroEstoque, javax.swing.GroupLayout.Alignment.TRAILING))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel_Codigo_Cadastro_CadastroEstoque))
+                .addGap(25, 25, 25)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTextField_Produto_Cadastro_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel_Produto_Cadastro_CadastroEstoque)
                     .addComponent(jComboBox_UnidadeDeMedida_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGap(25, 25, 25)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTextField_EstoqueMinimo_Cadastro_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel_EstoqueMinimo_Cadastro_CadastroEstoque))
-                .addGap(15, 15, 15)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jTextField_ValorUnitario_Cadastro_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel_ValorUnitario_Cadastro_CadastroEstoque)
-                    .addComponent(jLabel_MargemLucro_Cadastro_CadastroEstoque)
-                    .addComponent(jTextField_MargemLucro_Cadastro_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel_PrecoVenda_Cadastro_CadastroEstoque)
-                    .addComponent(jTextField_PrecoVenda_Cadastro_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 158, Short.MAX_VALUE)
-                .addComponent(jLabel7)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 134, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton_Salvar_Cadastro_CadastroEstoque)
-                    .addComponent(jButton_Editar_Cadastro_CadastroEstoque)
-                    .addComponent(jButton_Excluir_Cadastro_CadastroEstoque)
-                    .addComponent(jButton_Limpar_Cadastro_CadastroEstoque))
-                .addGap(32, 32, 32))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(25, 25, 25)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jTextField_ValorUnitario_Cadastro_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel_ValorUnitario_Cadastro_CadastroEstoque))
+                        .addGap(25, 25, 25)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel_MargemLucro_Cadastro_CadastroEstoque)
+                            .addComponent(jTextField_MargemLucro_Cadastro_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(25, 25, 25)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel_PrecoVenda_Cadastro_CadastroEstoque)
+                            .addComponent(jTextField_PrecoVenda_Cadastro_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 114, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jButton_Limpar_Cadastro_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton_Excluir_Cadastro_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton_Editar_Cadastro_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton_Salvar_Cadastro_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton_Sair_Cadastro_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(64, 64, 64))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(45, 45, 45)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
 
         setBounds(224, 57, 1101, 662);
@@ -262,6 +294,14 @@ public class Cadastro_CadastroEstoque extends javax.swing.JFrame {
      }
     }//GEN-LAST:event_jTextField_MargemLucro_Cadastro_CadastroEstoqueKeyPressed
 
+    private void jButton_Excluir_Cadastro_CadastroEstoqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Excluir_Cadastro_CadastroEstoqueActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton_Excluir_Cadastro_CadastroEstoqueActionPerformed
+
+    private void jButton_Sair_Cadastro_CadastroEstoqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Sair_Cadastro_CadastroEstoqueActionPerformed
+       this.dispose();
+    }//GEN-LAST:event_jButton_Sair_Cadastro_CadastroEstoqueActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -301,6 +341,7 @@ public class Cadastro_CadastroEstoque extends javax.swing.JFrame {
     private javax.swing.JButton jButton_Editar_Cadastro_CadastroEstoque;
     private javax.swing.JButton jButton_Excluir_Cadastro_CadastroEstoque;
     private javax.swing.JButton jButton_Limpar_Cadastro_CadastroEstoque;
+    private javax.swing.JButton jButton_Sair_Cadastro_CadastroEstoque;
     private javax.swing.JButton jButton_Salvar_Cadastro_CadastroEstoque;
     private javax.swing.JComboBox jComboBox_UnidadeDeMedida_CadastroEstoque;
     private javax.swing.JComboBox jComboBox_UnidadeDeMedida_Cadastro_CadastroEstoque;
@@ -312,6 +353,8 @@ public class Cadastro_CadastroEstoque extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel_PrecoVenda_Cadastro_CadastroEstoque;
     private javax.swing.JLabel jLabel_Produto_Cadastro_CadastroEstoque;
     private javax.swing.JLabel jLabel_ValorUnitario_Cadastro_CadastroEstoque;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextField jTextField_Codigo_Cadastro_CadastroEstoque;
     private javax.swing.JTextField jTextField_EstoqueMinimo_Cadastro_CadastroEstoque;
     private javax.swing.JTextField jTextField_MargemLucro_Cadastro_CadastroEstoque;

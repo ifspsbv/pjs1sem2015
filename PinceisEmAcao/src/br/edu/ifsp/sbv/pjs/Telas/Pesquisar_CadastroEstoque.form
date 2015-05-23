@@ -61,13 +61,13 @@
               </Group>
               <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
               <Component id="jScrollPane1" min="-2" pref="435" max="-2" attributes="0"/>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jButton_Limpar_Cadastro_Cadastro_Estoque" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                  <Component id="jButton_Pesquisar_Cadastro_Cadastro_Estoque" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                  <Component id="jButton_Sair_Cadastro_Cadastro_Estoque" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                  <Component id="jButton_Limpar_Cadastro_Cadastro_Estoque" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                  <Component id="jButton_Pesquisar_Cadastro_Cadastro_Estoque" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                  <Component id="jButton_Sair_Cadastro_Cadastro_Estoque" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="0" pref="71" max="32767" attributes="0"/>
+              <EmptySpace min="0" pref="43" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -142,6 +142,9 @@
     </Container>
     <Component class="javax.swing.JButton" name="jButton_Pesquisar_Cadastro_Cadastro_Estoque">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/br/edu/ifsp/sbv/pjs/Imagens/lupa32.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Pesquisar"/>
       </Properties>
       <Events>
@@ -150,11 +153,20 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton_Limpar_Cadastro_Cadastro_Estoque">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/br/edu/ifsp/sbv/pjs/Imagens/Limpar.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Limpar"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_Limpar_Cadastro_Cadastro_EstoqueActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton_Sair_Cadastro_Cadastro_Estoque">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/br/edu/ifsp/sbv/pjs/Imagens/Sair.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Sair"/>
       </Properties>
       <Events>

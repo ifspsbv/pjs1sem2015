@@ -103,6 +103,7 @@ public class Pesquisar_CadastroEstoque extends javax.swing.JFrame {
         jTable1.setShowVerticalLines(false);
         jScrollPane1.setViewportView(jTable1);
 
+        jButton_Pesquisar_Cadastro_Cadastro_Estoque.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/lupa32.png"))); // NOI18N
         jButton_Pesquisar_Cadastro_Cadastro_Estoque.setText("Pesquisar");
         jButton_Pesquisar_Cadastro_Cadastro_Estoque.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -110,8 +111,15 @@ public class Pesquisar_CadastroEstoque extends javax.swing.JFrame {
             }
         });
 
+        jButton_Limpar_Cadastro_Cadastro_Estoque.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/Limpar.png"))); // NOI18N
         jButton_Limpar_Cadastro_Cadastro_Estoque.setText("Limpar");
+        jButton_Limpar_Cadastro_Cadastro_Estoque.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_Limpar_Cadastro_Cadastro_EstoqueActionPerformed(evt);
+            }
+        });
 
+        jButton_Sair_Cadastro_Cadastro_Estoque.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/Sair.png"))); // NOI18N
         jButton_Sair_Cadastro_Cadastro_Estoque.setText("Sair");
         jButton_Sair_Cadastro_Cadastro_Estoque.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -154,12 +162,12 @@ public class Pesquisar_CadastroEstoque extends javax.swing.JFrame {
                     .addComponent(jTextField_Codigo_Pesquisar_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 435, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(30, 30, 30)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton_Limpar_Cadastro_Cadastro_Estoque, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton_Pesquisar_Cadastro_Cadastro_Estoque, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton_Sair_Cadastro_Cadastro_Estoque, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 71, Short.MAX_VALUE))
+                    .addComponent(jButton_Limpar_Cadastro_Cadastro_Estoque, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton_Pesquisar_Cadastro_Cadastro_Estoque, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton_Sair_Cadastro_Cadastro_Estoque, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 43, Short.MAX_VALUE))
         );
 
         setBounds(224, 57, 1101, 662);
@@ -179,6 +187,10 @@ public class Pesquisar_CadastroEstoque extends javax.swing.JFrame {
          jTextField_Produto_Pesquisar_CadastroEstoque.requestFocus();
      }
     }//GEN-LAST:event_jTextField_Codigo_Pesquisar_CadastroEstoqueKeyPressed
+
+    private void jButton_Limpar_Cadastro_Cadastro_EstoqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Limpar_Cadastro_Cadastro_EstoqueActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton_Limpar_Cadastro_Cadastro_EstoqueActionPerformed
 
     /**
      * @param args the command line arguments

@@ -72,7 +72,7 @@ public class CadastroFornecedor extends javax.swing.JFrame {
         jLayeredPane1.setPreferredSize(new java.awt.Dimension(1085, 623));
 
         jLabel_Codigo_CadastroFornecedor.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel_Codigo_CadastroFornecedor.setText("Codigo");
+        jLabel_Codigo_CadastroFornecedor.setText("Codigo:");
 
         jTextField_Codigo_Fornecedor.setPreferredSize(new java.awt.Dimension(28, 20));
 
@@ -101,7 +101,7 @@ public class CadastroFornecedor extends javax.swing.JFrame {
         jLabel_Endereco_CadastroFornecedor.setText("Endereço :");
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel6.setText("Nº :");
+        jLabel6.setText("Nº:");
 
         jLabel_Bairro_CadastroFornecedor.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel_Bairro_CadastroFornecedor.setText("Bairro :");
@@ -227,6 +227,11 @@ public class CadastroFornecedor extends javax.swing.JFrame {
 
         jButton_Sair_CadastroFornecedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/Sair.png"))); // NOI18N
         jButton_Sair_CadastroFornecedor.setText("Sair");
+        jButton_Sair_CadastroFornecedor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_Sair_CadastroFornecedorActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jLayeredPane1Layout = new javax.swing.GroupLayout(jLayeredPane1);
         jLayeredPane1.setLayout(jLayeredPane1Layout);
@@ -253,63 +258,58 @@ public class CadastroFornecedor extends javax.swing.JFrame {
                     .addGroup(jLayeredPane1Layout.createSequentialGroup()
                         .addGap(30, 30, 30)
                         .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(jLayeredPane1Layout.createSequentialGroup()
-                                .addComponent(jLabel_CEP_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addComponent(jLabel_CEP_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jLayeredPane1Layout.createSequentialGroup()
                                 .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel_Cidade_CadastroFornecedor)
                                     .addComponent(jLabel_Codigo_CadastroFornecedor))
-                                .addGap(18, 18, 18)
+                                .addGap(10, 10, 10)
                                 .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jLayeredPane1Layout.createSequentialGroup()
-                                        .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(jLayeredPane1Layout.createSequentialGroup()
-                                                .addComponent(jTextField_Cidade_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(18, 18, 18)
-                                                .addComponent(jLabel_Telefone_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(jTextField_Telefone_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addComponent(jLabel_Celular_CadastroFornecedor))
-                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jLayeredPane1Layout.createSequentialGroup()
-                                                .addComponent(jTextField_CEP_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addComponent(jLabel_Endereco_CadastroFornecedor)
-                                                .addGap(25, 25, 25)
-                                                .addComponent(jTextField_Endereco_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 304, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addComponent(jLabel_Bairro_CadastroFornecedor)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(jTextField_Bairro_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(7, 7, 7)))
-                                        .addGap(0, 0, 0)
-                                        .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(jLayeredPane1Layout.createSequentialGroup()
-                                                .addComponent(jLabel6)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addComponent(jTextField_Numero_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addComponent(jLabel9)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(jComboBox_Estado_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addComponent(jTextField_Celular_CadastroFornecedor)))
-                                    .addGroup(jLayeredPane1Layout.createSequentialGroup()
-                                        .addComponent(jTextField_Codigo_Fornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jLabel_Razao_Social_CadastroFornecedor)
+                                        .addComponent(jTextField_Cidade_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 477, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(20, 20, 20)
+                                        .addComponent(jLabel_Telefone_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jTextField_Razao_Social_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(jLabel_CNPJ_CadastroFornecedor)
+                                        .addComponent(jTextField_Telefone_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField_CNPJ_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jLabel_Celular_CadastroFornecedor)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jLabel_OBS_CadastroFornecedor)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jTextField_OBS_CadastroFornecedor)))))))
-                .addContainerGap())
+                                        .addComponent(jTextField_Celular_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jLayeredPane1Layout.createSequentialGroup()
+                                            .addComponent(jTextField_Codigo_Fornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGap(20, 20, 20)
+                                            .addComponent(jLabel_Razao_Social_CadastroFornecedor)
+                                            .addGap(10, 10, 10)
+                                            .addComponent(jTextField_Razao_Social_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGap(18, 18, 18)
+                                            .addComponent(jLabel_CNPJ_CadastroFornecedor)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                            .addComponent(jTextField_CNPJ_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGap(20, 20, 20)
+                                            .addComponent(jLabel_OBS_CadastroFornecedor)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(jTextField_OBS_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(jLayeredPane1Layout.createSequentialGroup()
+                                            .addComponent(jTextField_CEP_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGap(20, 20, 20)
+                                            .addComponent(jLabel_Endereco_CadastroFornecedor)
+                                            .addGap(10, 10, 10)
+                                            .addComponent(jTextField_Endereco_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGap(20, 20, 20)
+                                            .addComponent(jLabel_Bairro_CadastroFornecedor)
+                                            .addGap(10, 10, 10)
+                                            .addComponent(jTextField_Bairro_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGap(18, 18, 18)
+                                            .addComponent(jLabel6)
+                                            .addGap(10, 10, 10)
+                                            .addComponent(jTextField_Numero_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGap(20, 20, 20)
+                                            .addComponent(jLabel9)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                            .addComponent(jComboBox_Estado_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1019, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jLayeredPane1Layout.setVerticalGroup(
             jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -448,6 +448,10 @@ public class CadastroFornecedor extends javax.swing.JFrame {
     private void jTextField_Numero_CadastroFornecedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_Numero_CadastroFornecedorActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField_Numero_CadastroFornecedorActionPerformed
+
+    private void jButton_Sair_CadastroFornecedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Sair_CadastroFornecedorActionPerformed
+        this.dispose();
+    }//GEN-LAST:event_jButton_Sair_CadastroFornecedorActionPerformed
 
      public void buscaCep() {
         //Faz a busca para o cep 58043-280

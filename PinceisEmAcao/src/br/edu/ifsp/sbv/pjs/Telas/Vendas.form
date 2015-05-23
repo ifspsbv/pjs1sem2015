@@ -27,7 +27,7 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
+                  <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="1" attributes="0">
@@ -46,54 +46,74 @@
                           <Component id="jTextField_Troco_Vendas" alignment="0" min="-2" pref="156" max="-2" attributes="0"/>
                           <Component id="jTextField_Opção_Vendas" alignment="0" min="-2" pref="156" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace pref="313" max="32767" attributes="0"/>
                       <Component id="jLabel_Total_Vendas" min="-2" pref="168" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jTextField_Total_Vendas" min="-2" pref="246" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
                   </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Group type="102" attributes="0">
-                              <Component id="jLabel_Codido_Vendas" min="-2" pref="43" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jTextField_Codido_Vendas" min="-2" pref="92" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jLabel_Produto_Vendas" min="-2" pref="55" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jTextField_Produto_Vendas" min="-2" pref="324" max="-2" attributes="0"/>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="jLabel_Quantidade_Vendas" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="jTextField_Quantidade_Vendas" min="-2" pref="72" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jComboBox_UnidadeMedida" min="-2" pref="108" max="-2" attributes="0"/>
-                          </Group>
-                          <Component id="jScrollPane1" max="32767" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
-                              <EmptySpace pref="25" max="32767" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jButton_Limpar_Vendas" min="-2" pref="150" max="-2" attributes="0"/>
-                                  <Component id="jButton_Excluir_Vendas" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
-                                  <Component id="jButton_Finalizar_Vendas" min="-2" pref="150" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jLabel_Codido_Vendas" min="-2" pref="43" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="jTextField_Codido_Vendas1" min="-2" pref="92" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                                      <Component id="jLabel_Produto_Vendas" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                                      <Component id="jTextField_Produto_Vendas" min="-2" pref="324" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                                      <Component id="jLabel_Quantidade_Vendas" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="jTextField_Codigo_Cliente_Vendas" min="-2" pref="92" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                                      <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                                      <Component id="jTextField_Produto_Vendas1" min="-2" pref="324" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                                      <Component id="jButton1" min="-2" pref="45" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
-                              <EmptySpace pref="90" max="32767" attributes="0"/>
+                              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jButton_Ok" min="-2" pref="56" max="-2" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <Component id="jTextField_Quantidade_Vendas" min="-2" pref="72" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                                      <Component id="jComboBox_UnidadeMedida" min="-2" pref="108" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
                           </Group>
+                          <Component id="jScrollPane1" min="-2" pref="824" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
-                              <Component id="jButton_Ok" min="-2" pref="56" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              <Component id="jButton_Limpar_Vendas" min="-2" pref="140" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              <Component id="jButton2_Sair_Vendas" min="-2" pref="140" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="jCheckBox_Venda_Vendas" min="-2" max="-2" attributes="0"/>
                                   <Component id="jCheckBox_Consumo_Vendas" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jButton_Finalizar_Vendas" min="-2" pref="140" max="-2" attributes="0"/>
+                                  <Component id="jButton_Excluir_Vendas" min="-2" pref="140" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
               </Group>
+              <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -101,36 +121,50 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel_Codido_Vendas" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField_Codido_Vendas" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
-                  <Component id="jLabel_Produto_Vendas" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField_Produto_Vendas" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
-                  <Component id="jLabel_Quantidade_Vendas" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField_Quantidade_Vendas" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
-                  <Component id="jCheckBox_Venda_Vendas" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jComboBox_UnidadeMedida" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
-                  <Component id="jButton_Ok" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jCheckBox_Venda_Vendas" alignment="1" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel_Codido_Vendas" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel_Produto_Vendas" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jTextField_Produto_Vendas" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                      <Component id="jLabel_Quantidade_Vendas" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jTextField_Quantidade_Vendas" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                      <Component id="jComboBox_UnidadeMedida" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                      <Component id="jTextField_Codido_Vendas1" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jCheckBox_Consumo_Vendas" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButton_Ok" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jButton1" alignment="1" min="-2" pref="28" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTextField_Codigo_Cliente_Vendas" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                          <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTextField_Produto_Vendas1" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+              <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Component id="jButton_Finalizar_Vendas" min="-2" pref="50" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                      <Component id="jButton_Excluir_Vendas" min="-2" pref="50" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                      <Component id="jButton_Limpar_Vendas" min="-2" pref="50" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                      <Component id="jButton2_Sair_Vendas" min="-2" pref="50" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="jScrollPane1" min="-2" pref="299" max="-2" attributes="0"/>
               </Group>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jCheckBox_Consumo_Vendas" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
-                      <Component id="jButton_Finalizar_Vendas" min="-2" pref="55" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
-                      <Component id="jButton_Excluir_Vendas" min="-2" pref="55" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
-                      <Component id="jButton_Limpar_Vendas" min="-2" pref="55" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
-                      <Component id="jScrollPane1" min="-2" pref="349" max="-2" attributes="0"/>
-                  </Group>
-              </Group>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
                           <Component id="jLabel_Sub_Total_Vendas" min="-2" pref="28" max="-2" attributes="0"/>
                           <Component id="jTextField_Sub_Total_Vendas" min="-2" pref="28" max="-2" attributes="0"/>
@@ -140,21 +174,22 @@
                           <Component id="jTextField_Opção_Vendas" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
                           <Component id="jComboBox_FormaPagamento" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
                           <Component id="jLabel_Troco_Vendas" min="-2" pref="28" max="-2" attributes="0"/>
                           <Component id="jTextField_Troco_Vendas" min="-2" pref="28" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jTextField_Total_Vendas" alignment="3" min="-2" pref="145" max="-2" attributes="0"/>
-                          <Component id="jLabel_Total_Vendas" alignment="3" min="-2" pref="85" max="-2" attributes="0"/>
-                      </Group>
+                      <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
+                      <Component id="jLabel_Total_Vendas" min="-2" pref="85" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jTextField_Total_Vendas" min="-2" pref="122" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -168,15 +203,15 @@
         <Property name="text" type="java.lang.String" value="Codigo"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField_Codido_Vendas">
+    <Component class="javax.swing.JTextField" name="jTextField_Codigo_Cliente_Vendas">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="1"/>
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField_Codido_VendasActionPerformed"/>
-        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTextField_Codido_VendasKeyPressed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField_Codigo_Cliente_VendasActionPerformed"/>
+        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTextField_Codigo_Cliente_VendasKeyPressed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel_Produto_Vendas">
@@ -203,7 +238,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="0"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Qtde"/>
+        <Property name="text" type="java.lang.String" value="Quantidade"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="jTextField_Quantidade_Vendas">
@@ -237,6 +272,9 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="18" style="0"/>
         </Property>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/br/edu/ifsp/sbv/pjs/Imagens/Limpar.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Limpar"/>
       </Properties>
     </Component>
@@ -245,6 +283,9 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="18" style="0"/>
         </Property>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/br/edu/ifsp/sbv/pjs/Imagens/finalizar 32.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Finalizar"/>
       </Properties>
     </Component>
@@ -252,6 +293,9 @@
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="18" style="0"/>
+        </Property>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/br/edu/ifsp/sbv/pjs/Imagens/Excluir.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Excluir"/>
       </Properties>
@@ -338,10 +382,9 @@
           <Font name="Tahoma" size="14" style="0"/>
         </Property>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="3">
+          <StringArray count="2">
             <StringItem index="0" value="Unidade"/>
             <StringItem index="1" value="Centimetros"/>
-            <StringItem index="2" value=" "/>
           </StringArray>
         </Property>
       </Properties>
@@ -377,5 +420,64 @@
         </Component>
       </SubComponents>
     </Container>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Codigo"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jTextField_Codido_Vendas1">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="1"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField_Codido_Vendas1ActionPerformed"/>
+        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTextField_Codido_Vendas1KeyPressed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel2">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Cliente"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jTextField_Produto_Vendas1">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField_Produto_Vendas1ActionPerformed"/>
+        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTextField_Produto_Vendas1KeyPressed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton1">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/br/edu/ifsp/sbv/pjs/Imagens/lupa16.png"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton2_Sair_Vendas">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="0"/>
+        </Property>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/br/edu/ifsp/sbv/pjs/Imagens/Sair.png"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Sair"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2_Sair_VendasActionPerformed"/>
+      </Events>
+    </Component>
   </SubComponents>
 </Form>

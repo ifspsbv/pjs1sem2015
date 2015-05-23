@@ -22,6 +22,16 @@ public class PedidoVenda {
     private Usuario usuario;
     
     private Cliente cliente;
+    
+    private String tipo_de_venda;
+
+    public String getTipo_de_venda() {
+        return tipo_de_venda;
+    }
+
+    public void setTipo_de_venda(String tipo_de_venda) {
+        this.tipo_de_venda = tipo_de_venda;
+    }
 
     public Cliente getCliente() {
         return cliente;
@@ -78,11 +88,5 @@ public class PedidoVenda {
     public void setValor_total_pedido(double valor_total_pedido) {
         this.valor_total_pedido = valor_total_pedido;
     }
-
-
-
-
-
-
-    
+   
 }

@@ -117,7 +117,7 @@
     <Component class="javax.swing.JButton" name="jButton_Vendas_MenuPrincipal">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/br/edu/ifsp/sbv/pjs/Imagens/Vendas.png"/>
+          <Image iconType="3" name="/br/edu/ifsp/sbv/pjs/Imagens/vendas 32.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Vendas"/>
       </Properties>

@@ -69,7 +69,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
         });
         getContentPane().add(jButton_Cadastro_Cliente_MenuPrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 150, 60));
 
-        jButton_Vendas_MenuPrincipal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/Vendas.png"))); // NOI18N
+        jButton_Vendas_MenuPrincipal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/vendas 32.png"))); // NOI18N
         jButton_Vendas_MenuPrincipal.setText("Vendas");
         jButton_Vendas_MenuPrincipal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

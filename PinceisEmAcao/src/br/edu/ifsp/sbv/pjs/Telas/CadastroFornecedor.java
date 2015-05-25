@@ -32,7 +32,7 @@ public class CadastroFornecedor extends javax.swing.JFrame {
 
         jLayeredPane1 = new javax.swing.JLayeredPane();
         jLabel_Codigo_CadastroFornecedor = new javax.swing.JLabel();
-        jTextField_Codigo_Fornecedor = new javax.swing.JTextField();
+        jTextField_Codigo_CadastroFornecedor = new javax.swing.JTextField();
         jLabel_CEP_CadastroFornecedor = new javax.swing.JLabel();
         jTextField_CEP_CadastroFornecedor = new javax.swing.JTextField();
         jLabel_OBS_CadastroFornecedor = new javax.swing.JLabel();
@@ -53,7 +53,7 @@ public class CadastroFornecedor extends javax.swing.JFrame {
         jButton_Editar_CadastroFornecedor = new javax.swing.JButton();
         jButton_Pesquisar_CadastroFornecedor = new javax.swing.JButton();
         jLabel9 = new javax.swing.JLabel();
-        jComboBox_Estado_CadastroFornecedor = new javax.swing.JComboBox();
+        jComboBox_UF_CadastroFornecedor = new javax.swing.JComboBox();
         jTextField_Numero_CadastroFornecedor = new javax.swing.JTextField();
         jTextField_Endereco_CadastroFornecedor = new javax.swing.JTextField();
         jLabel_Celular_CadastroFornecedor = new javax.swing.JLabel();
@@ -74,7 +74,7 @@ public class CadastroFornecedor extends javax.swing.JFrame {
         jLabel_Codigo_CadastroFornecedor.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel_Codigo_CadastroFornecedor.setText("Codigo:");
 
-        jTextField_Codigo_Fornecedor.setPreferredSize(new java.awt.Dimension(28, 20));
+        jTextField_Codigo_CadastroFornecedor.setPreferredSize(new java.awt.Dimension(28, 20));
 
         jLabel_CEP_CadastroFornecedor.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel_CEP_CadastroFornecedor.setText("CEP:");
@@ -144,11 +144,11 @@ public class CadastroFornecedor extends javax.swing.JFrame {
         jLabel9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel9.setText("UF :");
 
-        jComboBox_Estado_CadastroFornecedor.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jComboBox_Estado_CadastroFornecedor.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO" }));
-        jComboBox_Estado_CadastroFornecedor.addActionListener(new java.awt.event.ActionListener() {
+        jComboBox_UF_CadastroFornecedor.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jComboBox_UF_CadastroFornecedor.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO" }));
+        jComboBox_UF_CadastroFornecedor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox_Estado_CadastroFornecedorActionPerformed(evt);
+                jComboBox_UF_CadastroFornecedorActionPerformed(evt);
             }
         });
 
@@ -277,7 +277,7 @@ public class CadastroFornecedor extends javax.swing.JFrame {
                                         .addComponent(jTextField_Celular_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jLayeredPane1Layout.createSequentialGroup()
-                                            .addComponent(jTextField_Codigo_Fornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jTextField_Codigo_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addGap(20, 20, 20)
                                             .addComponent(jLabel_Razao_Social_CadastroFornecedor)
                                             .addGap(10, 10, 10)
@@ -307,7 +307,7 @@ public class CadastroFornecedor extends javax.swing.JFrame {
                                             .addGap(20, 20, 20)
                                             .addComponent(jLabel9)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                            .addComponent(jComboBox_Estado_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                            .addComponent(jComboBox_UF_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1019, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -317,7 +317,7 @@ public class CadastroFornecedor extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel_Codigo_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField_Codigo_Fornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField_Codigo_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel_Razao_Social_CadastroFornecedor)
                     .addComponent(jTextField_Razao_Social_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel_CNPJ_CadastroFornecedor)
@@ -330,7 +330,7 @@ public class CadastroFornecedor extends javax.swing.JFrame {
                     .addComponent(jTextField_Bairro_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField_Numero_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jComboBox_Estado_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jComboBox_UF_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField_CEP_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel_CEP_CadastroFornecedor)
                     .addComponent(jTextField_Endereco_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -364,7 +364,7 @@ public class CadastroFornecedor extends javax.swing.JFrame {
                 .addGap(83, 83, 83))
         );
         jLayeredPane1.setLayer(jLabel_Codigo_CadastroFornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane1.setLayer(jTextField_Codigo_Fornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane1.setLayer(jTextField_Codigo_CadastroFornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane1.setLayer(jLabel_CEP_CadastroFornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane1.setLayer(jTextField_CEP_CadastroFornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane1.setLayer(jLabel_OBS_CadastroFornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
@@ -385,7 +385,7 @@ public class CadastroFornecedor extends javax.swing.JFrame {
         jLayeredPane1.setLayer(jButton_Editar_CadastroFornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane1.setLayer(jButton_Pesquisar_CadastroFornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane1.setLayer(jLabel9, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane1.setLayer(jComboBox_Estado_CadastroFornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane1.setLayer(jComboBox_UF_CadastroFornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane1.setLayer(jTextField_Numero_CadastroFornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane1.setLayer(jTextField_Endereco_CadastroFornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane1.setLayer(jLabel_Celular_CadastroFornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
@@ -417,9 +417,9 @@ public class CadastroFornecedor extends javax.swing.JFrame {
         buscaCep();
     }//GEN-LAST:event_jTextField_Telefone_CadastroFornecedorActionPerformed
 
-    private void jComboBox_Estado_CadastroFornecedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox_Estado_CadastroFornecedorActionPerformed
+    private void jComboBox_UF_CadastroFornecedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox_UF_CadastroFornecedorActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox_Estado_CadastroFornecedorActionPerformed
+    }//GEN-LAST:event_jComboBox_UF_CadastroFornecedorActionPerformed
 
     private void jButton_Salvar_CadastroFornecedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Salvar_CadastroFornecedorActionPerformed
         // TODO add your handling code here:
@@ -463,7 +463,7 @@ public class CadastroFornecedor extends javax.swing.JFrame {
            jTextField_Endereco_CadastroFornecedor.setText(webServiceCep.getLogradouroFull());
            jTextField_Cidade_CadastroFornecedor.setText(webServiceCep.getCidade());
            jTextField_Bairro_CadastroFornecedor.setText(webServiceCep.getBairro());
-           jComboBox_Estado_CadastroFornecedor.setSelectedItem(webServiceCep.getUf());
+           jComboBox_UF_CadastroFornecedor.setSelectedItem(webServiceCep.getUf());
             System.out.println("Cep: " + webServiceCep.getCep());
             System.out.println("Logradouro: " + webServiceCep.getLogradouroFull());
             System.out.println("Bairro: " + webServiceCep.getBairro());
@@ -523,7 +523,7 @@ public class CadastroFornecedor extends javax.swing.JFrame {
     private javax.swing.JButton jButton_Pesquisar_CadastroFornecedor;
     private javax.swing.JButton jButton_Sair_CadastroFornecedor;
     private javax.swing.JButton jButton_Salvar_CadastroFornecedor;
-    private javax.swing.JComboBox jComboBox_Estado_CadastroFornecedor;
+    private javax.swing.JComboBox jComboBox_UF_CadastroFornecedor;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel jLabel_Bairro_CadastroFornecedor;
@@ -544,7 +544,7 @@ public class CadastroFornecedor extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField_CNPJ_CadastroFornecedor;
     private javax.swing.JTextField jTextField_Celular_CadastroFornecedor;
     private javax.swing.JTextField jTextField_Cidade_CadastroFornecedor;
-    private javax.swing.JTextField jTextField_Codigo_Fornecedor;
+    private javax.swing.JTextField jTextField_Codigo_CadastroFornecedor;
     private javax.swing.JTextField jTextField_Endereco_CadastroFornecedor;
     private javax.swing.JTextField jTextField_Numero_CadastroFornecedor;
     private javax.swing.JTextField jTextField_OBS_CadastroFornecedor;

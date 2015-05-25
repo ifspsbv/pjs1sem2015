@@ -67,7 +67,7 @@ public class CadastroClientes extends javax.swing.JFrame {
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable2 = new javax.swing.JTable();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        jTextArea1_Observacao_CadastroCliente = new javax.swing.JTextArea();
         jPanel1 = new javax.swing.JPanel();
 
         setTitle("Cadastro Clientes");
@@ -229,10 +229,10 @@ public class CadastroClientes extends javax.swing.JFrame {
 
         jScrollPane1.setBorder(javax.swing.BorderFactory.createTitledBorder("Observações"));
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jTextArea1.setPreferredSize(new java.awt.Dimension(140, 70));
-        jScrollPane1.setViewportView(jTextArea1);
+        jTextArea1_Observacao_CadastroCliente.setColumns(20);
+        jTextArea1_Observacao_CadastroCliente.setRows(5);
+        jTextArea1_Observacao_CadastroCliente.setPreferredSize(new java.awt.Dimension(140, 70));
+        jScrollPane1.setViewportView(jTextArea1_Observacao_CadastroCliente);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -544,7 +544,7 @@ public class CadastroClientes extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable jTable2;
-    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextArea jTextArea1_Observacao_CadastroCliente;
     private javax.swing.JTextField jTextField_Bairro_CadastroClientes;
     private javax.swing.JTextField jTextField_CEP_CadastroClientes;
     private javax.swing.JTextField jTextField_CPF_CadastroClientes;

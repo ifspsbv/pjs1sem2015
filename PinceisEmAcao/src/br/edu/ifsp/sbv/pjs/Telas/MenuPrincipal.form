@@ -98,7 +98,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton_Cadastro_Cliente_MenuPrincipal">
+    <Component class="javax.swing.JButton" name="jButton_CadastroCliente_MenuPrincipal">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/br/edu/ifsp/sbv/pjs/Imagens/Cliente.png"/>
@@ -106,7 +106,7 @@
         <Property name="text" type="java.lang.String" value=" Clientes"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_Cadastro_Cliente_MenuPrincipalActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_CadastroCliente_MenuPrincipalActionPerformed"/>
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -146,7 +146,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton_Cadastro_Fornecedor_MenuPrincipal">
+    <Component class="javax.swing.JButton" name="jButton_CadastroFornecedor_MenuPrincipal">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/br/edu/ifsp/sbv/pjs/Imagens/Fornecedor.png"/>
@@ -154,7 +154,7 @@
         <Property name="text" type="java.lang.String" value="Fornecedor"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_Cadastro_Fornecedor_MenuPrincipalActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_CadastroFornecedor_MenuPrincipalActionPerformed"/>
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -175,7 +175,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton_Cadastro_NF_MenuPrincipal">
+    <Component class="javax.swing.JButton" name="jButton_CadastroNF_MenuPrincipal">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/br/edu/ifsp/sbv/pjs/Imagens/Nota Fiscal.png"/>
@@ -183,7 +183,7 @@
         <Property name="text" type="java.lang.String" value="Cadastro NF"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_Cadastro_NF_MenuPrincipalActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_CadastroNF_MenuPrincipalActionPerformed"/>
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">

@@ -42,7 +42,7 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jTextField_EstoqueMinimo_Cadastro_CadastroEstoque" alignment="0" min="-2" pref="103" max="-2" attributes="0"/>
                           <Component id="jTextField_Codigo_Cadastro_CadastroEstoque" alignment="0" min="-2" pref="109" max="-2" attributes="0"/>
-                          <Component id="jComboBox_UnidadeDeMedida_Cadastro_CadastroEstoque" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jComboBox_Categoria_Cadastro_CadastroEstoque" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jTextField_Produto_Cadastro_CadastroEstoque" min="-2" pref="423" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
@@ -89,7 +89,7 @@
               <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel_Categoria_CadastroEstoque" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jComboBox_UnidadeDeMedida_Cadastro_CadastroEstoque" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                  <Component id="jComboBox_Categoria_Cadastro_CadastroEstoque" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -198,7 +198,7 @@
         <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTextField_ValorUnitario_Cadastro_CadastroEstoqueKeyPressed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JComboBox" name="jComboBox_UnidadeDeMedida_Cadastro_CadastroEstoque">
+    <Component class="javax.swing.JComboBox" name="jComboBox_Categoria_Cadastro_CadastroEstoque">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="0"/>
@@ -329,7 +329,7 @@
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
       <SubComponents>
-        <Component class="javax.swing.JTextArea" name="jTextArea1">
+        <Component class="javax.swing.JTextArea" name="jTextArea1_Observacoes_Cadastro_CadastroEstoque">
           <Properties>
             <Property name="columns" type="int" value="20"/>
             <Property name="rows" type="int" value="5"/>

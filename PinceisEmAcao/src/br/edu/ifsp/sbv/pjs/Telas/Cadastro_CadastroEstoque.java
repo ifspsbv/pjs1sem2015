@@ -38,7 +38,7 @@ public class Cadastro_CadastroEstoque extends javax.swing.JFrame {
         jLabel_Categoria_CadastroEstoque = new javax.swing.JLabel();
         jLabel_EstoqueMinimo_Cadastro_CadastroEstoque = new javax.swing.JLabel();
         jTextField_ValorUnitario_Cadastro_CadastroEstoque = new javax.swing.JTextField();
-        jComboBox_UnidadeDeMedida_Cadastro_CadastroEstoque = new javax.swing.JComboBox();
+        jComboBox_Categoria_Cadastro_CadastroEstoque = new javax.swing.JComboBox();
         jComboBox_UnidadeDeMedida_CadastroEstoque = new javax.swing.JComboBox();
         jButton_Editar_Cadastro_CadastroEstoque = new javax.swing.JButton();
         jButton_Salvar_Cadastro_CadastroEstoque = new javax.swing.JButton();
@@ -51,7 +51,7 @@ public class Cadastro_CadastroEstoque extends javax.swing.JFrame {
         jLabel_PrecoVenda_Cadastro_CadastroEstoque = new javax.swing.JLabel();
         jTextField_MargemLucro_Cadastro_CadastroEstoque = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        jTextArea1_Observacoes_Cadastro_CadastroEstoque = new javax.swing.JTextArea();
         jButton_Sair_Cadastro_CadastroEstoque = new javax.swing.JButton();
 
         jLabel_Codigo_Cadastro_CadastroEstoque.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -95,8 +95,8 @@ public class Cadastro_CadastroEstoque extends javax.swing.JFrame {
             }
         });
 
-        jComboBox_UnidadeDeMedida_Cadastro_CadastroEstoque.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jComboBox_UnidadeDeMedida_Cadastro_CadastroEstoque.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Agulha", "Botão", "Cordão", "Elastico", "Fita", "Guipper", "Linha", "Passa Fita", "Renda", "Sianinha", "Tecido", "Tinta", "Velcro", "Viés", "Ziper" }));
+        jComboBox_Categoria_Cadastro_CadastroEstoque.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jComboBox_Categoria_Cadastro_CadastroEstoque.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Agulha", "Botão", "Cordão", "Elastico", "Fita", "Guipper", "Linha", "Passa Fita", "Renda", "Sianinha", "Tecido", "Tinta", "Velcro", "Viés", "Ziper" }));
 
         jComboBox_UnidadeDeMedida_CadastroEstoque.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jComboBox_UnidadeDeMedida_CadastroEstoque.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Unidade", "Centimetro" }));
@@ -139,10 +139,10 @@ public class Cadastro_CadastroEstoque extends javax.swing.JFrame {
             }
         });
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jTextArea1.setBorder(javax.swing.BorderFactory.createTitledBorder("Observações"));
-        jScrollPane1.setViewportView(jTextArea1);
+        jTextArea1_Observacoes_Cadastro_CadastroEstoque.setColumns(20);
+        jTextArea1_Observacoes_Cadastro_CadastroEstoque.setRows(5);
+        jTextArea1_Observacoes_Cadastro_CadastroEstoque.setBorder(javax.swing.BorderFactory.createTitledBorder("Observações"));
+        jScrollPane1.setViewportView(jTextArea1_Observacoes_Cadastro_CadastroEstoque);
 
         jButton_Sair_Cadastro_CadastroEstoque.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/Sair.png"))); // NOI18N
         jButton_Sair_Cadastro_CadastroEstoque.setText("Sair");
@@ -173,7 +173,7 @@ public class Cadastro_CadastroEstoque extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jTextField_EstoqueMinimo_Cadastro_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jTextField_Codigo_Cadastro_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jComboBox_UnidadeDeMedida_Cadastro_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jComboBox_Categoria_Cadastro_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jTextField_Produto_Cadastro_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 423, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(30, 30, 30)
@@ -210,7 +210,7 @@ public class Cadastro_CadastroEstoque extends javax.swing.JFrame {
                 .addGap(35, 35, 35)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel_Categoria_CadastroEstoque)
-                    .addComponent(jComboBox_UnidadeDeMedida_Cadastro_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jComboBox_Categoria_Cadastro_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(25, 25, 25)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTextField_Codigo_Cadastro_CadastroEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -343,8 +343,8 @@ public class Cadastro_CadastroEstoque extends javax.swing.JFrame {
     private javax.swing.JButton jButton_Limpar_Cadastro_CadastroEstoque;
     private javax.swing.JButton jButton_Sair_Cadastro_CadastroEstoque;
     private javax.swing.JButton jButton_Salvar_Cadastro_CadastroEstoque;
+    private javax.swing.JComboBox jComboBox_Categoria_Cadastro_CadastroEstoque;
     private javax.swing.JComboBox jComboBox_UnidadeDeMedida_CadastroEstoque;
-    private javax.swing.JComboBox jComboBox_UnidadeDeMedida_Cadastro_CadastroEstoque;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel_Categoria_CadastroEstoque;
     private javax.swing.JLabel jLabel_Codigo_Cadastro_CadastroEstoque;
@@ -354,7 +354,7 @@ public class Cadastro_CadastroEstoque extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel_Produto_Cadastro_CadastroEstoque;
     private javax.swing.JLabel jLabel_ValorUnitario_Cadastro_CadastroEstoque;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextArea jTextArea1_Observacoes_Cadastro_CadastroEstoque;
     private javax.swing.JTextField jTextField_Codigo_Cadastro_CadastroEstoque;
     private javax.swing.JTextField jTextField_EstoqueMinimo_Cadastro_CadastroEstoque;
     private javax.swing.JTextField jTextField_MargemLucro_Cadastro_CadastroEstoque;

@@ -31,10 +31,10 @@ public class CadastroEstoque extends javax.swing.JFrame {
     private void initComponents() {
 
         jButton_Cadastro_NF = new javax.swing.JButton();
-        jButton_Pesquisar_Estoque = new javax.swing.JButton();
-        jButton_Cadastrar_Estoque = new javax.swing.JButton();
-        jButton_Relatorio_Estoque = new javax.swing.JButton();
-        jButton_Sair_Estoque = new javax.swing.JButton();
+        jButton_Pesquisar_CadastroEstoque = new javax.swing.JButton();
+        jButton_Cadastrar_CadastroEstoque = new javax.swing.JButton();
+        jButton_Relatorio_CadastroEstoque = new javax.swing.JButton();
+        jButton_Sair_CadastroEstoque = new javax.swing.JButton();
         jLabel_imagem_fundo = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
@@ -52,37 +52,37 @@ public class CadastroEstoque extends javax.swing.JFrame {
         });
         getContentPane().add(jButton_Cadastro_NF, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 470, 150, 60));
 
-        jButton_Pesquisar_Estoque.setText("Pesquisar");
-        jButton_Pesquisar_Estoque.addActionListener(new java.awt.event.ActionListener() {
+        jButton_Pesquisar_CadastroEstoque.setText("Pesquisar");
+        jButton_Pesquisar_CadastroEstoque.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_Pesquisar_EstoqueActionPerformed(evt);
+                jButton_Pesquisar_CadastroEstoqueActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton_Pesquisar_Estoque, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 150, 60));
+        getContentPane().add(jButton_Pesquisar_CadastroEstoque, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 150, 60));
 
-        jButton_Cadastrar_Estoque.setText("Cadastrar");
-        jButton_Cadastrar_Estoque.addActionListener(new java.awt.event.ActionListener() {
+        jButton_Cadastrar_CadastroEstoque.setText("Cadastrar");
+        jButton_Cadastrar_CadastroEstoque.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_Cadastrar_EstoqueActionPerformed(evt);
+                jButton_Cadastrar_CadastroEstoqueActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton_Cadastrar_Estoque, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, 150, 60));
+        getContentPane().add(jButton_Cadastrar_CadastroEstoque, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, 150, 60));
 
-        jButton_Relatorio_Estoque.setText("Relatório");
-        jButton_Relatorio_Estoque.addActionListener(new java.awt.event.ActionListener() {
+        jButton_Relatorio_CadastroEstoque.setText("Relatório");
+        jButton_Relatorio_CadastroEstoque.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_Relatorio_EstoqueActionPerformed(evt);
+                jButton_Relatorio_CadastroEstoqueActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton_Relatorio_Estoque, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 250, 150, 60));
+        getContentPane().add(jButton_Relatorio_CadastroEstoque, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 250, 150, 60));
 
-        jButton_Sair_Estoque.setText("Sair");
-        jButton_Sair_Estoque.addActionListener(new java.awt.event.ActionListener() {
+        jButton_Sair_CadastroEstoque.setText("Sair");
+        jButton_Sair_CadastroEstoque.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_Sair_EstoqueActionPerformed(evt);
+                jButton_Sair_CadastroEstoqueActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton_Sair_Estoque, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 360, 150, 60));
+        getContentPane().add(jButton_Sair_CadastroEstoque, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 360, 150, 60));
 
         jLabel_imagem_fundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/fundo com logo.png"))); // NOI18N
         jLabel_imagem_fundo.setText("jLabel2");
@@ -119,31 +119,31 @@ public class CadastroEstoque extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton_Cadastro_NFActionPerformed
 
-    private void jButton_Pesquisar_EstoqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Pesquisar_EstoqueActionPerformed
+    private void jButton_Pesquisar_CadastroEstoqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Pesquisar_CadastroEstoqueActionPerformed
         if(pesquisarestoque==null){
         pesquisarestoque= new Pesquisar_CadastroEstoque();
     }
     pesquisarestoque.setVisible(true);
-    }//GEN-LAST:event_jButton_Pesquisar_EstoqueActionPerformed
+    }//GEN-LAST:event_jButton_Pesquisar_CadastroEstoqueActionPerformed
 
-    private void jButton_Cadastrar_EstoqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Cadastrar_EstoqueActionPerformed
+    private void jButton_Cadastrar_CadastroEstoqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Cadastrar_CadastroEstoqueActionPerformed
        if(cadastroestoque==null){
         cadastroestoque= new Cadastro_CadastroEstoque();
     }
     cadastroestoque.setVisible(true);
                               
-    }//GEN-LAST:event_jButton_Cadastrar_EstoqueActionPerformed
+    }//GEN-LAST:event_jButton_Cadastrar_CadastroEstoqueActionPerformed
 
-    private void jButton_Relatorio_EstoqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Relatorio_EstoqueActionPerformed
+    private void jButton_Relatorio_CadastroEstoqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Relatorio_CadastroEstoqueActionPerformed
         if(relatorioestoque==null){
         relatorioestoque= new Relatorio_CadastroEstoque();
     }
     relatorioestoque.setVisible(true);
-    }//GEN-LAST:event_jButton_Relatorio_EstoqueActionPerformed
+    }//GEN-LAST:event_jButton_Relatorio_CadastroEstoqueActionPerformed
 
-    private void jButton_Sair_EstoqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Sair_EstoqueActionPerformed
+    private void jButton_Sair_CadastroEstoqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Sair_CadastroEstoqueActionPerformed
        this.dispose(); 
-    }//GEN-LAST:event_jButton_Sair_EstoqueActionPerformed
+    }//GEN-LAST:event_jButton_Sair_CadastroEstoqueActionPerformed
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
         // TODO add your handling code here:
@@ -188,11 +188,11 @@ public class CadastroEstoque extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton_Cadastrar_Estoque;
+    private javax.swing.JButton jButton_Cadastrar_CadastroEstoque;
     private javax.swing.JButton jButton_Cadastro_NF;
-    private javax.swing.JButton jButton_Pesquisar_Estoque;
-    private javax.swing.JButton jButton_Relatorio_Estoque;
-    private javax.swing.JButton jButton_Sair_Estoque;
+    private javax.swing.JButton jButton_Pesquisar_CadastroEstoque;
+    private javax.swing.JButton jButton_Relatorio_CadastroEstoque;
+    private javax.swing.JButton jButton_Sair_CadastroEstoque;
     private javax.swing.JLabel jLabel_imagem_fundo;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenuBar jMenuBar1;

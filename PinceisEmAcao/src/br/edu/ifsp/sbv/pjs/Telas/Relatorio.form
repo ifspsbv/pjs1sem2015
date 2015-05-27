@@ -85,20 +85,15 @@
                   <Group type="102" attributes="0">
                       <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jButton_Vendas_MenuPrincipal" min="-2" pref="150" max="-2" attributes="0"/>
-                          <Component id="jButton_CadastroCliente_MenuPrincipal" min="-2" pref="150" max="-2" attributes="0"/>
-                          <Component id="jButton_Estoque_MenuPrincipal" min="-2" pref="150" max="-2" attributes="0"/>
-                          <Component id="jButton_CadastroFornecedor_MenuPrincipal" min="-2" pref="150" max="-2" attributes="0"/>
-                          <Component id="jButton_CadastroNF_MenuPrincipal" min="-2" pref="150" max="-2" attributes="0"/>
+                          <Component id="jButton_Cliente_Relatorio" min="-2" pref="150" max="-2" attributes="0"/>
+                          <Component id="jButton_Estoque_Relatorio" min="-2" pref="150" max="-2" attributes="0"/>
+                          <Component id="jButton_Produto_Relatorio" min="-2" pref="150" max="-2" attributes="0"/>
+                          <Component id="jButton_Vendas_Relatorio" min="-2" pref="150" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton_Relatorio_MenuPrincipal" min="-2" pref="150" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton_Sair_MenuPrincipal1" min="-2" pref="150" max="-2" attributes="0"/>
+                      <Component id="jButton_Sair_Relatorio" min="-2" pref="150" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
@@ -110,19 +105,15 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
               <EmptySpace min="30" pref="30" max="-2" attributes="0"/>
-              <Component id="jButton_Vendas_MenuPrincipal" min="-2" pref="60" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-              <Component id="jButton_CadastroCliente_MenuPrincipal" min="-2" pref="60" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-              <Component id="jButton_Estoque_MenuPrincipal" min="-2" pref="60" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-              <Component id="jButton_CadastroFornecedor_MenuPrincipal" min="-2" pref="60" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-              <Component id="jButton_CadastroNF_MenuPrincipal" min="-2" pref="60" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-              <Component id="jButton_Relatorio_MenuPrincipal" min="-2" pref="60" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-              <Component id="jButton_Sair_MenuPrincipal1" min="-2" pref="60" max="-2" attributes="0"/>
+              <Component id="jButton_Cliente_Relatorio" min="-2" pref="60" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="75" max="-2" attributes="0"/>
+              <Component id="jButton_Estoque_Relatorio" min="-2" pref="60" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="75" max="-2" attributes="0"/>
+              <Component id="jButton_Produto_Relatorio" min="-2" pref="60" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="75" max="-2" attributes="0"/>
+              <Component id="jButton_Vendas_Relatorio" min="-2" pref="60" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="75" max="-2" attributes="0"/>
+              <Component id="jButton_Sair_Relatorio" min="-2" pref="60" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
           </Group>
           <Group type="102" attributes="0">
@@ -133,59 +124,36 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JButton" name="jButton_Relatorio_MenuPrincipal">
+    <Component class="javax.swing.JButton" name="jButton_Estoque_Relatorio">
       <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/br/edu/ifsp/sbv/pjs/Imagens/relatorio.png"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Relat&#xf3;rio"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_Relatorio_MenuPrincipalActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JButton" name="jButton_CadastroCliente_MenuPrincipal">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/br/edu/ifsp/sbv/pjs/Imagens/Cliente.png"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value=" Clientes"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_CadastroCliente_MenuPrincipalActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JButton" name="jButton_Vendas_MenuPrincipal">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/br/edu/ifsp/sbv/pjs/Imagens/vendas 32.png"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Vendas"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_Vendas_MenuPrincipalActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JButton" name="jButton_Estoque_MenuPrincipal">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/br/edu/ifsp/sbv/pjs/Imagens/Estoque.png"/>
-        </Property>
         <Property name="text" type="java.lang.String" value="Estoque"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_Estoque_MenuPrincipalActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_Estoque_RelatorioActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton_CadastroFornecedor_MenuPrincipal">
+    <Component class="javax.swing.JButton" name="jButton_Cliente_Relatorio">
       <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/br/edu/ifsp/sbv/pjs/Imagens/Fornecedor.png"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Fornecedor"/>
+        <Property name="text" type="java.lang.String" value="Cliente"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_CadastroFornecedor_MenuPrincipalActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_Cliente_RelatorioActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton_Produto_Relatorio">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Produto"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_Produto_RelatorioActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton_Vendas_Relatorio">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Vendas"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_Vendas_RelatorioActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel_imagem_fundo">
@@ -196,18 +164,7 @@
         <Property name="text" type="java.lang.String" value="jLabel2"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton_CadastroNF_MenuPrincipal">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/br/edu/ifsp/sbv/pjs/Imagens/Nota Fiscal.png"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Cadastro NF"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_CadastroNF_MenuPrincipalActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JButton" name="jButton_Sair_MenuPrincipal1">
+    <Component class="javax.swing.JButton" name="jButton_Sair_Relatorio">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/br/edu/ifsp/sbv/pjs/Imagens/Sair.png"/>
@@ -215,7 +172,7 @@
         <Property name="text" type="java.lang.String" value="Sair"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_Sair_MenuPrincipal1ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_Sair_RelatorioActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

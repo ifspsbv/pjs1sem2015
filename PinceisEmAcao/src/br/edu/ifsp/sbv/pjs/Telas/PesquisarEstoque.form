@@ -28,21 +28,21 @@
               <EmptySpace min="-2" pref="160" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
                   <Group type="102" attributes="0">
-                      <Component id="jButton_Pesquisar_Cadastro_CadastroEstoque" min="-2" pref="149" max="-2" attributes="0"/>
+                      <Component id="jButton_Pesquisar_PesquisarEstoque" min="-2" pref="149" max="-2" attributes="0"/>
                       <EmptySpace pref="170" max="32767" attributes="0"/>
-                      <Component id="jButton_Limpar_Cadastro_CadastroEstoque" min="-2" pref="150" max="-2" attributes="0"/>
+                      <Component id="jButton_Limpar_PesquisarEstoque" min="-2" pref="150" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="147" max="-2" attributes="0"/>
-                      <Component id="jButton_Sair_Cadastro_CadastroEstoque" min="-2" pref="150" max="-2" attributes="0"/>
+                      <Component id="jButton_Sair_PesquisarEstoque" min="-2" pref="150" max="-2" attributes="0"/>
                   </Group>
                   <Component id="jScrollPane1" max="32767" attributes="0"/>
                   <Group type="102" attributes="0">
                       <Component id="jLabel_Codigo_Pesquisar_CadastroEstoque" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jTextField_Codigo_Pesquisar_CadastroEstoque" min="-2" pref="172" max="-2" attributes="0"/>
+                      <Component id="jTextField_Codigo_PesquisarEstoque" min="-2" pref="172" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
                       <Component id="jLabel_Produto_Pesquisar_CadastroEstoque" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="jTextField_Produto_Pesquisar_CadastroEstoque" min="-2" pref="214" max="-2" attributes="0"/>
+                      <Component id="jTextField_Produto_PesquisarEstoque" min="-2" pref="214" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace min="-2" pref="159" max="-2" attributes="0"/>
@@ -55,17 +55,17 @@
               <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel_Codigo_Pesquisar_CadastroEstoque" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField_Produto_Pesquisar_CadastroEstoque" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                  <Component id="jTextField_Produto_PesquisarEstoque" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
                   <Component id="jLabel_Produto_Pesquisar_CadastroEstoque" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField_Codigo_Pesquisar_CadastroEstoque" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                  <Component id="jTextField_Codigo_PesquisarEstoque" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
               <Component id="jScrollPane1" min="-2" pref="435" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jButton_Limpar_Cadastro_CadastroEstoque" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
-                  <Component id="jButton_Pesquisar_Cadastro_CadastroEstoque" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
-                  <Component id="jButton_Sair_Cadastro_CadastroEstoque" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                  <Component id="jButton_Limpar_PesquisarEstoque" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                  <Component id="jButton_Pesquisar_PesquisarEstoque" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                  <Component id="jButton_Sair_PesquisarEstoque" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="0" pref="43" max="32767" attributes="0"/>
           </Group>
@@ -81,7 +81,7 @@
         <Property name="text" type="java.lang.String" value="Codigo"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField_Produto_Pesquisar_CadastroEstoque">
+    <Component class="javax.swing.JTextField" name="jTextField_Produto_PesquisarEstoque">
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel_Produto_Pesquisar_CadastroEstoque">
       <Properties>
@@ -91,9 +91,9 @@
         <Property name="text" type="java.lang.String" value="Produto"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField_Codigo_Pesquisar_CadastroEstoque">
+    <Component class="javax.swing.JTextField" name="jTextField_Codigo_PesquisarEstoque">
       <Events>
-        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTextField_Codigo_Pesquisar_CadastroEstoqueKeyPressed"/>
+        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTextField_Codigo_PesquisarEstoqueKeyPressed"/>
       </Events>
     </Component>
     <Container class="javax.swing.JScrollPane" name="jScrollPane1">
@@ -103,7 +103,7 @@
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
       <SubComponents>
-        <Component class="javax.swing.JTable" name="jTable1">
+        <Component class="javax.swing.JTable" name="Tabela_PesquisarEstoque">
           <Properties>
             <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
               <Table columnCount="3" rowCount="25">
@@ -140,7 +140,7 @@
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JButton" name="jButton_Pesquisar_Cadastro_CadastroEstoque">
+    <Component class="javax.swing.JButton" name="jButton_Pesquisar_PesquisarEstoque">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/br/edu/ifsp/sbv/pjs/Imagens/lupa32.png"/>
@@ -148,10 +148,10 @@
         <Property name="text" type="java.lang.String" value="Pesquisar"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_Pesquisar_Cadastro_CadastroEstoqueActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_Pesquisar_PesquisarEstoqueActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton_Limpar_Cadastro_CadastroEstoque">
+    <Component class="javax.swing.JButton" name="jButton_Limpar_PesquisarEstoque">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/br/edu/ifsp/sbv/pjs/Imagens/Limpar.png"/>
@@ -159,10 +159,10 @@
         <Property name="text" type="java.lang.String" value="Limpar"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_Limpar_Cadastro_CadastroEstoqueActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_Limpar_PesquisarEstoqueActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton_Sair_Cadastro_CadastroEstoque">
+    <Component class="javax.swing.JButton" name="jButton_Sair_PesquisarEstoque">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/br/edu/ifsp/sbv/pjs/Imagens/Sair.png"/>
@@ -170,7 +170,7 @@
         <Property name="text" type="java.lang.String" value="Sair"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_Sair_Cadastro_CadastroEstoqueActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_Sair_PesquisarEstoqueActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

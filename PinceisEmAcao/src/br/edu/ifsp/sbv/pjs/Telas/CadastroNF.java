@@ -453,7 +453,7 @@ public class CadastroNF extends javax.swing.JFrame {
                                             .addComponent(jDateChooser_Emissao_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                             .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 1026, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(12, 12, 12)))
-                .addContainerGap(17, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -528,7 +528,7 @@ public class CadastroNF extends javax.swing.JFrame {
                 .addGap(36, 36, 36))
         );
 
-        setBounds(224, 57, 1112, 662);
+        setBounds(224, 57, 1101, 662);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTextField_NotaFiscal_CadastroNFKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_NotaFiscal_CadastroNFKeyPressed

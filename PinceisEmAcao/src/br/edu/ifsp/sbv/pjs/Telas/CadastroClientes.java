@@ -403,7 +403,7 @@ public class CadastroClientes extends javax.swing.JFrame {
                         .addComponent(jButton_Pesquisar_CadastroClientes, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))))
         );
 
-        setBounds(224, 57, 1101, 661);
+        setBounds(224, 57, 1099, 660);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTextField_CEP_CadastroClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_CEP_CadastroClientesActionPerformed

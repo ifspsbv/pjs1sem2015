@@ -5,7 +5,16 @@
  */
 package br.edu.ifsp.sbv.pjs.Telas;
 
+import br.edu.ifsp.sbv.pjs.Controle.ComplementoBD;
+import br.edu.ifsp.sbv.pjs.Modelo.Fornecedor;
+import br.edu.ifsp.sbv.pjs.Controle.EnderecoBD;
+import br.edu.ifsp.sbv.pjs.Controle.FornecedorBD;
+import br.edu.ifsp.sbv.pjs.Modelo.ComplementoEndereco;
+import br.edu.ifsp.sbv.pjs.Modelo.Endereco;
+import java.util.ArrayList;
+import java.util.List;
 import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
 
 /**
  *
@@ -13,13 +22,39 @@ import javax.swing.JOptionPane;
  */
 public class CadastroFornecedor extends javax.swing.JFrame {
 
-    /**
-     * Creates new form CadastroFornecedor
-     */
+    private List<Fornecedor> l_fornecedor = new ArrayList<Fornecedor>();
+    private Fornecedor fornecedor;
+    private FornecedorBD bdF = new FornecedorBD();
+    private Endereco endereco;
+
+    public void limparDados() {
+        jTextField_Bairro_CadastroFornecedor.setText("");
+        jTextField_CEP_CadastroFornecedor.setText("");
+        jTextField_CNPJ_CadastroFornecedor.setText("");
+        jTextField_Nome_Fantasia_Fornecedor.setText("");
+        jTextField_Celular_CadastroFornecedor.setText("");
+        jTextField_Cidade_CadastroFornecedor.setText("");
+        jTextField_Codigo_CadastroFornecedor.setText("");
+        jTextField_Email_Fornecedor.setText("");
+        jTextField_Endereco_CadastroFornecedor.setText("");
+        jTextField_Numero_CadastroFornecedor.setText("");
+        jTextField_Razao_Social_CadastroFornecedor.setText("");
+        jTextField_Telefone_CadastroFornecedor.setText("");
+        jTextField_Razao_Social_CadastroFornecedor.requestFocus(true);
+
+        ((DefaultTableModel) jTable_CadastroFornecedor.getModel()).setNumRows(0);
+        jTable_CadastroFornecedor.updateUI();
+        fornecedor = null;
+        l_fornecedor = new ArrayList<Fornecedor>();
+        
+        jTextField_Razao_Social_CadastroFornecedor.requestFocus(true);
+    }
+
     public CadastroFornecedor() {
         initComponents();
+        
+        
     }
-    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -48,7 +83,7 @@ public class CadastroFornecedor extends javax.swing.JFrame {
         jLabel_Razao_Social_CadastroFornecedor = new javax.swing.JLabel();
         jTextField_Razao_Social_CadastroFornecedor = new javax.swing.JTextField();
         jLabel_CNPJ_CadastroFornecedor = new javax.swing.JLabel();
-        jTextField_OBS_CadastroFornecedor = new javax.swing.JTextField();
+        jTextField_Email_Fornecedor = new javax.swing.JTextField();
         jButton_Salvar_CadastroFornecedor = new javax.swing.JButton();
         jButton_Editar_CadastroFornecedor = new javax.swing.JButton();
         jButton_Pesquisar_CadastroFornecedor = new javax.swing.JButton();
@@ -64,6 +99,8 @@ public class CadastroFornecedor extends javax.swing.JFrame {
         jButton_Limpar_CadastroFornecedor = new javax.swing.JButton();
         jButton_Excluir_CadastroFornecedor = new javax.swing.JButton();
         jButton_Sair_CadastroFornecedor = new javax.swing.JButton();
+        jLabel_Razao_Social_CadastroFornecedor1 = new javax.swing.JLabel();
+        jTextField_Nome_Fantasia_Fornecedor = new javax.swing.JTextField();
 
         setPreferredSize(new java.awt.Dimension(1085, 623));
 
@@ -75,6 +112,11 @@ public class CadastroFornecedor extends javax.swing.JFrame {
         jLabel_Codigo_CadastroFornecedor.setText("Codigo:");
 
         jTextField_Codigo_CadastroFornecedor.setPreferredSize(new java.awt.Dimension(28, 20));
+        jTextField_Codigo_CadastroFornecedor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField_Codigo_CadastroFornecedorActionPerformed(evt);
+            }
+        });
 
         jLabel_CEP_CadastroFornecedor.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel_CEP_CadastroFornecedor.setText("CEP:");
@@ -118,12 +160,6 @@ public class CadastroFornecedor extends javax.swing.JFrame {
         jLabel_Razao_Social_CadastroFornecedor.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel_Razao_Social_CadastroFornecedor.setText("Razão Social:");
 
-        jTextField_Razao_Social_CadastroFornecedor.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField_Razao_Social_CadastroFornecedorActionPerformed(evt);
-            }
-        });
-
         jLabel_CNPJ_CadastroFornecedor.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel_CNPJ_CadastroFornecedor.setText("CNPJ:");
 
@@ -137,9 +173,19 @@ public class CadastroFornecedor extends javax.swing.JFrame {
 
         jButton_Editar_CadastroFornecedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/Editar.png"))); // NOI18N
         jButton_Editar_CadastroFornecedor.setText("Editar");
+        jButton_Editar_CadastroFornecedor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_Editar_CadastroFornecedorActionPerformed(evt);
+            }
+        });
 
         jButton_Pesquisar_CadastroFornecedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/lupa24.png"))); // NOI18N
         jButton_Pesquisar_CadastroFornecedor.setText("Pesquisar");
+        jButton_Pesquisar_CadastroFornecedor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_Pesquisar_CadastroFornecedorActionPerformed(evt);
+            }
+        });
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel9.setText("UF :");
@@ -175,22 +221,14 @@ public class CadastroFornecedor extends javax.swing.JFrame {
 
         jTable_CadastroFornecedor.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null}
+
             },
             new String [] {
                 "CODIGO", "RAZAO SOCIAL", "CNPJ", "ENDERECO", "CIDADE", "TELEFONE", "CELULAR"
             }
         ) {
             Class[] types = new Class [] {
-                java.lang.Integer.class, java.lang.String.class, java.lang.Double.class, java.lang.String.class, java.lang.String.class, java.lang.Integer.class, java.lang.Integer.class
+                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
             };
             boolean[] canEdit = new boolean [] {
                 false, false, false, false, false, false, false
@@ -204,16 +242,18 @@ public class CadastroFornecedor extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
-        jTable_CadastroFornecedor.setRowHeight(45);
+        jTable_CadastroFornecedor.setRowHeight(20);
+        jTable_CadastroFornecedor.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+        jTable_CadastroFornecedor.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTable_CadastroFornecedorMouseClicked(evt);
+            }
+        });
         jScrollPane1.setViewportView(jTable_CadastroFornecedor);
         if (jTable_CadastroFornecedor.getColumnModel().getColumnCount() > 0) {
-            jTable_CadastroFornecedor.getColumnModel().getColumn(0).setResizable(false);
             jTable_CadastroFornecedor.getColumnModel().getColumn(1).setResizable(false);
-            jTable_CadastroFornecedor.getColumnModel().getColumn(2).setResizable(false);
             jTable_CadastroFornecedor.getColumnModel().getColumn(3).setResizable(false);
             jTable_CadastroFornecedor.getColumnModel().getColumn(4).setResizable(false);
-            jTable_CadastroFornecedor.getColumnModel().getColumn(5).setResizable(false);
-            jTable_CadastroFornecedor.getColumnModel().getColumn(6).setResizable(false);
         }
 
         jButton_Pesquisar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/Pesquisar.png"))); // NOI18N
@@ -221,9 +261,19 @@ public class CadastroFornecedor extends javax.swing.JFrame {
 
         jButton_Limpar_CadastroFornecedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/Limpar.png"))); // NOI18N
         jButton_Limpar_CadastroFornecedor.setText("Limpar");
+        jButton_Limpar_CadastroFornecedor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_Limpar_CadastroFornecedorActionPerformed(evt);
+            }
+        });
 
         jButton_Excluir_CadastroFornecedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/Excluir.png"))); // NOI18N
         jButton_Excluir_CadastroFornecedor.setText("Excluir");
+        jButton_Excluir_CadastroFornecedor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_Excluir_CadastroFornecedorActionPerformed(evt);
+            }
+        });
 
         jButton_Sair_CadastroFornecedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/Sair.png"))); // NOI18N
         jButton_Sair_CadastroFornecedor.setText("Sair");
@@ -232,6 +282,9 @@ public class CadastroFornecedor extends javax.swing.JFrame {
                 jButton_Sair_CadastroFornecedorActionPerformed(evt);
             }
         });
+
+        jLabel_Razao_Social_CadastroFornecedor1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel_Razao_Social_CadastroFornecedor1.setText("Nome Fantasia:");
 
         javax.swing.GroupLayout jLayeredPane1Layout = new javax.swing.GroupLayout(jLayeredPane1);
         jLayeredPane1.setLayout(jLayeredPane1Layout);
@@ -254,62 +307,75 @@ public class CadastroFornecedor extends javax.swing.JFrame {
                         .addComponent(jButton_Sair_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jLayeredPane1Layout.createSequentialGroup()
                         .addGap(306, 306, 306)
-                        .addComponent(jButton_Pesquisar1, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jButton_Pesquisar1, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(jLayeredPane1Layout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jLayeredPane1Layout.createSequentialGroup()
-                        .addGap(30, 30, 30)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1019, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jLayeredPane1Layout.createSequentialGroup()
                         .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel_CEP_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel_Codigo_CadastroFornecedor)
+                            .addComponent(jLabel_CNPJ_CadastroFornecedor)
+                            .addComponent(jLabel_OBS_CadastroFornecedor)
+                            .addComponent(jLabel_Bairro_CadastroFornecedor))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jLayeredPane1Layout.createSequentialGroup()
                                 .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel_Cidade_CadastroFornecedor)
-                                    .addComponent(jLabel_Codigo_CadastroFornecedor))
-                                .addGap(10, 10, 10)
-                                .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jLayeredPane1Layout.createSequentialGroup()
-                                        .addComponent(jTextField_Cidade_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 477, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(2, 2, 2)
+                                        .addComponent(jTextField_Codigo_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(20, 20, 20)
-                                        .addComponent(jLabel_Telefone_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jLabel_Razao_Social_CadastroFornecedor)
+                                        .addGap(10, 10, 10)
+                                        .addComponent(jTextField_Razao_Social_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jLabel_Razao_Social_CadastroFornecedor1)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jTextField_Telefone_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jLabel_Celular_CadastroFornecedor)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField_Celular_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jLayeredPane1Layout.createSequentialGroup()
-                                            .addComponent(jTextField_Codigo_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGap(20, 20, 20)
-                                            .addComponent(jLabel_Razao_Social_CadastroFornecedor)
-                                            .addGap(10, 10, 10)
-                                            .addComponent(jTextField_Razao_Social_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGap(18, 18, 18)
-                                            .addComponent(jLabel_CNPJ_CadastroFornecedor)
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                            .addComponent(jTextField_CNPJ_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGap(20, 20, 20)
-                                            .addComponent(jLabel_OBS_CadastroFornecedor)
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addComponent(jTextField_OBS_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGroup(jLayeredPane1Layout.createSequentialGroup()
-                                            .addComponent(jTextField_CEP_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGap(20, 20, 20)
-                                            .addComponent(jLabel_Endereco_CadastroFornecedor)
-                                            .addGap(10, 10, 10)
-                                            .addComponent(jTextField_Endereco_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGap(20, 20, 20)
-                                            .addComponent(jLabel_Bairro_CadastroFornecedor)
-                                            .addGap(10, 10, 10)
-                                            .addComponent(jTextField_Bairro_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGap(18, 18, 18)
-                                            .addComponent(jLabel6)
-                                            .addGap(10, 10, 10)
-                                            .addComponent(jTextField_Numero_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGap(20, 20, 20)
-                                            .addComponent(jLabel9)
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                            .addComponent(jComboBox_UF_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1019, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                        .addComponent(jTextField_Nome_Fantasia_Fornecedor))
+                                    .addGroup(jLayeredPane1Layout.createSequentialGroup()
+                                        .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jLayeredPane1Layout.createSequentialGroup()
+                                                .addComponent(jTextField_CNPJ_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(jLabel_CEP_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(jTextField_CEP_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(jLabel_Endereco_CadastroFornecedor)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(jTextField_Endereco_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(jLabel6)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(jTextField_Numero_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jLayeredPane1Layout.createSequentialGroup()
+                                                .addComponent(jTextField_Email_Fornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(33, 33, 33)
+                                                .addComponent(jLabel_Telefone_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addGroup(jLayeredPane1Layout.createSequentialGroup()
+                                                        .addComponent(jTextField_Telefone_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addGap(20, 20, 20)
+                                                        .addComponent(jLabel_Celular_CadastroFornecedor)
+                                                        .addGap(18, 18, 18)
+                                                        .addComponent(jTextField_Celular_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                    .addGroup(jLayeredPane1Layout.createSequentialGroup()
+                                                        .addComponent(jLabel_Cidade_CadastroFornecedor)
+                                                        .addGap(28, 28, 28)
+                                                        .addComponent(jTextField_Cidade_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 477, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(jLabel9)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jComboBox_UF_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(72, 72, 72))
+                            .addGroup(jLayeredPane1Layout.createSequentialGroup()
+                                .addComponent(jTextField_Bairro_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))))
         );
         jLayeredPane1Layout.setVerticalGroup(
             jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -320,38 +386,38 @@ public class CadastroFornecedor extends javax.swing.JFrame {
                     .addComponent(jTextField_Codigo_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel_Razao_Social_CadastroFornecedor)
                     .addComponent(jTextField_Razao_Social_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel_Razao_Social_CadastroFornecedor1)
+                    .addComponent(jTextField_Nome_Fantasia_Fornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel_CNPJ_CadastroFornecedor)
                     .addComponent(jTextField_CNPJ_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel_OBS_CadastroFornecedor)
-                    .addComponent(jTextField_OBS_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel_CEP_CadastroFornecedor)
+                    .addComponent(jTextField_CEP_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel_Endereco_CadastroFornecedor)
+                    .addComponent(jTextField_Endereco_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel6)
+                    .addComponent(jTextField_Numero_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jComboBox_UF_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel_Bairro_CadastroFornecedor)
                     .addComponent(jTextField_Bairro_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField_Numero_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jComboBox_UF_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField_CEP_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel_CEP_CadastroFornecedor)
-                    .addComponent(jTextField_Endereco_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel_Endereco_CadastroFornecedor)
-                    .addComponent(jLabel6))
+                    .addComponent(jLabel_Cidade_CadastroFornecedor)
+                    .addComponent(jTextField_Cidade_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
                 .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jLayeredPane1Layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel_Cidade_CadastroFornecedor)
-                            .addComponent(jTextField_Cidade_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jLayeredPane1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel_Celular_CadastroFornecedor)
-                            .addComponent(jTextField_Celular_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField_Telefone_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel_Telefone_CadastroFornecedor))))
-                .addGap(26, 26, 26)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 361, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(32, 32, 32)
+                    .addComponent(jLabel_OBS_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jTextField_Email_Fornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel_Telefone_CadastroFornecedor)
+                        .addComponent(jTextField_Telefone_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel_Celular_CadastroFornecedor)
+                        .addComponent(jTextField_Celular_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 322, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton_Salvar_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton_Editar_CadastroFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -380,7 +446,7 @@ public class CadastroFornecedor extends javax.swing.JFrame {
         jLayeredPane1.setLayer(jLabel_Razao_Social_CadastroFornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane1.setLayer(jTextField_Razao_Social_CadastroFornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane1.setLayer(jLabel_CNPJ_CadastroFornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane1.setLayer(jTextField_OBS_CadastroFornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane1.setLayer(jTextField_Email_Fornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane1.setLayer(jButton_Salvar_CadastroFornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane1.setLayer(jButton_Editar_CadastroFornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane1.setLayer(jButton_Pesquisar_CadastroFornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
@@ -395,6 +461,8 @@ public class CadastroFornecedor extends javax.swing.JFrame {
         jLayeredPane1.setLayer(jButton_Limpar_CadastroFornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane1.setLayer(jButton_Excluir_CadastroFornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane1.setLayer(jButton_Sair_CadastroFornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane1.setLayer(jLabel_Razao_Social_CadastroFornecedor1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane1.setLayer(jTextField_Nome_Fantasia_Fornecedor, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -406,15 +474,15 @@ public class CadastroFornecedor extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLayeredPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 873, Short.MAX_VALUE)
+            .addComponent(jLayeredPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 834, Short.MAX_VALUE)
         );
 
         setBounds(224, 57, 1101, 661);
     }// </editor-fold>//GEN-END:initComponents
 
-    
+
     private void jTextField_Telefone_CadastroFornecedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_Telefone_CadastroFornecedorActionPerformed
-        buscaCep();
+
     }//GEN-LAST:event_jTextField_Telefone_CadastroFornecedorActionPerformed
 
     private void jComboBox_UF_CadastroFornecedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox_UF_CadastroFornecedorActionPerformed
@@ -422,12 +490,52 @@ public class CadastroFornecedor extends javax.swing.JFrame {
     }//GEN-LAST:event_jComboBox_UF_CadastroFornecedorActionPerformed
 
     private void jButton_Salvar_CadastroFornecedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Salvar_CadastroFornecedorActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_Salvar_CadastroFornecedorActionPerformed
+        fornecedor = new Fornecedor();
+        fornecedor.setRazao_social(jTextField_Razao_Social_CadastroFornecedor.getText());
+        fornecedor.setNome_fantasia(jTextField_Nome_Fantasia_Fornecedor.getText());
+        fornecedor.setCnpj_Fornecedor(jTextField_CNPJ_CadastroFornecedor.getText());
 
-    private void jTextField_Razao_Social_CadastroFornecedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_Razao_Social_CadastroFornecedorActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField_Razao_Social_CadastroFornecedorActionPerformed
+        EnderecoBD enderecoBD = new EnderecoBD();
+
+        if (endereco == null) {
+            endereco = new Endereco();
+            endereco.setCep_Endereco(Integer.parseInt(jTextField_CEP_CadastroFornecedor.getText()));
+            endereco.setBairro_Endereco(jTextField_Bairro_CadastroFornecedor.getText());
+            endereco.setRua_Endereco(jTextField_Endereco_CadastroFornecedor.getText());
+            endereco.setCidade_Endereco(jTextField_Cidade_CadastroFornecedor.getText());
+            endereco.setUf_Endereco(jComboBox_UF_CadastroFornecedor.getSelectedItem().toString());
+            int idEndereco = enderecoBD.Inserir(endereco);
+            if (idEndereco > 0) {
+                endereco = enderecoBD.pesquisarPorID(idEndereco);
+            }
+        }
+
+        ComplementoEndereco complemento = new ComplementoEndereco();
+        complemento.setNumero_Endereco(jTextField_Numero_CadastroFornecedor.getText());
+
+        ComplementoBD complementoBD = new ComplementoBD();
+        int idComplemento = complementoBD.Inserir(complemento);
+
+        if (idComplemento > 0) {
+            complemento = complementoBD.pesquisarPorID(idComplemento);
+        }
+
+        fornecedor.setEndereco(endereco);
+
+        fornecedor.setComplementoEndereco(complemento);
+
+        fornecedor.setTelefone_fornecedor(jTextField_Telefone_CadastroFornecedor.getText());
+        fornecedor.setCelular_fornecedor(jTextField_Celular_CadastroFornecedor.getText());
+        fornecedor.setEmail_fornecedor(jTextField_Email_Fornecedor.getText());
+
+        JOptionPane.showMessageDialog(rootPane, bdF.Inserir(fornecedor));
+
+        
+        limparDados();
+       
+              
+
+    }//GEN-LAST:event_jButton_Salvar_CadastroFornecedorActionPerformed
 
     private void jTextField_Cidade_CadastroFornecedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_Cidade_CadastroFornecedorActionPerformed
         // TODO add your handling code here:
@@ -440,6 +548,59 @@ public class CadastroFornecedor extends javax.swing.JFrame {
     private void jTextField_CEP_CadastroFornecedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_CEP_CadastroFornecedorActionPerformed
         buscaCep();
     }//GEN-LAST:event_jTextField_CEP_CadastroFornecedorActionPerformed
+    public void buscaCep() {
+
+        EnderecoBD enderecoBD = new EnderecoBD();
+
+        endereco = enderecoBD.pesquisarPorCEP(Integer.parseInt(jTextField_CEP_CadastroFornecedor.getText()));
+
+        if (endereco == null) {
+
+            //Faz a busca para o cep 58043-280
+            WebServiceCep webServiceCep = WebServiceCep.searchCep(jTextField_CEP_CadastroFornecedor.getText());
+        //A ferramenta de busca ignora qualquer caracter que n?o seja n?mero.
+
+            //caso a busca ocorra bem, imprime os resultados.
+            if (webServiceCep.wasSuccessful()) {
+                jTextField_Endereco_CadastroFornecedor.setText(webServiceCep.getLogradouroFull());
+                jTextField_Cidade_CadastroFornecedor.setText(webServiceCep.getCidade());
+                jTextField_Bairro_CadastroFornecedor.setText(webServiceCep.getBairro());
+                jComboBox_UF_CadastroFornecedor.setSelectedItem(webServiceCep.getUf());
+                System.out.println("Cep: " + webServiceCep.getCep());
+                System.out.println("Logradouro: " + webServiceCep.getLogradouroFull());
+                System.out.println("Bairro: " + webServiceCep.getBairro());
+                System.out.println("Cidade: "
+                        + webServiceCep.getCidade() + "/" + webServiceCep.getUf());
+
+                //caso haja problemas imprime as exce??es.
+            } else {
+                JOptionPane.showMessageDialog(null, "Erro numero: " + webServiceCep.getResulCode());
+
+                JOptionPane.showMessageDialog(null, "Descrição do erro: " + webServiceCep.getResultText());
+            }
+        } else {
+            jTextField_Endereco_CadastroFornecedor.setText(endereco.getRua_Endereco());
+            jTextField_Cidade_CadastroFornecedor.setText(endereco.getCidade_Endereco());
+            jTextField_Bairro_CadastroFornecedor.setText(endereco.getBairro_Endereco());
+            jComboBox_UF_CadastroFornecedor.setSelectedItem(endereco.getUf_Endereco());
+        }
+    }
+
+    public void atualizarListadeFornecedor() {
+        DefaultTableModel modelo = (DefaultTableModel) jTable_CadastroFornecedor.getModel();
+        modelo.setNumRows(0);
+        jTable_CadastroFornecedor.updateUI();
+
+        if (l_fornecedor != null) {
+            if (l_fornecedor.size() > 0) {
+                for (Fornecedor c : l_fornecedor) {
+                    modelo.addRow(new Object[]{c.getId_fornecedor(), c.getRazao_social(),
+                        c.getCnpj_Fornecedor(), c.getEndereco().getRua_Endereco(), c.getEndereco().getCidade_Endereco(),
+                        c.getTelefone_fornecedor(), c.getCelular_fornecedor()});
+                }
+            }
+        }
+    }
 
     private void jTextField_Celular_CadastroFornecedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_Celular_CadastroFornecedorActionPerformed
         // TODO add your handling code here:
@@ -453,30 +614,98 @@ public class CadastroFornecedor extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_jButton_Sair_CadastroFornecedorActionPerformed
 
-     public void buscaCep() {
-        //Faz a busca para o cep 58043-280
-        WebServiceCep webServiceCep = WebServiceCep.searchCep(jTextField_CEP_CadastroFornecedor.getText());
-        //A ferramenta de busca ignora qualquer caracter que n?o seja n?mero.
+    private void jButton_Limpar_CadastroFornecedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Limpar_CadastroFornecedorActionPerformed
+        limparDados();
+    }//GEN-LAST:event_jButton_Limpar_CadastroFornecedorActionPerformed
 
-        //caso a busca ocorra bem, imprime os resultados.
-        if (webServiceCep.wasSuccessful()) {
-           jTextField_Endereco_CadastroFornecedor.setText(webServiceCep.getLogradouroFull());
-           jTextField_Cidade_CadastroFornecedor.setText(webServiceCep.getCidade());
-           jTextField_Bairro_CadastroFornecedor.setText(webServiceCep.getBairro());
-           jComboBox_UF_CadastroFornecedor.setSelectedItem(webServiceCep.getUf());
-            System.out.println("Cep: " + webServiceCep.getCep());
-            System.out.println("Logradouro: " + webServiceCep.getLogradouroFull());
-            System.out.println("Bairro: " + webServiceCep.getBairro());
-            System.out.println("Cidade: "
-                    + webServiceCep.getCidade() + "/" + webServiceCep.getUf());
+    private void jButton_Excluir_CadastroFornecedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Excluir_CadastroFornecedorActionPerformed
+        if (fornecedor != null) {
+            int idComplemento = fornecedor.getcomplemento_endereco().getId_complemento();
 
-            //caso haja problemas imprime as exce??es.
-        } else {
-            JOptionPane.showMessageDialog(null, "Erro numero: " + webServiceCep.getResulCode());
+            bdF = new FornecedorBD();
+            JOptionPane.showMessageDialog(rootPane, bdF.cancelarFornecedor(fornecedor.getId_fornecedor()));
 
-            JOptionPane.showMessageDialog(null, "Descrição do erro: " + webServiceCep.getResultText());
+            ComplementoBD complementoBD = new ComplementoBD();
+            complementoBD.excluir(idComplemento);
+
+            limparDados();
         }
+
+    }//GEN-LAST:event_jButton_Excluir_CadastroFornecedorActionPerformed
+
+    private void jButton_Pesquisar_CadastroFornecedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Pesquisar_CadastroFornecedorActionPerformed
+        pesquisarFornecedor();
+
+    }//GEN-LAST:event_jButton_Pesquisar_CadastroFornecedorActionPerformed
+
+    public void preencherCampos(Fornecedor fornecedor) {
+        jTextField_Codigo_CadastroFornecedor.setText(String.valueOf(fornecedor.getId_fornecedor()));
+        jTextField_Razao_Social_CadastroFornecedor.setText(fornecedor.getRazao_social());
+        jTextField_Nome_Fantasia_Fornecedor.setText(fornecedor.getNome_fantasia());
+        jTextField_Celular_CadastroFornecedor.setText(fornecedor.getCelular_fornecedor());
+        jTextField_Telefone_CadastroFornecedor.setText(fornecedor.getTelefone_fornecedor());
+        jTextField_Email_Fornecedor.setText(fornecedor.getEmail_fornecedor());
+        jTextField_CNPJ_CadastroFornecedor.setText(fornecedor.getCnpj_Fornecedor());
+
+        //Endereço
+        jTextField_CEP_CadastroFornecedor.setText(String.valueOf(fornecedor.getEndereco().getCep_Endereco()));
+        jTextField_Endereco_CadastroFornecedor.setText(fornecedor.getEndereco().getRua_Endereco());
+        jTextField_Bairro_CadastroFornecedor.setText(fornecedor.getEndereco().getBairro_Endereco());
+        jTextField_Cidade_CadastroFornecedor.setText(fornecedor.getEndereco().getCidade_Endereco());
+        jComboBox_UF_CadastroFornecedor.setSelectedItem(fornecedor.getEndereco().getUf_Endereco());
+
+        //Complemento
+        jTextField_Numero_CadastroFornecedor.setText(fornecedor.getcomplemento_endereco().getNumero_Endereco());
     }
+
+    private void jButton_Editar_CadastroFornecedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Editar_CadastroFornecedorActionPerformed
+
+        fornecedor.setRazao_social(jTextField_Razao_Social_CadastroFornecedor.getText());
+        fornecedor.setNome_fantasia(jTextField_Nome_Fantasia_Fornecedor.getText());
+        fornecedor.setCnpj_Fornecedor(jTextField_CNPJ_CadastroFornecedor.getText());
+        fornecedor.setEmail_fornecedor(jTextField_Email_Fornecedor.getText());
+        fornecedor.setTelefone_fornecedor(jTextField_Telefone_CadastroFornecedor.getText());
+        fornecedor.setCelular_fornecedor(jTextField_Celular_CadastroFornecedor.getText());
+
+        if (!fornecedor.getEndereco().getCep_Endereco().equals(jTextField_CEP_CadastroFornecedor.getText())) {
+            EnderecoBD enderecoBD = new EnderecoBD();
+            endereco = enderecoBD.pesquisarPorID(Integer.parseInt(jTextField_CEP_CadastroFornecedor.getText()));
+            if (endereco == null) {
+                endereco = new Endereco();
+                endereco.setCep_Endereco(Integer.parseInt(jTextField_CEP_CadastroFornecedor.getText()));
+                endereco.setRua_Endereco(jTextField_Endereco_CadastroFornecedor.getText());
+                endereco.setCidade_Endereco(jTextField_Cidade_CadastroFornecedor.getText());
+                endereco.setUf_Endereco(jComboBox_UF_CadastroFornecedor.getSelectedItem().toString());
+                endereco.setBairro_Endereco(jTextField_Bairro_CadastroFornecedor.getText());
+                int idEndereco = enderecoBD.Inserir(endereco);
+                if (idEndereco > 0) {
+                    endereco = enderecoBD.pesquisarPorID(idEndereco);
+                }
+            }
+
+            fornecedor.setEndereco(endereco);
+        }
+
+        fornecedor.getcomplemento_endereco().setNumero_Endereco(jTextField_Numero_CadastroFornecedor.getText());
+        ComplementoBD complementoBD = new ComplementoBD();
+        complementoBD.alterar(fornecedor.getcomplemento_endereco());
+
+        JOptionPane.showMessageDialog(rootPane, bdF.alterarFornecedor(fornecedor));
+        limparDados();
+        
+    }//GEN-LAST:event_jButton_Editar_CadastroFornecedorActionPerformed
+
+    private void jTable_CadastroFornecedorMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable_CadastroFornecedorMouseClicked
+        if (jTable_CadastroFornecedor.getModel().getRowCount() > 0) {
+            fornecedor = l_fornecedor.get(jTable_CadastroFornecedor.getSelectedRow());
+            preencherCampos(fornecedor);
+        }
+
+    }//GEN-LAST:event_jTable_CadastroFornecedorMouseClicked
+
+    private void jTextField_Codigo_CadastroFornecedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_Codigo_CadastroFornecedorActionPerformed
+        pesquisarFornecedor();
+    }//GEN-LAST:event_jTextField_Codigo_CadastroFornecedorActionPerformed
 
     /**
      * @param args the command line arguments
@@ -510,9 +739,9 @@ public class CadastroFornecedor extends javax.swing.JFrame {
             public void run() {
                 new CadastroFornecedor().setVisible(true);
             }
-            
+
         });
-        
+
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -535,6 +764,7 @@ public class CadastroFornecedor extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel_Endereco_CadastroFornecedor;
     private javax.swing.JLabel jLabel_OBS_CadastroFornecedor;
     private javax.swing.JLabel jLabel_Razao_Social_CadastroFornecedor;
+    private javax.swing.JLabel jLabel_Razao_Social_CadastroFornecedor1;
     private javax.swing.JLabel jLabel_Telefone_CadastroFornecedor;
     private javax.swing.JLayeredPane jLayeredPane1;
     private javax.swing.JScrollPane jScrollPane1;
@@ -545,10 +775,56 @@ public class CadastroFornecedor extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField_Celular_CadastroFornecedor;
     private javax.swing.JTextField jTextField_Cidade_CadastroFornecedor;
     private javax.swing.JTextField jTextField_Codigo_CadastroFornecedor;
+    private javax.swing.JTextField jTextField_Email_Fornecedor;
     private javax.swing.JTextField jTextField_Endereco_CadastroFornecedor;
+    private javax.swing.JTextField jTextField_Nome_Fantasia_Fornecedor;
     private javax.swing.JTextField jTextField_Numero_CadastroFornecedor;
-    private javax.swing.JTextField jTextField_OBS_CadastroFornecedor;
     private javax.swing.JTextField jTextField_Razao_Social_CadastroFornecedor;
     private javax.swing.JTextField jTextField_Telefone_CadastroFornecedor;
     // End of variables declaration//GEN-END:variables
+
+    private void pesquisarFornecedor() {
+        bdF = new FornecedorBD();
+
+        if (!jTextField_Codigo_CadastroFornecedor.getText().isEmpty()) {
+            fornecedor = bdF.pesquisarFornecedorporId(Integer.parseInt(jTextField_Codigo_CadastroFornecedor.getText()));
+            
+
+            if (fornecedor != null) {
+
+                l_fornecedor = new ArrayList<Fornecedor>();
+                l_fornecedor.add(fornecedor);
+               
+                atualizarListadeFornecedor();
+
+            } else {
+                JOptionPane.showMessageDialog(rootPane, "Fornecedor nâo encontrado");
+                limparDados();
+            }
+        } else if (!jTextField_Razao_Social_CadastroFornecedor.getText().isEmpty()) {
+            fornecedor = bdF.pesquisarFornecedorPorRazaoSocial(jTextField_Razao_Social_CadastroFornecedor.getText());
+
+             if (fornecedor != null) {
+
+                l_fornecedor = new ArrayList<Fornecedor>();
+                l_fornecedor.add(fornecedor);
+                atualizarListadeFornecedor();
+            } else {
+                JOptionPane.showMessageDialog(rootPane, "Fornecedor não encontrado!");
+                limparDados();
+            }
+        } else if (!jTextField_Nome_Fantasia_Fornecedor.getText().isEmpty()) {
+            fornecedor = bdF.pesquisarFornecedorPorRazaoSocial(jTextField_Nome_Fantasia_Fornecedor.getText());
+
+            if (fornecedor != null) {
+
+                l_fornecedor = new ArrayList<Fornecedor>();
+                l_fornecedor.add(fornecedor);
+                atualizarListadeFornecedor();
+            } else {
+                JOptionPane.showMessageDialog(rootPane, "Fornecedor não encontrado!");
+                limparDados();
+            }
+        }
+    }
 }

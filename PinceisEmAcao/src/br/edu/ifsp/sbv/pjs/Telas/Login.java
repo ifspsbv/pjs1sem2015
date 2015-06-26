@@ -1,22 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package br.edu.ifsp.sbv.pjs.Telas;
 
 import java.awt.event.KeyEvent;
 import javax.swing.JOptionPane;
+import br.edu.ifsp.sbv.pjs.Controle.LoginBD;
+import br.edu.ifsp.sbv.pjs.Controle.UsuarioBD;
+//import java.util.ArrayList;
+//import java.util.List;
 
-/**
- *
- * @author bv1301144
- */
 public class Login extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Login
-     */
+   // private Login login;
+    private LoginBD bdL = new LoginBD();
+
     public Login() {
         initComponents();
     }
@@ -40,52 +35,48 @@ public class Login extends javax.swing.JFrame {
         jLayeredPane1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPassword_Senha_Login.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jPassword_Senha_Login.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jPassword_Senha_Login.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPassword_Senha_Login.setDisabledTextColor(new java.awt.Color(51, 51, 51));
+        jPassword_Senha_Login.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jPassword_Senha_LoginActionPerformed(evt);
+            }
+        });
         jPassword_Senha_Login.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 jPassword_Senha_LoginKeyPressed(evt);
             }
         });
-        jLayeredPane1.add(jPassword_Senha_Login, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 210, 170, 35));
+        jLayeredPane1.add(jPassword_Senha_Login, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 200, 170, 35));
 
-        jLabel3.setFont(new java.awt.Font("Swis721 LtEx BT", 1, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 0, 204));
+        jLabel3.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(51, 51, 255));
         jLabel3.setText("Senha");
-        jLayeredPane1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, 80, -1));
+        jLayeredPane1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 210, -1, -1));
 
         jTextField_Usuario_Login.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jTextField_Usuario_Login.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jTextField_Usuario_Login.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jTextField_Usuario_Login.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField_Usuario_LoginActionPerformed(evt);
             }
         });
-        jLayeredPane1.add(jTextField_Usuario_Login, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 160, 170, 35));
+        jLayeredPane1.add(jTextField_Usuario_Login, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 150, 170, 35));
 
         jButton_Login_Login.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/key-16.png"))); // NOI18N
         jButton_Login_Login.setText("Login");
-        jButton_Login_Login.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton_Login_LoginMouseClicked(evt);
-            }
-        });
+        jButton_Login_Login.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jButton_Login_Login.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton_Login_LoginActionPerformed(evt);
             }
         });
-        jButton_Login_Login.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
-                jButton_Login_LoginKeyPressed(evt);
-            }
-        });
-        jLayeredPane1.add(jButton_Login_Login, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 270, 100, 30));
+        jLayeredPane1.add(jButton_Login_Login, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 260, 100, 30));
 
-        jLabel4.setFont(new java.awt.Font("Swis721 LtEx BT", 1, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(0, 0, 204));
+        jLabel4.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(51, 51, 255));
         jLabel4.setText("Usuário");
-        jLayeredPane1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 160, 70, 30));
+        jLayeredPane1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 160, -1, 20));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/fundo com logo login.png"))); // NOI18N
         jLabel2.setAutoscrolls(true);
@@ -106,41 +97,42 @@ public class Login extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField_Usuario_LoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_Usuario_LoginActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField_Usuario_LoginActionPerformed
-
     private void jButton_Login_LoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Login_LoginActionPerformed
-
+        logar();
 
     }//GEN-LAST:event_jButton_Login_LoginActionPerformed
 
-    private void jButton_Login_LoginKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton_Login_LoginKeyPressed
+    private void logar() {
+        bdL = new LoginBD();
+        br.edu.ifsp.sbv.pjs.Modelo.Login login = new br.edu.ifsp.sbv.pjs.Modelo.Login();
+        login = bdL.autenticarUsuario(jTextField_Usuario_Login.getText(), jPassword_Senha_Login.getText());
+        if (login != null) {
+            new MenuPrincipal().setVisible(true);
+            UsuarioBD usuarioBD = new UsuarioBD();            
+            MenuPrincipal.usuarioLogado = usuarioBD.pesquisarLogin(login.getId_login());
+            this.dispose();
+        } else {
+            JOptionPane.showMessageDialog(null, "Acesso negado");
+            jTextField_Usuario_Login.setText("");
+            jPassword_Senha_Login.setText("");
+            jTextField_Usuario_Login.requestFocus(true);
+        }
 
-    }//GEN-LAST:event_jButton_Login_LoginKeyPressed
+    }
 
     private void jPassword_Senha_LoginKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jPassword_Senha_LoginKeyPressed
         if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
-            if (jTextField_Usuario_Login.getText().equals("usuario") && (jPassword_Senha_Login.getText().equals("1234"))) {
-//JOptionPane.showMessageDialog(null,"Acesso Permitido ");
-                new MenuPrincipal().setVisible(true);
-                this.dispose();
-            } else {
-                JOptionPane.showMessageDialog(null, "Acesso negado");
-            }
+            logar();
+        }
     }//GEN-LAST:event_jPassword_Senha_LoginKeyPressed
-    }
-    private void jButton_Login_LoginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton_Login_LoginMouseClicked
-       {
-            if (jTextField_Usuario_Login.getText().equals("usuario") && (jPassword_Senha_Login.getText().equals("1234"))) {
-//JOptionPane.showMessageDialog(null,"Acesso Permitido ");
-                new MenuPrincipal().setVisible(true);
-                this.dispose();
-            } else {
-                JOptionPane.showMessageDialog(null, "Acesso negado");
-            }
-    }  
-    }//GEN-LAST:event_jButton_Login_LoginMouseClicked
+
+    private void jPassword_Senha_LoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPassword_Senha_LoginActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPassword_Senha_LoginActionPerformed
+
+    private void jTextField_Usuario_LoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_Usuario_LoginActionPerformed
+      
+    }//GEN-LAST:event_jTextField_Usuario_LoginActionPerformed
 
     /**
      * @param args the command line arguments

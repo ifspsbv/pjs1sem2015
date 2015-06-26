@@ -1,6 +1,4 @@
-package edu.ifsp.pjs.modelo;
-
-import java.util.*;
+package br.edu.ifsp.sbv.pjs.Modelo;
 
 public class Produto {
 
@@ -20,6 +18,28 @@ public class Produto {
     private double margem_lucro;
 
     private double qtde_estoque;
+    
+    private double valor_unitario;
+    
+    private String observacao;
+    
+
+    public String getObservacao() {
+        return observacao;
+    }
+
+    public void setObservacao(String observacao) {
+        this.observacao = observacao;
+    }
+    
+
+    public double getValor_unitario() {
+        return valor_unitario;
+    }
+
+    public void setValor_unitario(double valor_unitario) {
+        this.valor_unitario = valor_unitario;
+    }
     
     private UnidadeMedida unidademedida;
     private Categoria categoria;
@@ -97,9 +117,20 @@ public class Produto {
         this.qtde_estoque = qtde_estoque;
     }
 
-
-
-
-
-
+    public static void Clonar(Produto pOrigem, Produto pDestino)
+    {
+        if (pDestino == null)
+        {
+            pDestino = new Produto();
+        }
+        pDestino.id_produto = pOrigem.id_produto;
+        pDestino.cod_fixo = pOrigem.cod_fixo;
+        pDestino.preco_venda = pOrigem.preco_venda;
+        pDestino.qtde_min = pOrigem.qtde_min;
+        pDestino.nome_produto = pOrigem.nome_produto;
+        pDestino.margem_lucro = pOrigem.margem_lucro;
+        pDestino.qtde_estoque = pOrigem.qtde_estoque;
+        pDestino.valor_unitario = pOrigem.valor_unitario;
+        pDestino.observacao = pOrigem.observacao;
+    }
 }

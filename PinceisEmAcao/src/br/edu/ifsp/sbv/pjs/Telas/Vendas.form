@@ -16,6 +16,9 @@
     <SyntheticProperty name="generateSize" type="boolean" value="true"/>
     <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
   </SyntheticProperties>
+  <Events>
+    <EventHandler event="windowGainedFocus" listener="java.awt.event.WindowFocusListener" parameters="java.awt.event.WindowEvent" handler="formWindowGainedFocus"/>
+  </Events>
   <AuxValues>
     <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
     <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
@@ -35,64 +38,52 @@
               <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="jLabel_Sub_Total_Vendas" min="-2" pref="94" max="-2" attributes="0"/>
-                                  <Component id="jComboBox_Forma_Pagamento_Vendas" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <Component id="jLabel_Troco_Vendas" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jTextField_Sub_Total_Vendas" min="-2" pref="156" max="-2" attributes="0"/>
-                          <Component id="jTextField_Troco_Vendas" alignment="0" min="-2" pref="156" max="-2" attributes="0"/>
-                          <Component id="jTextField_Opção_Vendas" alignment="0" min="-2" pref="156" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Component id="jLabel_Total_Vendas" min="-2" pref="168" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jTextField_Total_Vendas" min="-2" pref="246" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jLabel_Codido_Vendas" min="-2" pref="43" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="jTextField_Codido_Produto_Vendas" min="-2" pref="92" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                                      <Component id="jLabel_Produto_Vendas" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-                                      <Component id="jTextField_Produto_Vendas" min="-2" pref="324" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                                      <Component id="jLabel_Quantidade_Vendas" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="jScrollPane1" min="-2" pref="824" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                  <Group type="102" attributes="0">
                                       <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                       <Component id="jTextField_Codigo_Cliente_Vendas" min="-2" pref="92" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                                       <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                                      <Component id="jTextField_Cliente_Vendas" min="-2" pref="324" max="-2" attributes="0"/>
+                                      <Component id="jTextField_Cliente_Vendas" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <Component id="jLabel_Codido_Vendas" min="-2" pref="43" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="jTextField_Codido_Produto_Vendas" min="-2" pref="92" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                                      <Component id="jLabel_Produto_Vendas" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-                                      <Component id="jButton_Pesquisar_Vendas" min="-2" pref="45" max="-2" attributes="0"/>
+                                      <Component id="jTextField_Produto_Vendas" min="-2" pref="299" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Component id="jButton_Pesquisar_Vendas" min="-2" pref="45" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
+                                      <Component id="jLabel_Quantidade_Vendas1" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <Component id="jButton_Pesquisar_Produto" min="-2" pref="45" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jLabel_Quantidade_Vendas" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jTextField_Quantidade_Vendas" min="-2" pref="72" max="-2" attributes="0"/>
-                                  <Component id="jButton_Incluir_Vendas" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <Component id="jTextField_Quantidade_Vendas" max="32767" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="jButton_Incluir_Vendas" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="jDateChooser1_Data_Vendas" max="32767" attributes="0"/>
                               </Group>
                           </Group>
-                          <Component id="jScrollPane1" min="-2" pref="824" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -114,6 +105,26 @@
                           </Group>
                       </Group>
                   </Group>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                              <Component id="jLabel_Sub_Total_Vendas" min="-2" pref="94" max="-2" attributes="0"/>
+                              <Component id="jComboBox_Forma_Pagamento_Vendas" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="jLabel_Troco_Vendas" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jTextField_Sub_Total_Vendas" min="-2" pref="156" max="-2" attributes="0"/>
+                          <Component id="jTextField_Opção_Vendas" alignment="0" min="-2" pref="156" max="-2" attributes="0"/>
+                          <Component id="jTextField_Troco_Vendas" alignment="0" min="-2" pref="93" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="jLabel_Total_Vendas" min="-2" pref="168" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jTextField_Total_Vendas" min="-2" pref="246" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                  </Group>
               </Group>
               <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
           </Group>
@@ -125,17 +136,20 @@
               <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel_Codido_Vendas" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel_Produto_Vendas" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField_Produto_Vendas" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
-                          <Component id="jLabel_Quantidade_Vendas" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField_Quantidade_Vendas" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
-                          <Component id="jTextField_Codido_Produto_Vendas" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jButton_Pesquisar_Produto" alignment="0" min="-2" pref="28" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel_Codido_Vendas" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel_Produto_Vendas" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jTextField_Produto_Vendas" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                              <Component id="jLabel_Quantidade_Vendas" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jTextField_Quantidade_Vendas" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                              <Component id="jTextField_Codido_Produto_Vendas" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                              <Component id="jButton_Incluir_Vendas" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
-                      <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jButton_Incluir_Vendas" min="-2" pref="28" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="jButton_Pesquisar_Vendas" alignment="1" min="-2" pref="28" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
@@ -145,8 +159,10 @@
                                   <Component id="jTextField_Cliente_Vendas" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
                               </Group>
                           </Group>
+                          <Component id="jDateChooser1_Data_Vendas" min="-2" pref="28" max="-2" attributes="0"/>
+                          <Component id="jLabel_Quantidade_Vendas1" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
                       <Component id="jRadioButton1_Venda_Vendas" min="-2" max="-2" attributes="0"/>
@@ -179,22 +195,24 @@
                           <Component id="jTextField_Opção_Vendas" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
                           <Component id="jComboBox_Forma_Pagamento_Vendas" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jLabel_Troco_Vendas" min="-2" pref="28" max="-2" attributes="0"/>
-                          <Component id="jTextField_Troco_Vendas" min="-2" pref="28" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jTextField_Troco_Vendas" alignment="3" min="-2" pref="59" max="-2" attributes="0"/>
+                          <Component id="jLabel_Troco_Vendas" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
-                      <Component id="jLabel_Total_Vendas" min="-2" pref="85" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jTextField_Total_Vendas" min="-2" pref="122" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
+                          <Component id="jLabel_Total_Vendas" min="-2" pref="85" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jTextField_Total_Vendas" min="-2" pref="122" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
               </Group>
-              <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -266,6 +284,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Limpar"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_Limpar_VendasActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton_Finalizar_Vendas">
       <Properties>
@@ -277,6 +298,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Finalizar"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_Finalizar_VendasActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton_Excluir_Vendas">
       <Properties>
@@ -288,6 +312,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Excluir"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_Excluir_VendasActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JComboBox" name="jComboBox_Forma_Pagamento_Vendas">
       <Properties>
@@ -315,8 +342,9 @@
     <Component class="javax.swing.JTextField" name="jTextField_Troco_Vendas">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="14" style="0"/>
+          <Font name="Tahoma" size="18" style="1"/>
         </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="jTextField_Sub_Total_Vendas">
@@ -333,6 +361,7 @@
         </Property>
       </Properties>
       <Events>
+        <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="jTextField_Op&#xe7;&#xe3;o_VendasFocusLost"/>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField_Op&#xe7;&#xe3;o_VendasActionPerformed"/>
       </Events>
     </Component>
@@ -369,6 +398,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Incluir"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_Incluir_VendasActionPerformed"/>
+      </Events>
     </Component>
     <Container class="javax.swing.JScrollPane" name="jScrollPane1">
       <AuxValues>
@@ -377,21 +409,48 @@
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
       <SubComponents>
-        <Component class="javax.swing.JTable" name="jTable1">
+        <Component class="javax.swing.JTable" name="jTable1_vendas">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="14" style="0"/>
             </Property>
             <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-              <Table columnCount="4" rowCount="20">
-                <Column editable="true" title="Codigo" type="java.lang.Integer"/>
+              <Table columnCount="4" rowCount="0">
                 <Column editable="true" title="Produto" type="java.lang.String"/>
-                <Column editable="true" title="Quantidade" type="java.lang.Integer"/>
-                <Column editable="true" title="Pre&#xe7;o" type="java.lang.Float"/>
+                <Column editable="true" title="Quantidade" type="java.lang.String"/>
+                <Column editable="true" title="Valor" type="java.lang.String"/>
+                <Column editable="true" title="Total" type="java.lang.String"/>
               </Table>
+            </Property>
+            <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+              <TableColumnModel selectionModel="0">
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+              </TableColumnModel>
             </Property>
             <Property name="showHorizontalLines" type="boolean" value="false"/>
             <Property name="showVerticalLines" type="boolean" value="false"/>
+            <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+              <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+            </Property>
           </Properties>
         </Component>
       </SubComponents>
@@ -440,6 +499,9 @@
           <Image iconType="3" name="/br/edu/ifsp/sbv/pjs/Imagens/lupa16.png"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_Pesquisar_VendasActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton2_Sair_Vendas">
       <Properties>
@@ -463,8 +525,12 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="21" style="0"/>
         </Property>
+        <Property name="selected" type="boolean" value="true"/>
         <Property name="text" type="java.lang.String" value="Venda"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButton1_Venda_VendasActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JRadioButton" name="jRadioButton1_Consumo_Vendas">
       <Properties>
@@ -475,6 +541,29 @@
           <Font name="Tahoma" size="21" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Consumo"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButton1_Consumo_VendasActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="com.toedter.calendar.JDateChooser" name="jDateChooser1_Data_Vendas">
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton_Pesquisar_Produto">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/br/edu/ifsp/sbv/pjs/Imagens/lupa16.png"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_Pesquisar_ProdutoActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel_Quantidade_Vendas1">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Data"/>
       </Properties>
     </Component>
   </SubComponents>

@@ -1,6 +1,4 @@
-package edu.ifsp.pjs.modelo;
-
-import java.util.*;
+package br.edu.ifsp.sbv.pjs.Modelo;
 
 
 public class Cliente {
@@ -16,8 +14,51 @@ public class Cliente {
 
     private String telefone_cliente;
     
+    private String telefonerecado_cliente;  
+    
+    private String celular_cliente;
+    
+    private String cpf;  
+    
     private Endereco endereco;
+    
+    private ComplementoEndereco complemento;
+           
+            
 
+    public String getTelefonerecado_cliente() {
+        return telefonerecado_cliente;
+    }
+
+    public void setTelefonerecado_cliente(String telefonerecado_cliente) {
+        this.telefonerecado_cliente = telefonerecado_cliente;
+    }
+
+    public ComplementoEndereco getComplemento() {
+        return complemento;
+    }
+
+    public void setComplemento(ComplementoEndereco complemento) {
+        this.complemento = complemento;
+    }
+
+    public String getCelular_cliente() {
+        return celular_cliente;
+    }
+
+    public void setCelular_cliente(String celular_cliente) {
+        this.celular_cliente = celular_cliente;
+    }   
+    
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+    
+    
     public Endereco getEndereco() {
         return endereco;
     }
@@ -58,6 +99,7 @@ public class Cliente {
         this.telefone_cliente = telefone_cliente;
     }
 
+   
 
 
     

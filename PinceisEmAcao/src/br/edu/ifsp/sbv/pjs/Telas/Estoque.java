@@ -12,7 +12,7 @@ package br.edu.ifsp.sbv.pjs.Telas;
 public class Estoque extends javax.swing.JFrame {
 
     
-    private PesquisarEstoque pesquisarestoque;
+    private PesquisarEstoque pesquisar_estoque;
     private CadastroProdutoEstoque cadastroprodutoestoque;
     public Estoque() {
         initComponents();
@@ -120,10 +120,10 @@ public class Estoque extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton_Pesquisar_Produto_EstoqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Pesquisar_Produto_EstoqueActionPerformed
-        if(pesquisarestoque==null){
-        pesquisarestoque= new PesquisarEstoque();
+        if(pesquisar_estoque == null){
+        pesquisar_estoque = new PesquisarEstoque();
     }
-    pesquisarestoque.setVisible(true);
+    pesquisar_estoque.setVisible(true);
     }//GEN-LAST:event_jButton_Pesquisar_Produto_EstoqueActionPerformed
 
     private void jButton_Cadastrar_Produto_EstoqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Cadastrar_Produto_EstoqueActionPerformed

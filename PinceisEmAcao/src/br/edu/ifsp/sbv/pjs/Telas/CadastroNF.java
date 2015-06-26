@@ -5,7 +5,26 @@
  */
 package br.edu.ifsp.sbv.pjs.Telas;
 
+import br.edu.ifsp.sbv.pjs.Controle.ClienteBD;
+import br.edu.ifsp.sbv.pjs.Controle.CompraProdutoBD;
+import br.edu.ifsp.sbv.pjs.Controle.FornecedorBD;
+import br.edu.ifsp.sbv.pjs.Controle.NotaFiscalBD;
+import br.edu.ifsp.sbv.pjs.Controle.ProdutoBD;
+import br.edu.ifsp.sbv.pjs.Modelo.Cliente;
+import br.edu.ifsp.sbv.pjs.Modelo.CompraProduto;
+import br.edu.ifsp.sbv.pjs.Modelo.Endereco;
+import br.edu.ifsp.sbv.pjs.Modelo.Fornecedor;
+import br.edu.ifsp.sbv.pjs.Modelo.Fornecedor;
+import br.edu.ifsp.sbv.pjs.Modelo.PedidoCompraNF;
+import br.edu.ifsp.sbv.pjs.Modelo.Produto;
 import java.awt.event.KeyEvent;
+import java.text.DecimalFormat;
+import java.util.AbstractList;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
 
 /**
  *
@@ -13,11 +32,24 @@ import java.awt.event.KeyEvent;
  */
 public class CadastroNF extends javax.swing.JFrame {
 
+    private PedidoCompraNF NF;
+    private Produto produto = new Produto();
+    private NotaFiscalBD bdd;
+    private double total = 0.00;
+    private Fornecedor fornecedor;
+    private FornecedorBD bd = new FornecedorBD();
+    private Endereco endereco;
+    private List<Produto> produtos;
+    private ProdutoBD bdP = new ProdutoBD();
+    private List<CompraProduto> listaCompraProduto = new ArrayList<CompraProduto>();
+    private DefaultTableModel modelo;
+
     /**
      * Creates new form CadastroBoleto
      */
     public CadastroNF() {
         initComponents();
+        modelo = (DefaultTableModel) jTable_NF.getModel();
     }
 
     /**
@@ -48,8 +80,6 @@ public class CadastroNF extends javax.swing.JFrame {
         jTextField_qtde_CadastroNF = new javax.swing.JTextField();
         jLabel_QtdeParcela_CadastroNF = new javax.swing.JLabel();
         jTextField_Parcela2_CadastroNF = new javax.swing.JTextField();
-        jLabel_Total1_CadastroNF = new javax.swing.JLabel();
-        jTextField_Total_CadastroNF = new javax.swing.JTextField();
         jLabel_Emissao_CadastroNF = new javax.swing.JLabel();
         jLabel_Vencimento_CadastroNF = new javax.swing.JLabel();
         jLabel_NomeFantasia_CadastroNF = new javax.swing.JLabel();
@@ -63,7 +93,7 @@ public class CadastroNF extends javax.swing.JFrame {
         jButton7_Pesquisar_RazaoSocial_CadastroNF = new javax.swing.JButton();
         jDateChooser_Emissao_CadastroNF = new com.toedter.calendar.JDateChooser();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jTable2 = new javax.swing.JTable();
+        jTable_NF = new javax.swing.JTable();
         jLabel_Total_CadastroNF = new javax.swing.JLabel();
         jLabel_QtdeParcela_CadastroNF1 = new javax.swing.JLabel();
         jTextField_Parcela1_CadastroNF = new javax.swing.JTextField();
@@ -80,26 +110,51 @@ public class CadastroNF extends javax.swing.JFrame {
         jButton_Editar_CadastroNF.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton_Editar_CadastroNF.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/Editar.png"))); // NOI18N
         jButton_Editar_CadastroNF.setText("Editar");
+        jButton_Editar_CadastroNF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_Editar_CadastroNFActionPerformed(evt);
+            }
+        });
 
         jButton_Limpar_CadastroNF.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton_Limpar_CadastroNF.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/Limpar.png"))); // NOI18N
         jButton_Limpar_CadastroNF.setText("Limpar");
         jButton_Limpar_CadastroNF.setMaximumSize(new java.awt.Dimension(75, 25));
         jButton_Limpar_CadastroNF.setMinimumSize(new java.awt.Dimension(75, 25));
+        jButton_Limpar_CadastroNF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_Limpar_CadastroNFActionPerformed(evt);
+            }
+        });
 
         jButton_Pesquisar_CadastroNF.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton_Pesquisar_CadastroNF.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/lupa24.png"))); // NOI18N
         jButton_Pesquisar_CadastroNF.setText("Pesquisar");
         jButton_Pesquisar_CadastroNF.setMaximumSize(new java.awt.Dimension(75, 25));
         jButton_Pesquisar_CadastroNF.setMinimumSize(new java.awt.Dimension(75, 25));
+        jButton_Pesquisar_CadastroNF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_Pesquisar_CadastroNFActionPerformed(evt);
+            }
+        });
 
         jButton_Excluir_CadastroNF.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton_Excluir_CadastroNF.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/Excluir.png"))); // NOI18N
         jButton_Excluir_CadastroNF.setText("Excluir");
+        jButton_Excluir_CadastroNF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_Excluir_CadastroNFActionPerformed(evt);
+            }
+        });
 
         jButton_Salvar_CadastroNF.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton_Salvar_CadastroNF.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/Salvar.png"))); // NOI18N
         jButton_Salvar_CadastroNF.setText("Salvar");
+        jButton_Salvar_CadastroNF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_Salvar_CadastroNFActionPerformed(evt);
+            }
+        });
 
         jLabel_Total2_CadastroNF.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         jLabel_Total2_CadastroNF.setText("Total");
@@ -125,6 +180,11 @@ public class CadastroNF extends javax.swing.JFrame {
         });
 
         jButton6_Pesquisar_Produto_CadastroNF.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/lupa16.png"))); // NOI18N
+        jButton6_Pesquisar_Produto_CadastroNF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6_Pesquisar_Produto_CadastroNFActionPerformed(evt);
+            }
+        });
 
         jLabel_Qtde_CadastroNF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel_Qtde_CadastroNF.setText("Valor:");
@@ -140,6 +200,16 @@ public class CadastroNF extends javax.swing.JFrame {
         jLabel_Impostos_CadastroNF.setText("Impostos:");
 
         jTextField_Impostos_CadastroNF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jTextField_Impostos_CadastroNF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField_Impostos_CadastroNFActionPerformed(evt);
+            }
+        });
+        jTextField_Impostos_CadastroNF.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                jTextField_Impostos_CadastroNFFocusLost(evt);
+            }
+        });
         jTextField_Impostos_CadastroNF.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 jTextField_Impostos_CadastroNFKeyPressed(evt);
@@ -150,6 +220,11 @@ public class CadastroNF extends javax.swing.JFrame {
         jLabel_Valor_CadastroNF.setText("Quantidade:");
 
         jTextField_qtde_CadastroNF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jTextField_qtde_CadastroNF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField_qtde_CadastroNFActionPerformed(evt);
+            }
+        });
         jTextField_qtde_CadastroNF.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 jTextField_qtde_CadastroNFKeyPressed(evt);
@@ -165,11 +240,6 @@ public class CadastroNF extends javax.swing.JFrame {
                 jTextField_Parcela2_CadastroNFKeyPressed(evt);
             }
         });
-
-        jLabel_Total1_CadastroNF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel_Total1_CadastroNF.setText("Total:");
-
-        jTextField_Total_CadastroNF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
 
         jLabel_Emissao_CadastroNF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel_Emissao_CadastroNF.setText(" Emissão:");
@@ -218,6 +288,11 @@ public class CadastroNF extends javax.swing.JFrame {
         });
 
         jButton7_Pesquisar_RazaoSocial_CadastroNF.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/lupa16.png"))); // NOI18N
+        jButton7_Pesquisar_RazaoSocial_CadastroNF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7_Pesquisar_RazaoSocial_CadastroNFActionPerformed(evt);
+            }
+        });
 
         jDateChooser_Emissao_CadastroNF.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
@@ -225,55 +300,57 @@ public class CadastroNF extends javax.swing.JFrame {
             }
         });
 
-        jTable2.setModel(new javax.swing.table.DefaultTableModel(
+        jTable_NF.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null}
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
             },
             new String [] {
-                "codigo", "Produto", "Quantidade", "Valor Unitario", "Total"
+                "Produto", "Quantidade", "Valor Unitario", "Total"
             }
         ) {
             Class[] types = new Class [] {
-                java.lang.Integer.class, java.lang.String.class, java.lang.Double.class, java.lang.Object.class, java.lang.Double.class
+                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
             };
 
             public Class getColumnClass(int columnIndex) {
                 return types [columnIndex];
             }
         });
-        jTable2.setToolTipText("");
-        jTable2.setShowHorizontalLines(false);
-        jTable2.setShowVerticalLines(false);
-        jScrollPane2.setViewportView(jTable2);
+        jTable_NF.setToolTipText("");
+        jTable_NF.setShowHorizontalLines(false);
+        jTable_NF.setShowVerticalLines(false);
+        jScrollPane2.setViewportView(jTable_NF);
+
+        jLabel_Total_CadastroNF.setFont(new java.awt.Font("Tahoma", 3, 14)); // NOI18N
 
         jLabel_QtdeParcela_CadastroNF1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel_QtdeParcela_CadastroNF1.setText("Parcelas 2:");
@@ -337,6 +414,11 @@ public class CadastroNF extends javax.swing.JFrame {
         });
 
         jButton1_OK_CadastroNF.setText("OK");
+        jButton1_OK_CadastroNF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1_OK_CadastroNFActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -344,115 +426,107 @@ public class CadastroNF extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(40, 40, 40)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                .addComponent(jButton_Salvar_CadastroNF)
-                                .addGap(15, 15, 15)
-                                .addComponent(jButton_Editar_CadastroNF))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel_QtdeParcela_CadastroNF)
-                                    .addComponent(jLabel_Impostos_CadastroNF))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 996, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                    .addComponent(jButton_Salvar_CadastroNF)
+                                    .addGap(15, 15, 15)
+                                    .addComponent(jButton_Editar_CadastroNF))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jLabel_QtdeParcela_CadastroNF)
+                                        .addComponent(jLabel_Impostos_CadastroNF))
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                        .addComponent(jTextField_Impostos_CadastroNF)
+                                        .addComponent(jTextField_Parcela1_CadastroNF, javax.swing.GroupLayout.DEFAULT_SIZE, 84, Short.MAX_VALUE))
+                                    .addGap(18, 18, 18)
+                                    .addComponent(jLabel_QtdeParcela_CadastroNF1)))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(jTextField_Parcela2_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(jLabel_Vencimento_CadastroNF)
+                                    .addGap(10, 10, 10)
+                                    .addComponent(jTextField_Parcela3_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(jLabel_Vencimento_CadastroNF2)
+                                    .addGap(10, 10, 10)
+                                    .addComponent(jTextField_Parcela4_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(jLabel_Vencimento_CadastroNF3))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addGap(9, 9, 9)
+                                    .addComponent(jButton_Limpar_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(15, 15, 15)
+                                    .addComponent(jButton_Pesquisar_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(15, 15, 15)
+                                    .addComponent(jButton_Excluir_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(15, 15, 15)
+                                    .addComponent(jButton_Sair_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGap(10, 10, 10)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                    .addComponent(jTextField_Parcela5_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(jLabel_Vencimento_CadastroNF1)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(jTextField_Parcela6_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(0, 0, Short.MAX_VALUE))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addGap(0, 0, Short.MAX_VALUE)
+                                    .addComponent(jLabel_Total2_CadastroNF)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(jLabel_Total_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGroup(layout.createSequentialGroup()
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(jTextField_Impostos_CadastroNF)
-                                    .addComponent(jTextField_Parcela1_CadastroNF, javax.swing.GroupLayout.DEFAULT_SIZE, 84, Short.MAX_VALUE))
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(18, 18, 18)
-                                        .addComponent(jLabel_QtdeParcela_CadastroNF1))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(18, 18, 18)
-                                        .addComponent(jLabel_Total1_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jTextField_Parcela2_CadastroNF, javax.swing.GroupLayout.DEFAULT_SIZE, 84, Short.MAX_VALUE)
-                                    .addComponent(jTextField_Total_CadastroNF))
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel_Vencimento_CadastroNF)
-                                .addGap(10, 10, 10)
-                                .addComponent(jTextField_Parcela3_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel_Vencimento_CadastroNF2)
-                                .addGap(10, 10, 10)
-                                .addComponent(jTextField_Parcela4_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel_Vencimento_CadastroNF3))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(9, 9, 9)
-                                .addComponent(jButton_Limpar_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(15, 15, 15)
-                                .addComponent(jButton_Pesquisar_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(15, 15, 15)
-                                .addComponent(jButton_Excluir_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(15, 15, 15)
-                                .addComponent(jButton_Sair_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(10, 10, 10)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                .addComponent(jTextField_Parcela5_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel_Vencimento_CadastroNF1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField_Parcela6_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 0, Short.MAX_VALUE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
-                                .addComponent(jLabel_Total2_CadastroNF)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jLabel_Total_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                        .addComponent(jLabel_RazaoSocial_CadastroNF, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jLabel_NotaFiscal_CadastroNF, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 99, Short.MAX_VALUE)
-                                        .addComponent(jLabel_NomeFantasia_CadastroNF, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                    .addComponent(jLabel_Codigo_CadastroNF))
-                                .addGap(10, 10, 10)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jTextField_NotaFiscal_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 424, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel_RazaoSocial_CadastroNF, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jLabel_NotaFiscal_CadastroNF, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 99, Short.MAX_VALUE)
+                                    .addComponent(jLabel_NomeFantasia_CadastroNF, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addComponent(jLabel_Codigo_CadastroNF))
+                            .addGap(10, 10, 10)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(jTextField_NotaFiscal_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 424, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(jLabel_CNPJ_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(jTextField_CNPJ_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 431, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(jTextField_RazaoSocial_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 882, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(jButton7_Pesquisar_RazaoSocial_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                        .addComponent(jTextField_Codigo_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(20, 20, 20)
+                                        .addComponent(jLabel_Produto_CadastroNF)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jLabel_CNPJ_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jTextField_CNPJ_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 431, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jTextField_RazaoSocial_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 882, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jTextField_Produto_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 336, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jButton7_Pesquisar_RazaoSocial_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                            .addComponent(jTextField_Codigo_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGap(20, 20, 20)
-                                            .addComponent(jLabel_Produto_CadastroNF)
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                            .addComponent(jTextField_Produto_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 336, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                            .addComponent(jButton6_Pesquisar_Produto_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addComponent(jLabel_Valor_CadastroNF)
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                            .addComponent(jTextField_qtde_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGap(18, 18, 18)
-                                            .addComponent(jLabel_Qtde_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                            .addComponent(jTextField_Valor_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGap(18, 18, 18)
-                                            .addComponent(jButton1_OK_CadastroNF))
-                                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                            .addComponent(jTextField_NomeFantasia_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 714, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGap(18, 18, 18)
-                                            .addComponent(jLabel_Emissao_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                            .addComponent(jDateChooser_Emissao_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 1026, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(12, 12, 12)))
+                                        .addComponent(jButton6_Pesquisar_Produto_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(jLabel_Valor_CadastroNF)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(jTextField_qtde_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jLabel_Qtde_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(jTextField_Valor_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jButton1_OK_CadastroNF))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                        .addComponent(jTextField_NomeFantasia_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 714, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jLabel_Emissao_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(jDateChooser_Emissao_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addGap(12, 12, 12))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -490,9 +564,9 @@ public class CadastroNF extends javax.swing.JFrame {
                         .addComponent(jTextField_qtde_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabel_Qtde_CadastroNF)
                         .addComponent(jTextField_Valor_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(30, 30, 30)
+                .addGap(26, 26, 26)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(30, 30, 30)
+                .addGap(34, 34, 34)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel_QtdeParcela_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField_Parcela2_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -510,10 +584,8 @@ public class CadastroNF extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel_Impostos_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField_Impostos_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel_Total1_CadastroNF)
-                            .addComponent(jTextField_Total_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 65, Short.MAX_VALUE)
+                            .addComponent(jTextField_Impostos_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 66, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jButton_Salvar_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jButton_Editar_CadastroNF, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -532,100 +604,98 @@ public class CadastroNF extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTextField_NotaFiscal_CadastroNFKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_NotaFiscal_CadastroNFKeyPressed
-         if(evt.getKeyCode()== KeyEvent.VK_ENTER)
-     {
-         jTextField_CNPJ_CadastroNF.requestFocus();
-     }
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
+            jTextField_CNPJ_CadastroNF.requestFocus();
+        }
     }//GEN-LAST:event_jTextField_NotaFiscal_CadastroNFKeyPressed
 
     private void jTextField_CNPJ_CadastroNFKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_CNPJ_CadastroNFKeyPressed
-       if(evt.getKeyCode()== KeyEvent.VK_ENTER)
-     {
-         jTextField_RazaoSocial_CadastroNF.requestFocus();
-     }
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
+            jTextField_RazaoSocial_CadastroNF.requestFocus();
+        }
     }//GEN-LAST:event_jTextField_CNPJ_CadastroNFKeyPressed
 
     private void jTextField_RazaoSocial_CadastroNFKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_RazaoSocial_CadastroNFKeyPressed
-      if(evt.getKeyCode()== KeyEvent.VK_ENTER)
-     {
-         jTextField_NomeFantasia_CadastroNF.requestFocus();
-     }
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
+            jTextField_NomeFantasia_CadastroNF.requestFocus();
+        }
     }//GEN-LAST:event_jTextField_RazaoSocial_CadastroNFKeyPressed
 
     private void jTextField_NomeFantasia_CadastroNFKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_NomeFantasia_CadastroNFKeyPressed
-         if(evt.getKeyCode()== KeyEvent.VK_ENTER)
-     {
-         jDateChooser_Emissao_CadastroNF.requestFocus();
-     }
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
+            jDateChooser_Emissao_CadastroNF.requestFocus();
+        }
     }//GEN-LAST:event_jTextField_NomeFantasia_CadastroNFKeyPressed
 
     private void jDateChooser_Emissao_CadastroNFKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jDateChooser_Emissao_CadastroNFKeyPressed
-         if(evt.getKeyCode()== KeyEvent.VK_ENTER)
-     {
-         jTextField_Codigo_CadastroNF.requestFocus();
-     }
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
+            jTextField_Codigo_CadastroNF.requestFocus();
+        }
     }//GEN-LAST:event_jDateChooser_Emissao_CadastroNFKeyPressed
 
     private void jTextField_Codigo_CadastroNFKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_Codigo_CadastroNFKeyPressed
-          if(evt.getKeyCode()== KeyEvent.VK_ENTER)
-     {
-         jTextField_Produto_CadastroNF.requestFocus();
-     }
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
+            jTextField_Produto_CadastroNF.requestFocus();
+        }
     }//GEN-LAST:event_jTextField_Codigo_CadastroNFKeyPressed
 
     private void jTextField_Produto_CadastroNFKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_Produto_CadastroNFKeyPressed
-           if(evt.getKeyCode()== KeyEvent.VK_ENTER)
-     {
-         jTextField_qtde_CadastroNF.requestFocus();
-     }
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
+            jTextField_qtde_CadastroNF.requestFocus();
+        }
     }//GEN-LAST:event_jTextField_Produto_CadastroNFKeyPressed
 
     private void jTextField_qtde_CadastroNFKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_qtde_CadastroNFKeyPressed
-            if(evt.getKeyCode()== KeyEvent.VK_ENTER)
-     {
-         jTextField_Valor_CadastroNF.requestFocus();
-     }
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
+            jTextField_Valor_CadastroNF.requestFocus();
+        }
     }//GEN-LAST:event_jTextField_qtde_CadastroNFKeyPressed
 
     private void jTextField_Valor_CadastroNFKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_Valor_CadastroNFKeyPressed
-       if(evt.getKeyCode()== KeyEvent.VK_ENTER)
-     {
-         jTextField_Parcela2_CadastroNF.requestFocus();
-     }
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
+            jTextField_Parcela1_CadastroNF.requestFocus();
+        }
     }//GEN-LAST:event_jTextField_Valor_CadastroNFKeyPressed
 
     private void jTextField_Parcela2_CadastroNFKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_Parcela2_CadastroNFKeyPressed
-        if(evt.getKeyCode()== KeyEvent.VK_ENTER)
-     {
-         jTextField_Parcela3_CadastroNF.requestFocus();
-     }
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
+            jTextField_Parcela3_CadastroNF.requestFocus();
+        }
     }//GEN-LAST:event_jTextField_Parcela2_CadastroNFKeyPressed
 
     private void jTextField_Impostos_CadastroNFKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_Impostos_CadastroNFKeyPressed
-       if(evt.getKeyCode()== KeyEvent.VK_ENTER)
-     {
-         jTextField_Total_CadastroNF.requestFocus();
-     }
+
     }//GEN-LAST:event_jTextField_Impostos_CadastroNFKeyPressed
 
     private void jTextField_Parcela1_CadastroNFKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_Parcela1_CadastroNFKeyPressed
-        // TODO add your handling code here:
+
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
+            jTextField_Parcela2_CadastroNF.requestFocus();
+        }
     }//GEN-LAST:event_jTextField_Parcela1_CadastroNFKeyPressed
 
     private void jTextField_Parcela3_CadastroNFKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_Parcela3_CadastroNFKeyPressed
-        // TODO add your handling code here:
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
+            jTextField_Parcela4_CadastroNF.requestFocus();
+        }
     }//GEN-LAST:event_jTextField_Parcela3_CadastroNFKeyPressed
 
     private void jTextField_Parcela4_CadastroNFKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_Parcela4_CadastroNFKeyPressed
-        // TODO add your handling code here:
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
+            jTextField_Parcela5_CadastroNF.requestFocus();
+        }
     }//GEN-LAST:event_jTextField_Parcela4_CadastroNFKeyPressed
 
     private void jTextField_Parcela5_CadastroNFKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_Parcela5_CadastroNFKeyPressed
-        // TODO add your handling code here:
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
+            jTextField_Parcela6_CadastroNF.requestFocus();
+        }
     }//GEN-LAST:event_jTextField_Parcela5_CadastroNFKeyPressed
 
     private void jTextField_Parcela6_CadastroNFKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_Parcela6_CadastroNFKeyPressed
-        // TODO add your handling code here:
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
+            jTextField_Impostos_CadastroNF.requestFocus();
+        }
     }//GEN-LAST:event_jTextField_Parcela6_CadastroNFKeyPressed
 
     private void jTextField_Parcela1_CadastroNFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_Parcela1_CadastroNFActionPerformed
@@ -635,6 +705,311 @@ public class CadastroNF extends javax.swing.JFrame {
     private void jButton_Sair_CadastroNFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Sair_CadastroNFActionPerformed
         this.dispose();
     }//GEN-LAST:event_jButton_Sair_CadastroNFActionPerformed
+
+    private void jButton_Salvar_CadastroNFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Salvar_CadastroNFActionPerformed
+
+        try {
+
+            NF = new PedidoCompraNF();
+            NotaFiscalBD bdd = new NotaFiscalBD();
+
+            NF.setParcela1(Double.parseDouble(jTextField_Parcela1_CadastroNF.getText()));
+            NF.setParcela2(Double.parseDouble(jTextField_Parcela2_CadastroNF.getText()));
+            NF.setParcela3(Double.parseDouble(jTextField_Parcela3_CadastroNF.getText()));
+            NF.setParcela4(Double.parseDouble(jTextField_Parcela4_CadastroNF.getText()));
+            NF.setParcela5(Double.parseDouble(jTextField_Parcela5_CadastroNF.getText()));
+            NF.setParcela6(Double.parseDouble(jTextField_Parcela6_CadastroNF.getText()));
+            NF.setValor_total_PedidoCompraNF(total);
+            NF.setData_emissao_PedidoCompraNF(jDateChooser_Emissao_CadastroNF.getDate());
+            NF.setImpostos(Double.parseDouble(jTextField_Impostos_CadastroNF.getText()));
+            NF.setFornecedor(fornecedor);
+            if (!jTextField_NotaFiscal_CadastroNF.getText().isEmpty()) {
+                NF.setNumNF_PedidoCompraNF(Integer.parseInt(jTextField_NotaFiscal_CadastroNF.getText()));
+            }
+
+            int idNF = bdd.Inserir(NF);
+
+            NF = bdd.pesquisarPorIDNotaFiscal(idNF);
+
+            for (CompraProduto a : listaCompraProduto) {
+                CompraProdutoBD cpBD = new CompraProdutoBD();
+                a.setPedidocompraNF(NF);
+                cpBD.Inserir(a);
+
+                //atualização do esstoque do produto
+                ProdutoBD produtoBD = new ProdutoBD();
+                Produto produto = a.getProduto();
+                produto.setQtde_estoque(produto.getQtde_estoque() + a.getQuantidade());
+                produto.setValor_unitario(a.getPreco_custo());
+                double total_venda = 0.00;
+                total_venda = ((produto.getValor_unitario() * produto.getMargem_lucro()) / 100);
+                total_venda += produto.getValor_unitario();
+                produto.setPreco_venda(total_venda);
+                
+                produtoBD.alterar(produto);
+
+            }
+
+            JOptionPane.showMessageDialog(this, "Nota fiscal inserida com sucesso!");
+
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Erro ao inserir produto: \n" + e.getMessage());
+        }
+        limparDados();
+
+
+    }//GEN-LAST:event_jButton_Salvar_CadastroNFActionPerformed
+
+    private void adicionarDadosTabela() {
+        modelo.setRowCount(0);
+        jTable_NF.updateUI();
+        if (listaCompraProduto != null) {
+            if (listaCompraProduto.size() > 0) {
+                for (CompraProduto a : listaCompraProduto) {
+                    modelo.addRow(new Object[]{
+                        a.getProduto().getNome_produto(), a.getQuantidade(), DecimalFormat.getCurrencyInstance().format(a.getPreco_custo()), DecimalFormat.getCurrencyInstance().format(a.getTotal())});
+                }
+            }
+
+        }
+
+    }
+
+
+    private void jButton_Limpar_CadastroNFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Limpar_CadastroNFActionPerformed
+        limparDados();
+    }//GEN-LAST:event_jButton_Limpar_CadastroNFActionPerformed
+
+    private void jButton_Pesquisar_CadastroNFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Pesquisar_CadastroNFActionPerformed
+        pesquisarPorNotafiscal();
+
+    }//GEN-LAST:event_jButton_Pesquisar_CadastroNFActionPerformed
+    private void pesquisarPorNotafiscal() {
+
+        bdd = new NotaFiscalBD();
+
+        if (!jTextField_NotaFiscal_CadastroNF.getText().isEmpty()) {
+            NF = bdd.pesquisarPorNotafiscal(Integer.parseInt(jTextField_NotaFiscal_CadastroNF.getText()));
+
+            if (NF != null) {
+                jTextField_NotaFiscal_CadastroNF.setText(String.valueOf(NF.getNumNF_PedidoCompraNF()));
+                fornecedor = NF.getFornecedor();
+                jTextField_CNPJ_CadastroNF.setText(fornecedor.getCnpj_Fornecedor());
+                jTextField_RazaoSocial_CadastroNF.setText(fornecedor.getRazao_social());
+                jTextField_NomeFantasia_CadastroNF.setText(fornecedor.getNome_fantasia());
+                jDateChooser_Emissao_CadastroNF.setDate(NF.getData_emissao_PedidoCompraNF());
+                jTextField_Parcela1_CadastroNF.setText(String.valueOf(NF.getParcela1()));
+                jTextField_Parcela2_CadastroNF.setText(String.valueOf(NF.getParcela2()));
+                jTextField_Parcela3_CadastroNF.setText(String.valueOf(NF.getParcela3()));
+                jTextField_Parcela4_CadastroNF.setText(String.valueOf(NF.getParcela4()));
+                jTextField_Parcela5_CadastroNF.setText(String.valueOf(NF.getParcela5()));
+                jTextField_Parcela6_CadastroNF.setText(String.valueOf(NF.getParcela6()));
+                jTextField_Impostos_CadastroNF.setText(String.valueOf(NF.getImpostos()));
+                calcularTotalNota();
+                CompraProdutoBD cpBD = new CompraProdutoBD();
+                listaCompraProduto = cpBD.pesquisarPorPedidoCompra(NF);
+                adicionarDadosTabela();
+
+            } else {
+                JOptionPane.showMessageDialog(rootPane, "Nota Fiscal não encontrado!");
+
+            }
+        }
+    }
+
+
+    private void jButton_Editar_CadastroNFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Editar_CadastroNFActionPerformed
+
+        NF.setNumNF_PedidoCompraNF(Integer.parseInt(jTextField_NotaFiscal_CadastroNF.getText()));
+        NF.setParcela1(Double.parseDouble(jTextField_Parcela1_CadastroNF.getText()));
+        NF.setParcela2(Double.parseDouble(jTextField_Parcela2_CadastroNF.getText()));
+        NF.setParcela3(Double.parseDouble(jTextField_Parcela3_CadastroNF.getText()));
+        NF.setParcela4(Double.parseDouble(jTextField_Parcela4_CadastroNF.getText()));
+        NF.setParcela5(Double.parseDouble(jTextField_Parcela5_CadastroNF.getText()));
+        NF.setParcela6(Double.parseDouble(jTextField_Parcela6_CadastroNF.getText()));
+        NF.setData_emissao_PedidoCompraNF(jDateChooser_Emissao_CadastroNF.getDate());
+        NF.setImpostos(total);
+
+        JOptionPane.showMessageDialog(rootPane, bdd.alterar(NF));
+        adicionarDadosTabela();
+        limparDados();
+
+    }//GEN-LAST:event_jButton_Editar_CadastroNFActionPerformed
+
+
+    private void jTextField_Impostos_CadastroNFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_Impostos_CadastroNFActionPerformed
+
+    }//GEN-LAST:event_jTextField_Impostos_CadastroNFActionPerformed
+
+    private void jButton_Excluir_CadastroNFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Excluir_CadastroNFActionPerformed
+        for (CompraProduto cp : listaCompraProduto) {
+            CompraProdutoBD compraProdutoBD = new CompraProdutoBD();
+            compraProdutoBD.excluir(cp.getId_compra_produto());
+        }
+
+        NotaFiscalBD notaFiscalBD = new NotaFiscalBD();
+        JOptionPane.showMessageDialog(this, notaFiscalBD.excluir(NF.getId_pedido_compraNF()));
+        limparDados();
+    }//GEN-LAST:event_jButton_Excluir_CadastroNFActionPerformed
+
+    private void jTextField_Impostos_CadastroNFFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField_Impostos_CadastroNFFocusLost
+        calcularTotalNota();
+    }//GEN-LAST:event_jTextField_Impostos_CadastroNFFocusLost
+
+    public void calcularTotalNota() {
+        total = 0.00;
+
+        if (listaCompraProduto != null) {
+            if (listaCompraProduto.size() > 0) {
+                for (CompraProduto compraProduto : listaCompraProduto) {
+                    total += compraProduto.getTotal();
+                }
+                total += Double.parseDouble(jTextField_Impostos_CadastroNF.getText().replace(",", "."));
+            }
+        }
+
+        jLabel_Total2_CadastroNF.setText("Total: " + DecimalFormat.getCurrencyInstance().format(total));
+
+    }
+
+    public void atualizarDadosFornecedor() {
+
+        if (fornecedor != null) {
+            jTextField_RazaoSocial_CadastroNF.setText("" + fornecedor.getRazao_social());
+            jTextField_CNPJ_CadastroNF.setText("" + fornecedor.getCnpj_Fornecedor());
+            jTextField_NomeFantasia_CadastroNF.setText("" + fornecedor.getNome_fantasia());
+        }
+
+    }
+
+    private void jButton7_Pesquisar_RazaoSocial_CadastroNFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7_Pesquisar_RazaoSocial_CadastroNFActionPerformed
+        bd = new FornecedorBD();
+
+        if (!jTextField_CNPJ_CadastroNF.getText().isEmpty()) {
+            fornecedor = bd.pesquisarFornecedorPorCnpj(jTextField_CNPJ_CadastroNF.getText());
+
+            if (fornecedor != null) {
+                atualizarDadosFornecedor();
+
+            } else {
+                JOptionPane.showMessageDialog(rootPane, "Fornecedor nâo encontrado");
+                limparDadosFornecedor();
+            }
+        } else if (!jTextField_RazaoSocial_CadastroNF.getText().isEmpty()) {
+            fornecedor = bd.pesquisarFornecedorPorRazaoSocial(jTextField_RazaoSocial_CadastroNF.getText());
+
+            if (fornecedor != null) {
+                atualizarDadosFornecedor();
+
+            } else {
+                JOptionPane.showMessageDialog(rootPane, "Fornecedor nâo encontrado");
+                limparDadosFornecedor();
+            }
+        } else if (!jTextField_NomeFantasia_CadastroNF.getText().isEmpty()) {
+            fornecedor = bd.pesquisarFornecedorPorNomeFantasia(jTextField_NomeFantasia_CadastroNF.getText());
+
+            if (fornecedor != null) {
+                atualizarDadosFornecedor();
+
+            } else {
+                JOptionPane.showMessageDialog(rootPane, "Fornecedor nâo encontrado");
+                limparDadosFornecedor();
+            }
+        }
+    }//GEN-LAST:event_jButton7_Pesquisar_RazaoSocial_CadastroNFActionPerformed
+
+    public void atualizarDadosProduto() {
+
+        if (produto != null) {
+            jTextField_Codigo_CadastroNF.setText(String.valueOf(produto.getId_produto()));
+            jTextField_Produto_CadastroNF.setText(produto.getNome_produto());
+          
+
+        }
+    }
+    private void jButton6_Pesquisar_Produto_CadastroNFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6_Pesquisar_Produto_CadastroNFActionPerformed
+        bdP = new ProdutoBD();
+        if (!jTextField_Codigo_CadastroNF.getText().isEmpty()) {
+            produto = bdP.pesquisarPorID(Integer.parseInt(jTextField_Codigo_CadastroNF.getText()));
+
+            if (produto != null) {
+
+                produtos = new ArrayList<Produto>();
+                produtos.add(produto);
+                atualizarDadosProduto();
+
+            } else {
+                JOptionPane.showMessageDialog(rootPane, "Produto não encontrado!");
+                limparDadosproduto();
+            }
+
+        } else if (!jTextField_Produto_CadastroNF.getText().isEmpty()) {
+            produtos = bdP.pesquisarPorNome(jTextField_Produto_CadastroNF.getText());
+
+            if (produtos.size() > 0) {
+                atualizarDadosProduto();
+            } else {
+                JOptionPane.showMessageDialog(rootPane, "Produto não encontrado!");
+                limparDadosproduto();
+            }
+
+        }
+
+    }//GEN-LAST:event_jButton6_Pesquisar_Produto_CadastroNFActionPerformed
+    public void limparDadosproduto() {
+
+        jTextField_Codigo_CadastroNF.setText("");
+        jTextField_Produto_CadastroNF.setText("");
+        jTextField_qtde_CadastroNF.setText("");
+        jTextField_Valor_CadastroNF.setText("");
+
+    }
+    private void jButton1_OK_CadastroNFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1_OK_CadastroNFActionPerformed
+        CompraProduto cp = new CompraProduto();
+        cp.setProduto(produto);
+        cp.setQuantidade(Double.parseDouble(jTextField_qtde_CadastroNF.getText().replace(",", ".")));
+        cp.setPreco_custo(Double.parseDouble(jTextField_Valor_CadastroNF.getText().replace(",", ".")));
+        cp.setTotal(cp.getQuantidade() * cp.getPreco_custo());
+        listaCompraProduto.add(cp);
+        adicionarDadosTabela();
+        limparDadosproduto();
+    }//GEN-LAST:event_jButton1_OK_CadastroNFActionPerformed
+
+    private void jTextField_qtde_CadastroNFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_qtde_CadastroNFActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField_qtde_CadastroNFActionPerformed
+
+    public void limparDados() {
+
+        jTextField_NotaFiscal_CadastroNF.setText("");
+        jTextField_CNPJ_CadastroNF.setText("");
+        jTextField_RazaoSocial_CadastroNF.setText("");
+        jTextField_NomeFantasia_CadastroNF.setText("");
+        jDateChooser_Emissao_CadastroNF.setCalendar(null);
+        jTextField_Codigo_CadastroNF.setText("");
+        jTextField_Produto_CadastroNF.setText("");
+        jTextField_qtde_CadastroNF.setText("");
+        jTextField_Valor_CadastroNF.setText("");
+        jTextField_Parcela1_CadastroNF.setText("");
+        jTextField_Parcela2_CadastroNF.setText("");
+        jTextField_Parcela3_CadastroNF.setText("");
+        jTextField_Parcela4_CadastroNF.setText("");
+        jTextField_Parcela5_CadastroNF.setText("");
+        jTextField_Parcela6_CadastroNF.setText("");
+        jTextField_Impostos_CadastroNF.setText("");
+        total = 0.00;
+        listaCompraProduto = new ArrayList<CompraProduto>();
+        ((DefaultTableModel) jTable_NF.getModel()).setNumRows(0);
+        jTable_NF.updateUI();
+        calcularTotalNota();
+    }
+
+    public void limparDadosFornecedor() {
+
+        jTextField_CNPJ_CadastroNF.setText("");
+        jTextField_RazaoSocial_CadastroNF.setText("");
+        jTextField_NomeFantasia_CadastroNF.setText("");
+    }
 
     /**
      * @param args the command line arguments
@@ -661,6 +1036,7 @@ public class CadastroNF extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(CadastroNF.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
@@ -693,7 +1069,6 @@ public class CadastroNF extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel_QtdeParcela_CadastroNF1;
     private javax.swing.JLabel jLabel_Qtde_CadastroNF;
     private javax.swing.JLabel jLabel_RazaoSocial_CadastroNF;
-    private javax.swing.JLabel jLabel_Total1_CadastroNF;
     private javax.swing.JLabel jLabel_Total2_CadastroNF;
     private javax.swing.JLabel jLabel_Total_CadastroNF;
     private javax.swing.JLabel jLabel_Valor_CadastroNF;
@@ -702,7 +1077,7 @@ public class CadastroNF extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel_Vencimento_CadastroNF2;
     private javax.swing.JLabel jLabel_Vencimento_CadastroNF3;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTable jTable2;
+    private javax.swing.JTable jTable_NF;
     private javax.swing.JTextField jTextField_CNPJ_CadastroNF;
     private javax.swing.JTextField jTextField_Codigo_CadastroNF;
     private javax.swing.JTextField jTextField_Impostos_CadastroNF;
@@ -716,8 +1091,8 @@ public class CadastroNF extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField_Parcela6_CadastroNF;
     private javax.swing.JTextField jTextField_Produto_CadastroNF;
     private javax.swing.JTextField jTextField_RazaoSocial_CadastroNF;
-    private javax.swing.JTextField jTextField_Total_CadastroNF;
     private javax.swing.JTextField jTextField_Valor_CadastroNF;
     private javax.swing.JTextField jTextField_qtde_CadastroNF;
     // End of variables declaration//GEN-END:variables
+
 }

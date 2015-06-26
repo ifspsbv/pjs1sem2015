@@ -1,4 +1,4 @@
-package edu.ifsp.pjs.modelo;
+package br.edu.ifsp.sbv.pjs.Modelo;
 
 import java.util.*;
 
@@ -9,7 +9,10 @@ public class Login {
 
     private int id_login;
 
+    private String usuario;
+    
     private String senha;
+    
 
     public int getId_login() {
         return id_login;
@@ -18,6 +21,16 @@ public class Login {
     public void setId_login(int id_login) {
         this.id_login = id_login;
     }
+
+    public String getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
+    }
+    
+    
 
     public String getSenha() {
         return senha;

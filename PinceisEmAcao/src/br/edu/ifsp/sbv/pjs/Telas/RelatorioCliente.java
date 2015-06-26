@@ -6,7 +6,6 @@
 package br.edu.ifsp.sbv.pjs.Telas;
 
 import java.awt.event.KeyEvent;
-import javax.swing.JOptionPane;
 
 /**
  *
@@ -14,9 +13,7 @@ import javax.swing.JOptionPane;
  */
 public class RelatorioCliente extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Vendas
-     */
+   
     public RelatorioCliente() {
         initComponents();
     }
@@ -52,6 +49,11 @@ public class RelatorioCliente extends javax.swing.JFrame {
         jButton_Pesquisar_RelatorioCliente.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton_Pesquisar_RelatorioCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/edu/ifsp/sbv/pjs/Imagens/lupa24.png"))); // NOI18N
         jButton_Pesquisar_RelatorioCliente.setText("Pesquisar");
+        jButton_Pesquisar_RelatorioCliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_Pesquisar_RelatorioClienteActionPerformed(evt);
+            }
+        });
 
         jLabel_Codigo_Relatorio_CadastroEstoque.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel_Codigo_Relatorio_CadastroEstoque.setText("Codigo");
@@ -214,6 +216,13 @@ public class RelatorioCliente extends javax.swing.JFrame {
        this.dispose();
     }//GEN-LAST:event_jButton_Sair__RelatorioClienteActionPerformed
 
+    private void jButton_Pesquisar_RelatorioClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Pesquisar_RelatorioClienteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton_Pesquisar_RelatorioClienteActionPerformed
+
+      
+    
+    
     /**
      * @param args the command line arguments
      */

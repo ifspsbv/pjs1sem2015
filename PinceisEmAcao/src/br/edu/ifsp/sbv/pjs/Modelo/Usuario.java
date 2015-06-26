@@ -1,4 +1,4 @@
-package edu.ifsp.pjs.modelo;
+package br.edu.ifsp.sbv.pjs.Modelo;
 
 import java.util.*;
 

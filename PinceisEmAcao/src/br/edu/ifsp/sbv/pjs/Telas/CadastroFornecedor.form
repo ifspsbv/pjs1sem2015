@@ -37,7 +37,7 @@
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="jLayeredPane1" alignment="0" pref="873" max="32767" attributes="0"/>
+          <Component id="jLayeredPane1" alignment="0" pref="834" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
@@ -74,71 +74,92 @@
                           <EmptySpace min="-2" pref="306" max="-2" attributes="0"/>
                           <Component id="jButton_Pesquisar1" min="-2" pref="120" max="-2" attributes="0"/>
                       </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Component id="jScrollPane1" min="-2" pref="1019" max="-2" attributes="0"/>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jLabel_CEP_CadastroFornecedor" min="-2" pref="43" max="-2" attributes="0"/>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jLabel_Cidade_CadastroFornecedor" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel_Codigo_CadastroFornecedor" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                              <Component id="jLabel_Codigo_CadastroFornecedor" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel_CNPJ_CadastroFornecedor" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel_OBS_CadastroFornecedor" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel_Bairro_CadastroFornecedor" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" attributes="0">
-                                          <Component id="jTextField_Cidade_CadastroFornecedor" min="-2" pref="477" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                                          <Component id="jTextField_Codigo_CadastroFornecedor" min="-2" pref="52" max="-2" attributes="0"/>
                                           <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                                          <Component id="jLabel_Telefone_CadastroFornecedor" min="-2" pref="64" max="-2" attributes="0"/>
+                                          <Component id="jLabel_Razao_Social_CadastroFornecedor" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                                          <Component id="jTextField_Razao_Social_CadastroFornecedor" min="-2" pref="290" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="jLabel_Razao_Social_CadastroFornecedor1" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="jTextField_Telefone_CadastroFornecedor" min="-2" pref="140" max="-2" attributes="0"/>
-                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                          <Component id="jLabel_Celular_CadastroFornecedor" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                          <Component id="jTextField_Celular_CadastroFornecedor" min="-2" pref="189" max="-2" attributes="0"/>
+                                          <Component id="jTextField_Nome_Fantasia_Fornecedor" max="32767" attributes="0"/>
                                       </Group>
-                                      <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                                          <Group type="102" alignment="0" attributes="0">
-                                              <Component id="jTextField_Codigo_CadastroFornecedor" min="-2" pref="52" max="-2" attributes="0"/>
-                                              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                                              <Component id="jLabel_Razao_Social_CadastroFornecedor" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-                                              <Component id="jTextField_Razao_Social_CadastroFornecedor" min="-2" pref="290" max="-2" attributes="0"/>
-                                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                                              <Component id="jLabel_CNPJ_CadastroFornecedor" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField_CNPJ_CadastroFornecedor" min="-2" pref="172" max="-2" attributes="0"/>
-                                              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                                              <Component id="jLabel_OBS_CadastroFornecedor" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace max="32767" attributes="0"/>
-                                              <Component id="jTextField_OBS_CadastroFornecedor" min="-2" pref="206" max="-2" attributes="0"/>
+                                      <Group type="102" attributes="0">
+                                          <Group type="103" groupAlignment="1" attributes="0">
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Component id="jTextField_CNPJ_CadastroFornecedor" min="-2" pref="172" max="-2" attributes="0"/>
+                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                  <Component id="jLabel_CEP_CadastroFornecedor" min="-2" pref="43" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="jTextField_CEP_CadastroFornecedor" min="-2" pref="107" max="-2" attributes="0"/>
+                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                  <Component id="jLabel_Endereco_CadastroFornecedor" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                  <Component id="jTextField_Endereco_CadastroFornecedor" min="-2" pref="286" max="-2" attributes="0"/>
+                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                  <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                  <Component id="jTextField_Numero_CadastroFornecedor" min="-2" pref="50" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Component id="jTextField_Email_Fornecedor" min="-2" pref="206" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                                                  <Component id="jLabel_Telefone_CadastroFornecedor" min="-2" pref="64" max="-2" attributes="0"/>
+                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Group type="102" attributes="0">
+                                                          <Component id="jTextField_Telefone_CadastroFornecedor" min="-2" pref="140" max="-2" attributes="0"/>
+                                                          <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                                                          <Component id="jLabel_Celular_CadastroFornecedor" min="-2" max="-2" attributes="0"/>
+                                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                          <Component id="jTextField_Celular_CadastroFornecedor" min="-2" pref="189" max="-2" attributes="0"/>
+                                                      </Group>
+                                                      <Group type="102" alignment="0" attributes="0">
+                                                          <Component id="jLabel_Cidade_CadastroFornecedor" min="-2" max="-2" attributes="0"/>
+                                                          <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                                                          <Component id="jTextField_Cidade_CadastroFornecedor" min="-2" pref="477" max="-2" attributes="0"/>
+                                                      </Group>
+                                                  </Group>
+                                              </Group>
                                           </Group>
-                                          <Group type="102" attributes="0">
-                                              <Component id="jTextField_CEP_CadastroFornecedor" min="-2" pref="107" max="-2" attributes="0"/>
-                                              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                                              <Component id="jLabel_Endereco_CadastroFornecedor" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-                                              <Component id="jTextField_Endereco_CadastroFornecedor" min="-2" pref="286" max="-2" attributes="0"/>
-                                              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                                              <Component id="jLabel_Bairro_CadastroFornecedor" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-                                              <Component id="jTextField_Bairro_CadastroFornecedor" min="-2" pref="193" max="-2" attributes="0"/>
-                                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                                              <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-                                              <Component id="jTextField_Numero_CadastroFornecedor" min="-2" pref="50" max="-2" attributes="0"/>
-                                              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                                              <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jComboBox_UF_CadastroFornecedor" min="-2" max="-2" attributes="0"/>
-                                          </Group>
+                                          <EmptySpace min="9" max="32767" attributes="0"/>
+                                          <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="jComboBox_UF_CadastroFornecedor" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
+                                  <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
                               </Group>
-                              <Component id="jScrollPane1" alignment="0" min="-2" pref="1019" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <Component id="jTextField_Bairro_CadastroFornecedor" min="-2" pref="263" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
+                              </Group>
                           </Group>
                       </Group>
                   </Group>
-                  <EmptySpace min="100" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -151,45 +172,43 @@
                       <Component id="jTextField_Codigo_CadastroFornecedor" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
                       <Component id="jLabel_Razao_Social_CadastroFornecedor" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jTextField_Razao_Social_CadastroFornecedor" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                      <Component id="jLabel_Razao_Social_CadastroFornecedor1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jTextField_Nome_Fantasia_Fornecedor" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel_CNPJ_CadastroFornecedor" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jTextField_CNPJ_CadastroFornecedor" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
-                      <Component id="jLabel_OBS_CadastroFornecedor" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jTextField_OBS_CadastroFornecedor" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                      <Component id="jLabel_CEP_CadastroFornecedor" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jTextField_CEP_CadastroFornecedor" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                      <Component id="jLabel_Endereco_CadastroFornecedor" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jTextField_Endereco_CadastroFornecedor" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                      <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jTextField_Numero_CadastroFornecedor" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                      <Component id="jComboBox_UF_CadastroFornecedor" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel9" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel_Bairro_CadastroFornecedor" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jTextField_Bairro_CadastroFornecedor" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
-                      <Component id="jTextField_Numero_CadastroFornecedor" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
-                      <Component id="jLabel9" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
-                      <Component id="jComboBox_UF_CadastroFornecedor" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jTextField_CEP_CadastroFornecedor" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
-                      <Component id="jLabel_CEP_CadastroFornecedor" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jTextField_Endereco_CadastroFornecedor" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
-                      <Component id="jLabel_Endereco_CadastroFornecedor" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel_Cidade_CadastroFornecedor" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jTextField_Cidade_CadastroFornecedor" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
                   </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jLabel_Cidade_CadastroFornecedor" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jTextField_Cidade_CadastroFornecedor" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <Group type="102" attributes="0">
-                          <EmptySpace max="32767" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jLabel_Celular_CadastroFornecedor" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jTextField_Celular_CadastroFornecedor" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
-                              <Component id="jTextField_Telefone_CadastroFornecedor" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
-                              <Component id="jLabel_Telefone_CadastroFornecedor" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
+                      <Component id="jLabel_OBS_CadastroFornecedor" alignment="0" min="-2" pref="17" max="-2" attributes="0"/>
+                      <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                          <Component id="jTextField_Email_Fornecedor" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                          <Component id="jLabel_Telefone_CadastroFornecedor" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTextField_Telefone_CadastroFornecedor" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                          <Component id="jLabel_Celular_CadastroFornecedor" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTextField_Celular_CadastroFornecedor" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-                  <Component id="jScrollPane1" min="-2" pref="361" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="jScrollPane1" min="-2" pref="322" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jButton_Salvar_CadastroFornecedor" alignment="3" min="-2" pref="51" max="-2" attributes="0"/>
                       <Component id="jButton_Editar_CadastroFornecedor" alignment="3" min="-2" pref="51" max="-2" attributes="0"/>
@@ -220,6 +239,9 @@
               <Dimension value="[28, 20]"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField_Codigo_CadastroFornecedorActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel_CEP_CadastroFornecedor">
           <Properties>
@@ -305,9 +327,6 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="jTextField_Razao_Social_CadastroFornecedor">
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField_Razao_Social_CadastroFornecedorActionPerformed"/>
-          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel_CNPJ_CadastroFornecedor">
           <Properties>
@@ -317,7 +336,7 @@
             <Property name="text" type="java.lang.String" value="CNPJ:"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField_OBS_CadastroFornecedor">
+        <Component class="javax.swing.JTextField" name="jTextField_Email_Fornecedor">
         </Component>
         <Component class="javax.swing.JButton" name="jButton_Salvar_CadastroFornecedor">
           <Properties>
@@ -337,6 +356,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Editar"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_Editar_CadastroFornecedorActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="jButton_Pesquisar_CadastroFornecedor">
           <Properties>
@@ -345,6 +367,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Pesquisar"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_Pesquisar_CadastroFornecedorActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel9">
           <Properties>
@@ -428,19 +453,29 @@
             <Component class="javax.swing.JTable" name="jTable_CadastroFornecedor">
               <Properties>
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                  <Table columnCount="7" rowCount="9">
-                    <Column editable="false" title="CODIGO" type="java.lang.Integer"/>
+                  <Table columnCount="7" rowCount="0">
+                    <Column editable="false" title="CODIGO" type="java.lang.String"/>
                     <Column editable="false" title="RAZAO SOCIAL" type="java.lang.String"/>
-                    <Column editable="false" title="CNPJ" type="java.lang.Double"/>
+                    <Column editable="false" title="CNPJ" type="java.lang.String"/>
                     <Column editable="false" title="ENDERECO" type="java.lang.String"/>
                     <Column editable="false" title="CIDADE" type="java.lang.String"/>
-                    <Column editable="false" title="TELEFONE" type="java.lang.Integer"/>
-                    <Column editable="false" title="CELULAR" type="java.lang.Integer"/>
+                    <Column editable="false" title="TELEFONE" type="java.lang.String"/>
+                    <Column editable="false" title="CELULAR" type="java.lang.String"/>
                   </Table>
                 </Property>
                 <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
                   <TableColumnModel selectionModel="0">
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
                     <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
                       <Title/>
                       <Editor/>
                       <Renderer/>
@@ -455,33 +490,29 @@
                       <Editor/>
                       <Renderer/>
                     </Column>
-                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
                       <Title/>
                       <Editor/>
                       <Renderer/>
                     </Column>
-                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
-                      <Title/>
-                      <Editor/>
-                      <Renderer/>
-                    </Column>
-                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
-                      <Title/>
-                      <Editor/>
-                      <Renderer/>
-                    </Column>
-                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
                       <Title/>
                       <Editor/>
                       <Renderer/>
                     </Column>
                   </TableColumnModel>
                 </Property>
-                <Property name="rowHeight" type="int" value="45"/>
+                <Property name="rowHeight" type="int" value="20"/>
+                <Property name="selectionModel" type="javax.swing.ListSelectionModel" editor="org.netbeans.modules.form.editors2.JTableSelectionModelEditor">
+                  <JTableSelectionModel selectionMode="0"/>
+                </Property>
                 <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
                   <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                 </Property>
               </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jTable_CadastroFornecedorMouseClicked"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
@@ -500,6 +531,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Limpar"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_Limpar_CadastroFornecedorActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="jButton_Excluir_CadastroFornecedor">
           <Properties>
@@ -508,6 +542,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Excluir"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_Excluir_CadastroFornecedorActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="jButton_Sair_CadastroFornecedor">
           <Properties>
@@ -519,6 +556,16 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_Sair_CadastroFornecedorActionPerformed"/>
           </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel_Razao_Social_CadastroFornecedor1">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="14" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Nome Fantasia:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jTextField_Nome_Fantasia_Fornecedor">
         </Component>
       </SubComponents>
     </Container>

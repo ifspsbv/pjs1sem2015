@@ -5,6 +5,8 @@
  */
 package br.edu.ifsp.sbv.pjs.Telas;
 
+import br.edu.ifsp.sbv.pjs.Modelo.Usuario;
+
 /**
  *
  * @author bv1301144
@@ -20,6 +22,9 @@ public class MenuPrincipal extends javax.swing.JFrame {
     private Estoque estoque;
     private CadastroFornecedor fornecedor;
     private Relatorio relatorio;
+    public static Usuario usuarioLogado = null;
+    
+
     public MenuPrincipal() {
         initComponents();
     }
@@ -188,46 +193,50 @@ public class MenuPrincipal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton_Relatorio_MenuPrincipalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Relatorio_MenuPrincipalActionPerformed
-       if(relatorio==null){
-            relatorio=new Relatorio();
+        if (relatorio == null) {
+            relatorio = new Relatorio();
         }
         relatorio.setVisible(true);
     }//GEN-LAST:event_jButton_Relatorio_MenuPrincipalActionPerformed
 
     private void jButton_CadastroCliente_MenuPrincipalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_CadastroCliente_MenuPrincipalActionPerformed
-        if(cadastroclientes==null){
-        cadastroclientes= new CadastroClientes();
-    }
-    cadastroclientes.setVisible(true);
+        if (cadastroclientes == null) {
+            cadastroclientes = new CadastroClientes();
+        }
+        
+        cadastroclientes.setVisible(true);
+        cadastroclientes.limparDados();
+
     }//GEN-LAST:event_jButton_CadastroCliente_MenuPrincipalActionPerformed
 
     private void jButton_Vendas_MenuPrincipalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Vendas_MenuPrincipalActionPerformed
-    if(vendas==null){
-        vendas= new Vendas();
-    }
-    vendas.setVisible(true);
+        if (vendas == null) {
+            vendas = new Vendas();
+        }
+        vendas.setVisible(true);
     }//GEN-LAST:event_jButton_Vendas_MenuPrincipalActionPerformed
 
     private void jButton_Estoque_MenuPrincipalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Estoque_MenuPrincipalActionPerformed
-        if(estoque == null){
-        estoque = new Estoque();
-    }
-    estoque.setVisible(true);
+        if (estoque == null) {
+            estoque = new Estoque();
+        }
+        estoque.setVisible(true);
     }//GEN-LAST:event_jButton_Estoque_MenuPrincipalActionPerformed
 
     private void jButton_CadastroFornecedor_MenuPrincipalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_CadastroFornecedor_MenuPrincipalActionPerformed
-          if(fornecedor==null){
-        fornecedor= new CadastroFornecedor();
-    }
-    fornecedor.setVisible(true);
-       
+        if (fornecedor == null) {
+            fornecedor = new CadastroFornecedor();
+        }
+        fornecedor.setVisible(true);
+        fornecedor.limparDados();
+
     }//GEN-LAST:event_jButton_CadastroFornecedor_MenuPrincipalActionPerformed
 
     private void jButton_CadastroNF_MenuPrincipalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_CadastroNF_MenuPrincipalActionPerformed
-        if(notafiscal == null){
-        notafiscal = new CadastroNF();
-    }
-    notafiscal.setVisible(true);
+        if (notafiscal == null) {
+            notafiscal = new CadastroNF();
+        }
+        notafiscal.setVisible(true);
     }//GEN-LAST:event_jButton_CadastroNF_MenuPrincipalActionPerformed
 
     private void jButton_Sair_MenuPrincipal1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Sair_MenuPrincipal1ActionPerformed

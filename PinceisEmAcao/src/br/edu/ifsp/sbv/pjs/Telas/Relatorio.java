@@ -18,6 +18,7 @@ public class Relatorio extends javax.swing.JFrame {
     private RelatorioEstoque relatorioestoque;
     private RelatorioProduto relatorioproduto;
     private RelatorioVendas relatoriovendas;
+    private RelatorioCompras relatoriocompras;
     
     /**private Relatorio relatorio;*/
     public Relatorio() {
@@ -39,6 +40,7 @@ public class Relatorio extends javax.swing.JFrame {
         jButton_Vendas_Relatorio = new javax.swing.JButton();
         jLabel_imagem_fundo = new javax.swing.JLabel();
         jButton_Sair_Relatorio = new javax.swing.JButton();
+        jButton_Compras_Relatorio = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -89,6 +91,13 @@ public class Relatorio extends javax.swing.JFrame {
             }
         });
 
+        jButton_Compras_Relatorio.setText("Compras");
+        jButton_Compras_Relatorio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_Compras_RelatorioActionPerformed(evt);
+            }
+        });
+
         jMenu1.setText("Arquivo");
 
         jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, java.awt.event.InputEvent.ALT_MASK));
@@ -130,24 +139,29 @@ public class Relatorio extends javax.swing.JFrame {
                             .addComponent(jButton_Vendas_Relatorio, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jButton_Sair_Relatorio, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jButton_Sair_Relatorio, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jButton_Compras_Relatorio, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(20, 20, 20)
                 .addComponent(jLabel_imagem_fundo, javax.swing.GroupLayout.PREFERRED_SIZE, 1100, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(30, 30, 30)
+                .addGap(40, 40, 40)
                 .addComponent(jButton_Cliente_Relatorio, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(75, 75, 75)
+                .addGap(45, 45, 45)
                 .addComponent(jButton_Estoque_Relatorio, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(75, 75, 75)
+                .addGap(45, 45, 45)
                 .addComponent(jButton_Produto_Relatorio, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(75, 75, 75)
+                .addGap(45, 45, 45)
                 .addComponent(jButton_Vendas_Relatorio, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(75, 75, 75)
+                .addGap(45, 45, 45)
+                .addComponent(jButton_Compras_Relatorio, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(45, 45, 45)
                 .addComponent(jButton_Sair_Relatorio, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(27, 27, 27))
+                .addGap(30, 30, 30))
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jLabel_imagem_fundo)
                 .addGap(0, 0, Short.MAX_VALUE))
@@ -182,13 +196,21 @@ public class Relatorio extends javax.swing.JFrame {
           if(relatoriovendas==null){
         relatoriovendas= new RelatorioVendas();
     }
-    relatoriovendas.setVisible(true);
+     relatoriovendas.setVisible(true);
        
     }//GEN-LAST:event_jButton_Vendas_RelatorioActionPerformed
 
     private void jButton_Sair_RelatorioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Sair_RelatorioActionPerformed
         this.dispose();
     }//GEN-LAST:event_jButton_Sair_RelatorioActionPerformed
+
+    private void jButton_Compras_RelatorioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Compras_RelatorioActionPerformed
+         if(relatoriocompras==null){
+        relatoriocompras= new RelatorioCompras();
+    }
+     relatoriocompras.setVisible(true);
+       
+    }//GEN-LAST:event_jButton_Compras_RelatorioActionPerformed
 
     /**
      * @param args the command line arguments
@@ -230,6 +252,7 @@ public class Relatorio extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton_Cliente_Relatorio;
+    private javax.swing.JButton jButton_Compras_Relatorio;
     private javax.swing.JButton jButton_Estoque_Relatorio;
     private javax.swing.JButton jButton_Produto_Relatorio;
     private javax.swing.JButton jButton_Sair_Relatorio;

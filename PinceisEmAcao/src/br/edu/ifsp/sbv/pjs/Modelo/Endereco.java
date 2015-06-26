@@ -1,14 +1,10 @@
-package edu.ifsp.pjs.modelo;
-
-import java.util.*;
-
+package br.edu.ifsp.sbv.pjs.Modelo;
 
 public class Endereco {
 
     
     public Endereco() {
     }
-
     
     private int id_Endereco;
    
@@ -18,7 +14,17 @@ public class Endereco {
     
     private String uf_Endereco;
 
-    private String cep_Endereco;
+    private Integer cep_Endereco;
+    
+    private String bairro_Endereco;
+
+    public String getBairro_Endereco() {
+        return bairro_Endereco;
+    }
+
+    public void setBairro_Endereco(String bairro_Endereco) {
+        this.bairro_Endereco = bairro_Endereco;
+    }
     
     private ComplementoEndereco complementoendereco;    
 
@@ -62,11 +68,11 @@ public class Endereco {
         this.uf_Endereco = uf_Endereco;
     }
 
-    public String getCep_Endereco() {
+    public Integer getCep_Endereco() {
         return cep_Endereco;
     }
 
-    public void setCep_Endereco(String cep_Endereco) {
+    public void setCep_Endereco(Integer cep_Endereco) {
         this.cep_Endereco = cep_Endereco;
     }
 

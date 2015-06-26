@@ -26,21 +26,18 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
+                  <Group type="102" attributes="0">
                       <EmptySpace min="-2" pref="133" max="-2" attributes="0"/>
                       <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabel_ValorUnitario_Cadastro_CadastroEstoque" min="-2" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="1" attributes="0">
-                              <Component id="jLabel_MargemLucro_Cadastro_CadastroEstoque" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel_EstoqueMinimo_Cadastro_CadastroEstoque" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel_Produto_Cadastro_CadastroEstoque" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel_Codigo_Cadastro_CadastroEstoque" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel_Categoria_CadastroEstoque" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel_PrecoVenda_Cadastro_CadastroEstoque" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel_Codigo_Cadastro_CadastroEstoque1" alignment="0" min="-2" max="-2" attributes="0"/>
-                          </Group>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="jLabel_MargemLucro_Cadastro_CadastroEstoque" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel_EstoqueMinimo_Cadastro_CadastroEstoque" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel_Produto_Cadastro_CadastroEstoque" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel_Codigo_Cadastro_CadastroEstoque" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel_Categoria_CadastroEstoque" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel_PrecoVenda_Cadastro_CadastroEstoque" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel_Codigo_Cadastro_CadastroEstoque1" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -51,7 +48,6 @@
                                   <Group type="103" groupAlignment="1" max="-2" attributes="0">
                                       <Component id="jTextField_PrecoVenda_CadastroProdutoEstoque" alignment="0" max="32767" attributes="0"/>
                                       <Component id="jTextField_MargemLucro_CadastroProdutoEstoque" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="jTextField_ValorUnitario_CadastroProdutoEstoque" alignment="0" min="-2" pref="103" max="-2" attributes="0"/>
                                       <Component id="jTextField_EstoqueMinimo_CadastroProdutoEstoque" min="-2" pref="103" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
@@ -67,19 +63,21 @@
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="110" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
                       <Component id="jButton_Salvar_CadastroProdutoEstoque" min="-2" pref="115" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
                       <Component id="jButton_Editar_CadastroProdutoEstoque" min="-2" pref="115" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
                       <Component id="jButton_Excluir_CadastroProdutoEstoque" min="-2" pref="125" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
                       <Component id="jButton_Limpar_CadastroProdutoEstoque" min="-2" pref="121" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
+                      <Component id="jButton_Pesquisar_CadastroProdutoEstoque1" min="-2" pref="125" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
                       <Component id="jButton_Sair_CadastroProdutoEstoque" min="-2" pref="120" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace pref="99" max="32767" attributes="0"/>
+              <EmptySpace pref="54" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -121,12 +119,7 @@
                           <Component id="jTextField_EstoqueMinimo_CadastroProdutoEstoque" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
                           <Component id="jLabel_EstoqueMinimo_Cadastro_CadastroEstoque" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jTextField_ValorUnitario_CadastroProdutoEstoque" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                          <Component id="jLabel_ValorUnitario_Cadastro_CadastroEstoque" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jTextField_MargemLucro_CadastroProdutoEstoque" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
                           <Component id="jLabel_MargemLucro_Cadastro_CadastroEstoque" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -146,6 +139,7 @@
                   <Component id="jButton_Editar_CadastroProdutoEstoque" alignment="3" min="-2" pref="51" max="-2" attributes="0"/>
                   <Component id="jButton_Salvar_CadastroProdutoEstoque" alignment="3" min="-2" pref="51" max="-2" attributes="0"/>
                   <Component id="jButton_Sair_CadastroProdutoEstoque" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                  <Component id="jButton_Pesquisar_CadastroProdutoEstoque1" alignment="3" min="-2" pref="51" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
           </Group>
@@ -177,6 +171,7 @@
     </Component>
     <Component class="javax.swing.JTextField" name="jTextField_Produto_CadastroProdutoEstoque">
       <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField_Produto_CadastroProdutoEstoqueActionPerformed"/>
         <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTextField_Produto_CadastroProdutoEstoqueKeyPressed"/>
       </Events>
     </Component>
@@ -201,35 +196,13 @@
         <Property name="text" type="java.lang.String" value="Estoque M&#xed;nimo"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField_ValorUnitario_CadastroProdutoEstoque">
-      <Events>
-        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTextField_ValorUnitario_CadastroProdutoEstoqueKeyPressed"/>
-      </Events>
-    </Component>
     <Component class="javax.swing.JComboBox" name="jComboBox_Categoria_CadastroProdutoEstoque">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="0"/>
         </Property>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="16">
-            <StringItem index="0" value="Agulha"/>
-            <StringItem index="1" value="Bot&#xe3;o"/>
-            <StringItem index="2" value="Cord&#xe3;o"/>
-            <StringItem index="3" value="Elastico"/>
-            <StringItem index="4" value="Fita"/>
-            <StringItem index="5" value="Guipper"/>
-            <StringItem index="6" value="Linha"/>
-            <StringItem index="7" value="Passa Fita"/>
-            <StringItem index="8" value="Renda"/>
-            <StringItem index="9" value="Sianinha"/>
-            <StringItem index="10" value="Tecido"/>
-            <StringItem index="11" value="Tinta"/>
-            <StringItem index="12" value="Velcro"/>
-            <StringItem index="13" value="Vi&#xe9;s"/>
-            <StringItem index="14" value="Ziper"/>
-            <StringItem index="15" value="Outro"/>
-          </StringArray>
+          <StringArray count="0"/>
         </Property>
       </Properties>
     </Component>
@@ -239,10 +212,7 @@
           <Font name="Tahoma" size="14" style="0"/>
         </Property>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="2">
-            <StringItem index="0" value="Unidade"/>
-            <StringItem index="1" value="Centimetro"/>
-          </StringArray>
+          <StringArray count="0"/>
         </Property>
       </Properties>
     </Component>
@@ -256,6 +226,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Editar"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_Editar_CadastroProdutoEstoqueActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton_Salvar_CadastroProdutoEstoque">
       <Properties>
@@ -267,6 +240,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Salvar"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_Salvar_CadastroProdutoEstoqueActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton_Limpar_CadastroProdutoEstoque">
       <Properties>
@@ -278,6 +254,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Limpar"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_Limpar_CadastroProdutoEstoqueActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton_Excluir_CadastroProdutoEstoque">
       <Properties>
@@ -309,14 +288,12 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="jTextField_PrecoVenda_CadastroProdutoEstoque">
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel_ValorUnitario_Cadastro_CadastroEstoque">
       <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="14" style="0"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Valor Unit&#xe1;rio"/>
+        <Property name="editable" type="boolean" value="false"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField_PrecoVenda_CadastroProdutoEstoqueActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel_PrecoVenda_Cadastro_CadastroEstoque">
       <Properties>
@@ -328,6 +305,7 @@
     </Component>
     <Component class="javax.swing.JTextField" name="jTextField_MargemLucro_CadastroProdutoEstoque">
       <Events>
+        <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="jTextField_MargemLucro_CadastroProdutoEstoqueFocusLost"/>
         <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTextField_MargemLucro_CadastroProdutoEstoqueKeyPressed"/>
       </Events>
     </Component>
@@ -374,6 +352,20 @@
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField_CodigoFixo_CadastroProdutoEstoqueActionPerformed"/>
         <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTextField_CodigoFixo_CadastroProdutoEstoqueKeyPressed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton_Pesquisar_CadastroProdutoEstoque1">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/br/edu/ifsp/sbv/pjs/Imagens/Pesquisar.png"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Pesquisar"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_Pesquisar_CadastroProdutoEstoque1ActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>
